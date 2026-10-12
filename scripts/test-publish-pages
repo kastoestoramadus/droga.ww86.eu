@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+# Tests scripts/publish-pages against a throwaway bare repo (no network, no GitHub, no sbt): happy paths,
+# idempotency, the guards, a real push race and a push failure that must not be retried. Run by CI in job `build`.
+set -uo pipefail
+
+here=$(cd "$(dirname "$0")" && pwd)
+publish=$here/publish-pages
+real_git=$(command -v git)
+t=$(mktemp -d)
+trap 'rm -rf "$t"' EXIT
+export GIT_AUTHOR_NAME=test GIT_AUTHOR_EMAIL=test@example.com
+
+passed=0 failed=0
+check() { # description, command...
+  local what=$1; shift
+  if "$@" >/dev/null 2>&1; then passed=$((passed + 1)); echo "  ok   $what"; else failed=$((failed + 1)); echo "  FAIL $what"; fi
+}
+origin() { "$real_git" --git-dir="$t/origin.git" "$@"; }
+tip() { origin rev-parse gh-pages; }
+in_tree() { origin ls-tree -r --name-only gh-pages | grep -qx "$1"; }
+not_in_tree() { ! in_tree "$1"; }
+fails() { ! "$@"; }
+clone() { rm -rf "$1"; "$real_git" clone -q --depth 1 --branch gh-pages "file://$t/origin.git" "$1"; }
+make_site() { # dir [marker]: a tiny site with everything the real one has that matters
+  rm -rf "$1"; mkdir -p "$1/img"
+  echo "<html><head></head><body>$2</body></html>" > "$1/index.html"
+  echo "<html>about $2</html>" > "$1/about.html"
+  echo example.org > "$1/CNAME"
+  echo "png $2" > "$1/img/a.png"
+  printf 'User-agent: *\nDisallow: /preview/\n' > "$1/robots.txt"
+}
+
+origin init -q --bare 2>/dev/null || "$real_git" init -q --bare "$t/origin.git"
+make_site "$t/site" v1
+make_site "$t/pr" pr-v1
+"$real_git" clone -q "$t/origin.git" "$t/seed" 2>/dev/null
+( cd "$t/seed" && "$real_git" checkout -q --orphan gh-pages && cp -a "$t/site/." . && touch .nojekyll \
+  && "$real_git" add -A && "$real_git" -c user.name=t -c user.email=t@t commit -qm bootstrap && "$real_git" push -q origin gh-pages )
+origin symbolic-ref HEAD refs/heads/gh-pages
+boot=$(tip)
+
+echo "publishing the site the branch already holds changes nothing"
+clone "$t/pages"
+check "exit 0" "$publish" "$t/pages" site "$t/site"
+check "no new commit" test "$(tip)" = "$boot"
+
+echo "previews land only below preview/pr-N/"
+SOURCE_SHA=aaa "$publish" "$t/pages" preview 5 "$t/pr" >/dev/null 2>&1
+SOURCE_SHA=bbb "$publish" "$t/pages" preview 6 "$t/pr" >/dev/null 2>&1
+check "preview 5" in_tree preview/pr-5/index.html
+check "preview 5 assets" in_tree preview/pr-5/img/a.png
+check "preview 6" in_tree preview/pr-6/index.html
+check "root untouched" in_tree index.html
+check "CNAME untouched" in_tree CNAME
+check ".nojekyll untouched" in_tree .nojekyll
+check "root has the production page" bash -c "'$real_git' --git-dir='$t/origin.git' show gh-pages:index.html | grep -q v1"
+
+echo "republishing a preview replaces it"
+make_site "$t/pr2" pr-v2; rm "$t/pr2/img/a.png"; echo x > "$t/pr2/new.html"
+"$publish" "$t/pages" preview 5 "$t/pr2" >/dev/null 2>&1
+check "new file" in_tree preview/pr-5/new.html
+check "deleted file gone" not_in_tree preview/pr-5/img/a.png
+check "content replaced" bash -c "'$real_git' --git-dir='$t/origin.git' show gh-pages:preview/pr-5/index.html | grep -q pr-v2"
+check "other preview untouched" in_tree preview/pr-6/img/a.png
+
+echo "publishing a new site replaces the root and keeps previews, CNAME and .nojekyll"
+make_site "$t/site2" v2; echo fresh > "$t/site2/fresh.html"; rm "$t/site2/about.html"
+"$publish" "$t/pages" site "$t/site2" >/dev/null 2>&1
+check "new root file" in_tree fresh.html
+check "stale root file removed" not_in_tree about.html
+check "root content replaced" bash -c "'$real_git' --git-dir='$t/origin.git' show gh-pages:index.html | grep -q v2"
+check "preview 5 kept" in_tree preview/pr-5/new.html
+check "preview 6 kept" in_tree preview/pr-6/index.html
+check "CNAME kept" in_tree CNAME
+check ".nojekyll kept" in_tree .nojekyll
+
+echo "removing a preview"
+"$publish" "$t/pages" remove 5 >/dev/null 2>&1
+check "preview 5 gone" bash -c "! '$real_git' --git-dir='$t/origin.git' ls-tree -r --name-only gh-pages | grep -q '^preview/pr-5/'"
+check "preview 6 kept" in_tree preview/pr-6/index.html
+before=$(tip)
+check "removing it again succeeds" "$publish" "$t/pages" remove 5
+check "removing it again changes nothing" test "$(tip)" = "$before"
+
+echo "guards refuse bad input and change nothing"
+before=$(tip)
+make_site "$t/nocname" x; rm "$t/nocname/CNAME"
+make_site "$t/withpreview" x; mkdir "$t/withpreview/preview"; echo x > "$t/withpreview/preview/x.html"
+mkdir -p "$t/empty"
+check "site without CNAME" fails "$publish" "$t/pages" site "$t/nocname"
+check "site containing preview/" fails "$publish" "$t/pages" site "$t/withpreview"
+check "site without index.html" fails "$publish" "$t/pages" site "$t/empty"
+check "preview without index.html" fails "$publish" "$t/pages" preview 7 "$t/empty"
+check "PR number ../x" fails "$publish" "$t/pages" preview ../x "$t/pr"
+check "empty PR number" fails "$publish" "$t/pages" remove ''
+check "unknown mode" fails "$publish" "$t/pages" sideways
+clone "$t/elsewhere"; "$real_git" -C "$t/elsewhere" switch -q -c other
+check "checkout on another branch" fails "$publish" "$t/elsewhere" site "$t/site"
+check "origin unchanged" test "$(tip)" = "$before"
+
+echo "a competing push lands between our commit and our push"
+clone "$t/pages"
+mkdir -p "$t/bin"
+cat > "$t/bin/git" <<EOF
+#!/usr/bin/env bash
+# the first 'git push' is preceded by a competing publish (preview 8) from another clone, so it gets rejected
+if [[ "\${1:-}" == push && ! -e "$t/raced" ]]; then
+  touch "$t/raced"
+  rm -rf "$t/other"; "$real_git" clone -q --depth 1 --branch gh-pages "file://$t/origin.git" "$t/other"
+  PATH=\${PATH#$t/bin:} "$publish" "$t/other" preview 8 "$t/pr" >/dev/null 2>&1
+fi
+exec "$real_git" "\$@"
+EOF
+chmod +x "$t/bin/git"
+PATH="$t/bin:$PATH" "$publish" "$t/pages" preview 9 "$t/pr" > "$t/out.txt" 2>&1; rc=$?
+check "succeeds" test $rc -eq 0
+check "says it rebased" grep -q 'gh-pages moved during the publish' "$t/out.txt"
+check "competing preview 8 survived" in_tree preview/pr-8/index.html
+check "our preview 9 landed" in_tree preview/pr-9/index.html
+check "history stays linear" test -z "$(origin rev-list --merges gh-pages)"
+
+echo "a push that fails for another reason (read-only token) is not retried"
+printf '#!/bin/sh\necho "remote: Permission denied to github-actions[bot]." >&2\nexit 1\n' > "$t/origin.git/hooks/pre-receive"
+chmod +x "$t/origin.git/hooks/pre-receive"
+clone "$t/pages"
+"$publish" "$t/pages" preview 10 "$t/pr" > "$t/out.txt" 2>&1; rc=$?
+check "fails" test $rc -ne 0
+check "shows the push error" grep -q 'Permission denied' "$t/out.txt"
+check "says why it gives up" grep -q 'did not move' "$t/out.txt"
+check "gives up at once" fails grep -q 'attempt' "$t/out.txt"
+rm "$t/origin.git/hooks/pre-receive"
+
+echo
+echo "publish-pages: $passed passed, $failed failed"
+[[ $failed -eq 0 ]]

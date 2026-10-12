@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+# Publishes a built site into a checkout of the gh-pages branch and pushes it (GITHUB_TOKEN is enough, no secrets).
+# GitHub Pages serves that branch as it is (.nojekyll), so the branch *is* the live site: production at the root,
+# PR previews below preview/pr-<N>/. Every mode only touches its own part and leaves the rest alone.
+#
+#   publish-pages <gh-pages-checkout> site    <site-dir>          root <- site-dir (keeps preview/, CNAME must be in it)
+#   publish-pages <gh-pages-checkout> preview <pr-number> <site-dir>   preview/pr-<N>/ <- site-dir
+#   publish-pages <gh-pages-checkout> remove  <pr-number>         delete preview/pr-<N>/
+#
+# Publishing and removing are idempotent. The commit is made from the checkout's current state and pushed; when
+# another job pushed in the meantime (master publish vs. a preview vs. another preview) it is rebased onto the new
+# tip and pushed again. That never conflicts, the jobs touch disjoint paths.
+set -euo pipefail
+
+die() { echo "publish-pages: $*" >&2; exit 1; }
+
+[[ $# -ge 2 ]] || die "usage: publish-pages <gh-pages-checkout> site|preview|remove ..."
+pages=$1 mode=$2
+shift 2
+
+# resolve site-dir before we cd into the checkout
+abs_dir() { [[ -d $1 ]] || die "not a directory: $1"; (cd "$1" && pwd); }
+
+export GIT_AUTHOR_NAME=${GIT_AUTHOR_NAME:-github-actions[bot]}
+export GIT_AUTHOR_EMAIL=${GIT_AUTHOR_EMAIL:-41898282+github-actions[bot]@users.noreply.github.com}
+export GIT_COMMITTER_NAME=${GIT_COMMITTER_NAME:-$GIT_AUTHOR_NAME}
+export GIT_COMMITTER_EMAIL=${GIT_COMMITTER_EMAIL:-$GIT_AUTHOR_EMAIL}
+source_sha=${SOURCE_SHA:-unknown}
+
+pr_number() { [[ ${1:-} =~ ^[0-9]+$ ]] || die "not a pull request number: '${1:-}'"; echo "$1"; }
+
+case $mode in
+  site)
+    [[ $# -eq 1 ]] || die "usage: publish-pages <gh-pages-checkout> site <site-dir>"
+    site=$(abs_dir "$1")
+    [[ -f $site/index.html ]] || die "$site has no index.html, refusing to publish it as the site"
+    [[ -s $site/CNAME ]] || die "$site has no CNAME, publishing it would drop the custom domain"
+    [[ ! -e $site/preview ]] || die "$site contains preview/, that path is reserved for PR previews"
+    message="Publish site from $source_sha"
+    ;;
+  preview)
+    [[ $# -eq 2 ]] || die "usage: publish-pages <gh-pages-checkout> preview <pr-number> <site-dir>"
+    n=$(pr_number "$1")
+    site=$(abs_dir "$2")
+    [[ -f $site/index.html ]] || die "$site has no index.html, refusing to publish it as a preview"
+    message="Preview of PR #$n from $source_sha"
+    ;;
+  remove)
+    [[ $# -eq 1 ]] || die "usage: publish-pages <gh-pages-checkout> remove <pr-number>"
+    n=$(pr_number "$1")
+    message="Remove preview of PR #$n"
+    ;;
+  *) die "unknown mode '$mode' (site, preview or remove)" ;;
+esac
+
+cd "$pages"
+[[ $(git rev-parse --abbrev-ref HEAD) == gh-pages ]] || die "$pages is not a checkout of the gh-pages branch"
+
+push_with_retry() {
+  local attempt
+  for attempt in 1 2 3 4 5; do
+    git push -q origin HEAD:gh-pages && return 0
+    # A rejected push only means a race when gh-pages moved on. Anything else (read-only token, network) won't
+    # fix itself by retrying, so fail at once with the git error above.
+    git fetch -q origin gh-pages
+    if git merge-base --is-ancestor FETCH_HEAD HEAD; then
+      die "push failed although gh-pages did not move, see the error above"
+    fi
+    echo "publish-pages: gh-pages moved during the publish (attempt $attempt of 5), rebasing onto it" >&2
+    git rebase -q FETCH_HEAD
+  done
+  die "gh-pages kept moving, gave up after 5 attempts"
+}
+
+case $mode in
+  site)
+    # everything but the git dir and the previews goes; .nojekyll and CNAME come back with the new site
+    find . -mindepth 1 -maxdepth 1 ! -name .git ! -name preview -exec rm -rf {} +
+    cp -a "$site"/. .
+    touch .nojekyll
+    ;;
+  preview)
+    rm -rf "preview/pr-$n"
+    mkdir -p "preview/pr-$n"
+    cp -a "$site"/. "preview/pr-$n"/
+    ;;
+  remove)
+    rm -rf "preview/pr-$n"
+    ;;
+esac
+
+git add -A
+if git diff --cached --quiet; then
+  echo "publish-pages: gh-pages is already up to date, nothing to publish"
+  exit 0
+fi
+git commit -q -m "$message"
+git show --stat --format='%h %s' HEAD | tail -n 3
+push_with_retry
+echo "publish-pages: pushed '$message'"

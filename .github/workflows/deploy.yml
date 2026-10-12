@@ -1,0 +1,85 @@
+name: Build & deploy blog
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-${{ github.ref }}
+  # never cancel a running publish of master, only superseded PR builds
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
+
+jobs:
+  # Runs all the code of the PR with a read-only token; the publishing job below only copies its output.
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: pnpm/action-setup@v6   # the version comes from "packageManager" in package.json
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Types of code and content
+        run: pnpm check
+
+      - name: Unit tests, including the Polish/English pairing of posts
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
+
+      # the script that publishes with a write token after the merge: better to find out here that it is broken
+      - name: Test the publish script
+        run: ./scripts/test-publish-pages
+
+      - name: Upload site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: dist
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+          overwrite: true
+
+  # Every commit that lands on master is published: the built site goes to the root of the gh-pages branch, which
+  # GitHub Pages serves at https://droga.ww86.eu. GITHUB_TOKEN only, no secrets; contents: write on this job only.
+  publish:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: pages-publish-master
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: src
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: pages
+      - uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: site
+      - name: Publish to gh-pages
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+        run: src/scripts/publish-pages pages site site

@@ -4,7 +4,7 @@
 
 The chosen theme will ship demo images; they have to be replaced with our own.
 Exchange folder on Google Drive, shared between the owner and the assistants:
-https://drive.google.com/drive/folders/1qHrTwdRpKMF6pwwqCDgLEBrmwWiO0m7n (`nontech-blog-obrazki`).
+the folder `nontech-blog-obrazki` in the owner's Google Drive (the link is in the owner's notes, not in this public repo).
 
 - [ ] Decide what the images show (brand mood, people or no people, colours) before writing any prompt.
 - [ ] Write the Gemini prompts. **Not yet**: the owner asked to postpone them.
@@ -21,9 +21,10 @@ https://drive.google.com/drive/folders/1qHrTwdRpKMF6pwwqCDgLEBrmwWiO0m7n (`nonte
 ## Other
 
 - [ ] Real content for both languages: homepage, about, authors, privacy policy (RODO), first real posts; both versions of each.
-- [ ] Brand: site title, logo, favicon, colours, `metadata` and `params.copyright` in `src/config/config.json` (still Astroplate).
+- [ ] Brand: logo and favicon (still Astroplate's `favicon.png`, og-image); the second accent (terracotta `#b4532f`, dark `#e08a68`) has no slot in `theme.json`.
 - [ ] Remove what we do not use: Swiper, Google Tag Manager, the Astroplate navigation button, the duplicate `/pl/` copy if the theme allows.
 - [ ] Check the Polish UI strings of the theme that are not in `src/i18n` (dates, search, 404, form) in the browser.
 - [ ] `src/lib/breath.ts` (+ tests) waits for a widget; reuse it in the new theme or drop it.
-- [ ] Publishing: domain/subdomain, `SITE_URL` and `BASE_PATH`, deploy workflow (see AGENTS.md).
+- [ ] DNS: `droga.ww86.eu CNAME kastoestoramadus.github.io` at the registrar, then check the Pages certificate and `https_enforced`.
+- [ ] PR previews: the theme ignores `base_path` (menu links and images start at `/`), so `/preview/pr-N/` cannot work until that is patched.
 - [ ] Translate the interface strings of the theme (navigation, buttons, 404).

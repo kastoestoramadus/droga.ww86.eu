@@ -88,5 +88,23 @@ is a one-file change. Astroplate already depends on `disqus-react`.
 
 ## Publishing
 
-Not set up yet. Intended: GitHub Pages from a branch, the same `publish-pages` machinery as ww86.eu, a
-separate domain or a subdomain of the hub (decision pending).
+Name **Droga**, served at https://droga.ww86.eu (a subdomain of the hub's domain, like the tech blog's `blog`).
+`public/CNAME` carries the domain into the build.
+
+```plaintext
+this repo, branch master
+  └─ .github/workflows/deploy.yml
+       job build    (read-only token) pnpm check, pnpm test, pnpm build, scripts/test-publish-pages → artifact `site` (master)
+       job publish  (master only, contents: write)   scripts/publish-pages site → root of gh-pages
+            → branch gh-pages: built site only, plus `.nojekyll` and `CNAME`
+               → GitHub Pages, "deploy from a branch" (gh-pages, /), custom domain droga.ww86.eu
+```
+
+The same machinery as the hub's and the tech blog's: `scripts/publish-pages` and its test are copied from the hub.
+Only `GITHUB_TOKEN`, never `pull_request_target`; `contents: write` on the job `publish` only. `gh-pages` is written by
+the workflow only, never by hand, and `publish-pages` refuses a site without `CNAME`.
+
+**No PR previews yet.** The hub's `preview` mode of `publish-pages` is unused: Astroplate ignores `base_path` (menu
+links and images start at `/`), so a site under `/preview/pr-N/` would link to production. Patch that first.
+
+DNS: `droga.ww86.eu CNAME kastoestoramadus.github.io`, set at the registrar (the hub's `DNS.md` has the pattern).
