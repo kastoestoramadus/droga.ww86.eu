@@ -87,6 +87,14 @@ the page URL and previews would create junk threads); one thread per post, keyed
 so the Polish and English versions share it; wrap it in one typed component so replacing it (Giscus, Remark42)
 is a one-file change. Astroplate already depends on `disqus-react`.
 
+## Commit and PR attribution
+
+- A commit carries no `Co-Authored-By:` trailer for an AI. Its message body ends with one line per helper,
+  `Helped by: <model-id>/<effort> through <tool>`, e.g. `Helped by: haiku-5.5/m through Claude Code`.
+- A PR body ends with `Generated with <model-id>/<effort> through [<tool>](<url>)`, then one `Revised by` or
+  `Reviewed by` line per later pass in the same form.
+- Effort is `l`, `m`, `h`, `xh` or `max`, as given to the agent. Older commits keep their wording.
+
 ## Publishing
 
 Name **Droga**, served at https://droga.ww86.eu (a subdomain of the hub's domain, like the tech blog's `blog`).
