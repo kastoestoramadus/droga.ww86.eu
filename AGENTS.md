@@ -90,7 +90,7 @@ is a one-file change. Astroplate already depends on `disqus-react`.
 ## Commit and PR attribution
 
 - A commit carries no `Co-Authored-By:` trailer for an AI. Its message body ends with one line per helper,
-  `Helped by: <model-id>/<effort> through <tool>`, e.g. `Helped by: haiku-5.5/m through Claude Code`.
+  `Helped by: <model-id>/<effort> by <coding assistant>`, e.g. `Helped by: haiku-5.5/m by Claude Code`.
 - A PR body ends with `Generated with <model-id>/<effort> through [<tool>](<url>)`, then one `Revised by` or
   `Reviewed by` line per later pass in the same form.
 - Effort is `l`, `m`, `h`, `xh` or `max`, as given to the agent. Older commits keep their wording.
