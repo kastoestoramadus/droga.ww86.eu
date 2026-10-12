@@ -1,0 +1,246 @@
+# Droga
+
+URL: https://droga.ww86.eu
+
+## Blog
+
+URL: https://droga.ww86.eu
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Blog
+
+Tutaj piszę o rzeczach, które nie są kodem. Treść do uzupełnienia.
+
+![banner](/_astro/banner.BMwzPDc-_Z17jISl.webp)
+
+---
+
+## O mnie
+
+URL: https://droga.ww86.eu/about
+
+Kilka słów o autorze bloga.
+
+
+![O mnie](/_astro/image-placeholder.DyBpoAJD_1yh1uJ.webp)
+
+## O mnie
+
+Tekst do uzupełnienia: kim jestem, czym się zajmuję i o czym tu piszę.
+
+---
+
+## Autorzy
+
+URL: https://droga.ww86.eu/authors
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Autorzy
+
+![Waldemar Wosiński](/_astro/avatar.DeQDKSwT_1Rjf6j.webp)
+
+#### [Waldemar Wosiński](/authors/waldemar-wosiński)
+
+Krótki opis autora, do uzupełnienia.
+
+-   [github](https://github.com/kastoestoramadus)
+
+---
+
+## Waldemar Wosiński
+
+URL: https://droga.ww86.eu/authors/waldemar-wosiński
+
+Autor bloga.
+
+
+![Waldemar Wosiński](/_astro/avatar.DeQDKSwT_ZEmI25.webp)
+
+# Waldemar Wosiński
+
+Krótki opis autora, do uzupełnienia.
+
+-   [github](https://github.com/kastoestoramadus)
+
+![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
+
+#### [Pierwszy wpis](/blog/pierwszy-wpis)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Notatki](/categories/notatki)
+-   12 Oct, 2026
+
+To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
+
+[Czytaj dalej](/blog/pierwszy-wpis)
+
+---
+
+## Wpisy
+
+URL: https://droga.ww86.eu/blog
+
+Wszystkie wpisy.
+
+
+# Wpisy
+
+![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
+
+#### [Pierwszy wpis](/blog/pierwszy-wpis)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Notatki](/categories/notatki)
+-   12 Oct, 2026
+
+To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
+
+[Czytaj dalej](/blog/pierwszy-wpis)
+
+##### Categories
+
+-   [Notatki (1)](/categories/notatki)
+
+##### Tags
+
+-   [Start](/tags/start)
+
+---
+
+## Pierwszy wpis
+
+URL: https://droga.ww86.eu/blog/pierwszy-wpis
+
+Na razie szkielet bloga, treść wkrótce.
+
+
+![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_uce2f.webp)
+
+# Pierwszy wpis
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Notatki](/categories/notatki)
+-   12 Oct, 2026
+
+To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem `translationKey`.
+
+##### Tags :
+
+-   [Start](/tags/start)
+
+##### Share :
+
+-   [](https://facebook.com/sharer/sharer.php?u=https://droga.ww86.eu/polski/pierwszy-wpis)
+-   [](<https://twitter.com/intent/tweet/?text=Pierwszy wpis&amp;url=https://droga.ww86.eu/polski/pierwszy-wpis>)
+-   [](<https://www.linkedin.com/shareArticle?mini=true&url=https://droga.ww86.eu/polski/pierwszy-wpis&title=Pierwszy wpis&summary=Na razie szkielet bloga, treść wkrótce.&source=https://droga.ww86.eu>)
+-   [](<https://pinterest.com/pin/create/button/?url=https://droga.ww86.eu/polski/pierwszy-wpis&media=&description=Na razie szkielet bloga, treść wkrótce.>)
+
+## Related Posts
+
+---
+
+## Categories
+
+URL: https://droga.ww86.eu/categories
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Categories
+
+-   [Notatki 1](/categories/notatki)
+
+---
+
+## Notatki
+
+URL: https://droga.ww86.eu/categories/notatki
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Notatki
+
+![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
+
+#### [Pierwszy wpis](/blog/pierwszy-wpis)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Notatki](/categories/notatki)
+-   12 Oct, 2026
+
+To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
+
+[Czytaj dalej](/blog/pierwszy-wpis)
+
+---
+
+## Kontakt
+
+URL: https://droga.ww86.eu/contact
+
+Napisz do mnie.
+
+
+# Kontakt
+
+Imię i nazwisko\*
+
+Adres e-mail\*
+
+Coś jeszcze?\*
+
+Wyślij
+
+---
+
+## Polityka prywatności
+
+URL: https://droga.ww86.eu/privacy-policy
+
+Jak traktuję dane odwiedzających.
+
+
+# Polityka prywatności
+
+Treść do uzupełnienia przed publikacją: jakie dane zbiera strona (komentarze, formularz kontaktowy, statystyki) i na jakiej podstawie.
+
+---
+
+## Tags
+
+URL: https://droga.ww86.eu/tags
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Tags
+
+-   [Start 1](/tags/start)
+
+---
+
+## Start
+
+URL: https://droga.ww86.eu/tags/start
+
+Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+
+# Start
+
+![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
+
+#### [Pierwszy wpis](/blog/pierwszy-wpis)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Notatki](/categories/notatki)
+-   12 Oct, 2026
+
+To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
+
+[Czytaj dalej](/blog/pierwszy-wpis)
