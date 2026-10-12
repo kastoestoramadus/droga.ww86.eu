@@ -20,7 +20,9 @@ https://drive.google.com/drive/folders/1qHrTwdRpKMF6pwwqCDgLEBrmwWiO0m7n (`nonte
 
 ## Other
 
-- [ ] Pick the theme (Astroplate multilingual or astro-i18n-starter-pro), import it in its own commit.
+- [ ] Languages: replace FR with PL (`config/language.json`, `src/i18n/pl.json`, `config/menu.pl.json`, `src/content/**/polski`), default language.
+- [ ] Typed pairing of the two versions of a post (translation key in the zod schema) plus a test that every post has its pair.
+- [ ] Remove demo content and the parts we do not use (Swiper, Google Tag Manager, sample posts, authors).
 - [ ] `src/lib/breath.ts` (+ tests) waits for a widget; reuse it in the new theme or drop it.
 - [ ] Publishing: domain/subdomain, `SITE_URL` and `BASE_PATH`, deploy workflow (see AGENTS.md).
 - [ ] Translate the interface strings of the theme (navigation, buttons, 404).

@@ -31,12 +31,12 @@ that belong to them.
 ## Commands
 
 ```bash
-npm install
-npm run dev        # live preview with hot reload, http://localhost:4321
-npm run build      # static site into dist/
-npm run preview    # serve dist/ as it will be published
-npx astro check    # types of .astro/.ts files and of the content frontmatter; run before every commit
-npx vitest run     # unit tests of src/lib
+pnpm install
+pnpm dev           # live preview with hot reload, http://localhost:4321 (also regenerates theme and json files)
+pnpm build         # theme generator + json generator + astro build + llms.txt into dist/
+pnpm preview       # serve dist/
+pnpm check         # types of .astro/.ts/.tsx and of content frontmatter; run before every commit
+pnpm test          # vitest, unit tests of src/lib
 ```
 
 ## Conventions
@@ -56,10 +56,15 @@ npx vitest run     # unit tests of src/lib
 
 ## Theme
 
-Not chosen. Yoga Fitness (Scintillaweb, MIT) was imported on 2026-10-12 and removed the same day: no i18n, and
-every post has to exist in two languages (PL and EN). Candidates: Astroplate `multilingual` branch
-(zeon-studio, MIT, Astro 7, React 19, Tailwind 4) or astro-i18n-starter-pro (naodeng). Record the decision,
-date and upstream commit here when made.
+**Astroplate, branch `multilingual`** (https://github.com/zeon-studio/astroplate, MIT), imported on 2026-10-12 from
+upstream commit `469ca9f348121cd3cdcc58838007fc56ba28bc34` (Astro 7, React 19, Tailwind 4, TypeScript, pnpm).
+The code is ours from then on; compare with upstream when wanting its fixes. Left out on purpose: its agent files,
+CI and hosting config (Cloudflare, Netlify, Docker), `.sitepins`. Yoga Fitness was tried and dropped (no i18n).
+
+How it is laid out: languages in `config/language.json` (now EN and FR, to become PL and EN), UI strings in
+`src/i18n/<code>.json`, menus in `config/menu.<code>.json`, posts in `src/content/blog/<contentDir>/`, a post's
+other-language version is the file with the same name. It still ships its demo content, Disqus, Google Tag Manager,
+Swiper and `remove-multilang`/`remove-darkmode` scripts we do not use; trim what we do not need.
 
 ## Comments
 
