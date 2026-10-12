@@ -1,0 +1,17 @@
+{
+  "full_name": "Imię i nazwisko",
+  "full_name_placeholder": "Wpisz swoje imię i nazwisko",
+  "mail_placeholder": "jan.kowalski@email.pl",
+  "message": "Coś jeszcze?",
+  "message_placeholder": "Twoja wiadomość...",
+  "submit": "Wyślij",
+  "read_more": "Czytaj dalej",
+  "page_not_found": "Nie znaleziono strony",
+  "working_mail": "Adres e-mail",
+  "anything_else": "Coś jeszcze?",
+  "contact_message_placeholder": "Twoja wiadomość...",
+  "page_not_found_content": "Strona, której szukasz, mogła zostać usunięta, zmienić adres albo jest chwilowo niedostępna.",
+  "back_to_home": "Wróć na stronę główną",
+  "get_started": "Zaczynamy",
+  "announcement": ""
+}

@@ -61,10 +61,20 @@ upstream commit `469ca9f348121cd3cdcc58838007fc56ba28bc34` (Astro 7, React 19, T
 The code is ours from then on; compare with upstream when wanting its fixes. Left out on purpose: its agent files,
 CI and hosting config (Cloudflare, Netlify, Docker), `.sitepins`. Yoga Fitness was tried and dropped (no i18n).
 
-How it is laid out: languages in `config/language.json` (now EN and FR, to become PL and EN), UI strings in
-`src/i18n/<code>.json`, menus in `config/menu.<code>.json`, posts in `src/content/blog/<contentDir>/`, a post's
-other-language version is the file with the same name. It still ships its demo content, Disqus, Google Tag Manager,
-Swiper and `remove-multilang`/`remove-darkmode` scripts we do not use; trim what we do not need.
+How it is laid out: languages in `src/config/language.json` (**Polish, the default and served at `/`, and
+English at `/en/`**; `default_language` in `src/config/config.json`), UI strings in `src/i18n/<code>.json`, menus in
+`src/config/menu.<code>.json`, content in `src/content/<collection>/<contentDir>/` (`polski`, `english`).
+The build also writes a copy of the Polish site under `/pl/`.
+
+**The versions of a post are paired by `translationKey`** (frontmatter, same value in every language; file names
+differ so that Polish URLs stay Polish). `src/lib/translations.ts` finds posts without a key, a key used twice in one
+language and a key missing in a language; `pnpm test` fails on any of them, and also when a language lacks its
+dictionary or menu, or when a dictionary has other keys than the English one. The key is optional in the zod schema
+only because `-index.md` shares the blog collection. Still shipped and unused: Google Tag Manager, Swiper,
+`remove-multilang`/`remove-darkmode` scripts, the logo and texts of Astroplate in `config.json`.
+
+Disqus is **disabled** in `src/config/config.json` (`disqus.enable: false`): the theme's shortname belongs to its
+authors. Enable it only with our own shortname.
 
 ## Comments
 

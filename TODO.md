@@ -20,9 +20,10 @@ https://drive.google.com/drive/folders/1qHrTwdRpKMF6pwwqCDgLEBrmwWiO0m7n (`nonte
 
 ## Other
 
-- [ ] Languages: replace FR with PL (`config/language.json`, `src/i18n/pl.json`, `config/menu.pl.json`, `src/content/**/polski`), default language.
-- [ ] Typed pairing of the two versions of a post (translation key in the zod schema) plus a test that every post has its pair.
-- [ ] Remove demo content and the parts we do not use (Swiper, Google Tag Manager, sample posts, authors).
+- [ ] Real content for both languages: homepage, about, authors, privacy policy (RODO), first real posts; both versions of each.
+- [ ] Brand: site title, logo, favicon, colours, `metadata` and `params.copyright` in `src/config/config.json` (still Astroplate).
+- [ ] Remove what we do not use: Swiper, Google Tag Manager, the Astroplate navigation button, the duplicate `/pl/` copy if the theme allows.
+- [ ] Check the Polish UI strings of the theme that are not in `src/i18n` (dates, search, 404, form) in the browser.
 - [ ] `src/lib/breath.ts` (+ tests) waits for a widget; reuse it in the new theme or drop it.
 - [ ] Publishing: domain/subdomain, `SITE_URL` and `BASE_PATH`, deploy workflow (see AGENTS.md).
 - [ ] Translate the interface strings of the theme (navigation, buttons, 404).

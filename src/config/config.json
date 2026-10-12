@@ -20,13 +20,13 @@
     "pagination": 2,
     "summary_length": 200,
     "blog_folder": "blog",
-    "default_language": "en",
+    "default_language": "pl",
     "disable_languages": [],
     "default_language_in_subdir": false
   },
 
   "announcement": {
-    "enable": true,
+    "enable": false,
     "expire_days": 7
   },
 
@@ -47,7 +47,7 @@
   },
 
   "disqus": {
-    "enable": true,
+    "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   },

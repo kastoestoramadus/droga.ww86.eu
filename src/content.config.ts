@@ -22,6 +22,9 @@ const blogCollection = defineCollection({
     date: z.coerce.date().optional(),
     image: z.string().optional(),
     author: z.string().default("Admin"),
+    // shared by the versions of one post in all languages; optional only because -index.md lives in the same
+    // collection, src/lib/translations.test.ts requires it on every post
+    translationKey: z.string().optional(),
     categories: z.array(z.string()).default(() => ["others"]),
     tags: z.array(z.string()).default(() => ["others"]),
     draft: z.boolean().optional(),
