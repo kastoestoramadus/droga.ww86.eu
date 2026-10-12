@@ -35,7 +35,8 @@ pnpm install
 pnpm dev           # live preview with hot reload, http://localhost:4321 (also regenerates theme and json files)
 pnpm build         # theme generator + json generator + astro build + llms.txt into dist/
 pnpm preview       # serve dist/
-pnpm check         # types of .astro/.ts/.tsx and of content frontmatter; run before every commit
+pnpm check         # generates .json/search.json (the search modal imports it), then types of .astro/.ts/.tsx and of
+                   # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 ```
 

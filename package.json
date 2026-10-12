@@ -11,7 +11,7 @@
     "build": "node scripts/themeGenerator.js && node scripts/jsonGenerator.js && astro build && node scripts/llmsGenerator.js",
     "preview": "astro preview",
     "format": "prettier -w ./src",
-    "check": "astro check",
+    "check": "node scripts/jsonGenerator.js && astro check",
     "generate-json": "node scripts/jsonGenerator.js",
     "generate-llms": "node scripts/llmsGenerator.js",
     "remove-darkmode": "node scripts/removeDarkmode.js && pnpm format",
