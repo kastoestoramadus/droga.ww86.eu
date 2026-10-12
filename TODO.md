@@ -12,6 +12,12 @@ https://drive.google.com/drive/folders/1qHrTwdRpKMF6pwwqCDgLEBrmwWiO0m7n (`nonte
       put them in `public/images/` (the theme expects optimised WebP; hero is prioritised, the rest lazy).
 - [ ] Replace the demo copy and data and the language config (PL default, EN).
 
+## Comments (Disqus)
+
+- [ ] Create a Disqus site for this blog and note its shortname in the config (not in git history of secrets: it is public).
+- [ ] Decide: free plan with ads and a consent banner, or Plus without ads.
+- [ ] One typed `Comments` component, production only, thread id = translation key.
+
 ## Other
 
 - [ ] Pick the theme (Astroplate multilingual or astro-i18n-starter-pro), import it in its own commit.

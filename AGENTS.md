@@ -61,6 +61,16 @@ every post has to exist in two languages (PL and EN). Candidates: Astroplate `mu
 (zeon-studio, MIT, Astro 7, React 19, Tailwind 4) or astro-i18n-starter-pro (naodeng). Record the decision,
 date and upstream commit here when made.
 
+## Comments
+
+**Disqus**, same account as the tech blog but a new site (own shortname, own moderation). Decided 2026-10-12:
+no server to run, readers need no GitHub account. Known costs: the free plan shows ads and sets tracking cookies
+(consent banner for Polish readers); the Plus plan (about 11 USD/month, check the price) removes the ads.
+Rules, as on the tech blog: load Disqus only in the production build, never in PR previews (thread ids come from
+the page URL and previews would create junk threads); one thread per post, keyed by the shared translation key
+so the Polish and English versions share it; wrap it in one typed component so replacing it (Giscus, Remark42)
+is a one-file change. Astroplate already depends on `disqus-react`.
+
 ## Publishing
 
 Not set up yet. Intended: GitHub Pages from a branch, the same `publish-pages` machinery as ww86.eu, a
