@@ -1,17 +1,16 @@
 {
   "site": {
-    "title": "Astroplate",
-    "base_url": "https://astroplate-multilang.netlify.app",
+    "title": "Droga",
+    "base_url": "https://droga.ww86.eu",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
-    "logo_darkmode": "/images/logo-darkmode.png",
+    "logo": "",
+    "logo_darkmode": "",
     "logo_width": "150",
     "logo_height": "30",
-    "logo_text": "Astroplate"
+    "logo_text": "Droga"
   },
-
   "settings": {
     "search": true,
     "sticky_header": true,
@@ -24,40 +23,33 @@
     "disable_languages": [],
     "default_language_in_subdir": false
   },
-
   "announcement": {
     "enable": false,
     "expire_days": 7
   },
-
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "© Waldemar Wosiński"
   },
-
   "navigation_button": {
-    "enable": true,
+    "enable": false,
     "label": "Github",
     "link": "https://github.com/zeon-studio/astroplate/tree/multilingual"
   },
-
   "google_tag_manager": {
     "enable": false,
     "gtm_id": "GTM-XXXXXX"
   },
-
   "disqus": {
     "enable": false,
     "shortname": "themefisher-template",
     "settings": {}
   },
-
   "metadata": {
-    "meta_author": "zeon.studio",
+    "meta_author": "Waldemar Wosiński",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro and tailwind boilerplate"
+    "meta_description": "Droga: notatki o ludziach, zmianie i tym, co robimy razem."
   },
-
   "llms": {
     "generate_llms_txt": true,
     "generate_llms_full_txt": true,
