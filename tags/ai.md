@@ -1,0 +1,18 @@
+---
+title: "Ai"
+url: "https://droga.ww86.eu/tags/ai"
+description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+"
+---
+
+# Ai
+
+#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Przyroda](/categories/przyroda)
+-   18 Oct, 2026
+
+Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. C
+
+[Czytaj dalej](/blog/ai-i-szesc-drzew)

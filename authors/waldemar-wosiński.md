@@ -13,6 +13,16 @@ Krótki opis autora, do uzupełnienia.
 
 -   [github](https://github.com/kastoestoramadus)
 
+#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Przyroda](/categories/przyroda)
+-   18 Oct, 2026
+
+Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. C
+
+[Czytaj dalej](/blog/ai-i-szesc-drzew)
+
 ![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
 
 #### [Pierwszy wpis](/blog/pierwszy-wpis)

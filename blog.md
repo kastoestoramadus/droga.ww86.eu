@@ -7,6 +7,16 @@ description: "Wszystkie wpisy.
 
 # Wpisy
 
+#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Przyroda](/categories/przyroda)
+-   18 Oct, 2026
+
+Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. C
+
+[Czytaj dalej](/blog/ai-i-szesc-drzew)
+
 #### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
@@ -17,25 +27,18 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
 
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
-
-#### [Pierwszy wpis](/blog/pierwszy-wpis)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
-
-[Czytaj dalej](/blog/pierwszy-wpis)
-
 ##### Categories
 
+-   [Przyroda (1)](/categories/przyroda)
 -   [Notatki (1)](/categories/notatki)
 -   [Codzienność (1)](/categories/codzienność)
 
 ##### Tags
 
+-   [Drzewa](/tags/drzewa)
+-   [Ai](/tags/ai)
+-   [Ursus](/tags/ursus)
+-   [Działanie społeczne](/tags/działanie-społeczne)
 -   [Start](/tags/start)
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
