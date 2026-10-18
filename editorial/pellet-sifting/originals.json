@@ -1,0 +1,27 @@
+[
+  {
+    "file": "originals/1-28046.jpg",
+    "bytes": 403814,
+    "sha256": "6375cce14b38ea93021b8797ee3843517b02aed4fd845a8349f9d206887dc806"
+  },
+  {
+    "file": "originals/2-28045.jpg",
+    "bytes": 251850,
+    "sha256": "80f331e167c7ee893d18f92885ade7ec2768f0b4bd6b3bec950072dd5022540c"
+  },
+  {
+    "file": "originals/3-28044.jpg",
+    "bytes": 398905,
+    "sha256": "f87e03e3ba729dcf4657a0e30c6a96fac73d67934a29c6fa18dda042c9a85532"
+  },
+  {
+    "file": "originals/4-28043.jpg",
+    "bytes": 376592,
+    "sha256": "b0fcbdbb887877a9061cf42124a6ce44b82a062ad515753cbc37051bcc50773e"
+  },
+  {
+    "file": "originals/5-28042.jpg",
+    "bytes": 365437,
+    "sha256": "de091aa9b09952b05f4b2042780466af55907038aaaac3d8e867aa7aa51acd64"
+  }
+]

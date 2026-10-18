@@ -5,9 +5,11 @@ import React from "react";
 const LanguageSwitcher = ({
   lang,
   pathname,
+  translationPaths = {},
 }: {
   lang: string;
   pathname: string;
+  translationPaths?: Record<string, string>;
 }) => {
   const { default_language, default_language_in_subdir } = config.settings;
 
@@ -33,6 +35,10 @@ const LanguageSwitcher = ({
         className="border border-dark text-text-dark bg-transparent dark:border-darkmode-primary dark:text-white py-1 rounded-sm cursor-pointer focus:ring-0 focus:border-dark dark:focus:border-darkmode-primary"
         onChange={(e) => {
           const selectedLang = e.target.value;
+          if (translationPaths[selectedLang]) {
+            window.location.href = translationPaths[selectedLang];
+            return;
+          }
           let newPath;
           const baseUrl = window.location.origin;
 
@@ -54,6 +60,7 @@ const LanguageSwitcher = ({
           <option
             className="dark:text-text-dark"
             key={language.languageCode}
+            data-path={translationPaths[language.languageCode]}
             value={language.languageCode}
           >
             {language.languageName}

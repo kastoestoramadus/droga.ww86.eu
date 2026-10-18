@@ -1,4 +1,6 @@
 ---
+import languages from "@/config/language.json";
+import { getSinglePage } from "@/lib/contentParser.astro";
 import Logo from "@/components/Logo.astro";
 import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
@@ -18,6 +20,27 @@ const { navigation_button, settings } = config;
 const { default_language } = config.settings;
 const { pathname } = Astro.url;
 const { get_started } = await getTranslations(lang);
+
+// Post slugs differ between languages; use the shared key rather than swapping URL prefixes.
+let translationPaths: Record<string, string> = {};
+if (/\/blog\/[^/]+\/?$/.test(pathname)) {
+  const slug = decodeURI(pathname).split("/").filter(Boolean).pop();
+  const currentPost = (await getSinglePage("blog", lang)).find(
+    (post) => post.id.split("/").pop() === slug,
+  );
+  if (currentPost?.data.translationKey) {
+    translationPaths = Object.fromEntries(
+      await Promise.all(languages.map(async ({ languageCode }) => {
+        const paired = (await getSinglePage("blog", languageCode)).find(
+          (post) => post.data.translationKey === currentPost.data.translationKey,
+        );
+        return [languageCode, paired
+          ? slugSelector(`/blog/${paired.id.split("/").pop()}`, languageCode)
+          : slugSelector("/blog", languageCode)];
+      })),
+    );
+  }
+}
 
 const disabledLanguages = config.settings.disable_languages as string[];
 if (disabledLanguages.includes(lang)) {
@@ -148,7 +171,7 @@ if (disabledLanguages.includes(lang)) {
       <ThemeSwitcher className="mr-5" />
 
       {/* Language switcher */}
-      <LanguageSwitcher client:load lang={lang} pathname={pathname} />
+      <LanguageSwitcher client:load lang={lang} pathname={pathname} translationPaths={translationPaths} />
 
       {/* Navigation button */}
       {

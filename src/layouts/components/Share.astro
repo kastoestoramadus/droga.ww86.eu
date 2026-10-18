@@ -15,13 +15,15 @@ const {
   className,
 }: { title?: string; description?: string; slug?: string; className?: string } =
   Astro.props;
+
+const postUrl = `${base_url}/${slug}`;
 ---
 
 <ul class={`${className}`}>
   <li class="inline-block">
     <a
       aria-label="facebook share button"
-      href={`https://facebook.com/sharer/sharer.php?u=${base_url}/${slug}`}
+      href={`https://facebook.com/sharer/sharer.php?${new URLSearchParams({ u: postUrl })}`}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -31,7 +33,7 @@ const {
   <li class="inline-block">
     <a
       aria-label="twitter share button"
-      href={`https://twitter.com/intent/tweet/?text=${title}&amp;url=${base_url}/${slug}`}
+      href={`https://twitter.com/intent/tweet/?${new URLSearchParams({ text: title ?? "", url: postUrl })}`}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -41,7 +43,7 @@ const {
   <li class="inline-block">
     <a
       aria-label="linkedin share button"
-      href={`https://www.linkedin.com/shareArticle?mini=true&url=${base_url}/${slug}&title=${title}&summary=${description}&source=${base_url}`}
+      href={`https://www.linkedin.com/shareArticle?${new URLSearchParams({ mini: "true", url: postUrl, title: title ?? "", summary: description ?? "", source: base_url })}`}
       target="_blank"
       rel="noreferrer noopener"
     >
@@ -51,7 +53,7 @@ const {
   <li class="inline-block">
     <a
       aria-label="pinterest share button"
-      href={`https://pinterest.com/pin/create/button/?url=${base_url}/${slug}&media=&description=${description}`}
+      href={`https://pinterest.com/pin/create/button/?${new URLSearchParams({ url: postUrl, media: "", description: description ?? "" })}`}
       target="_blank"
       rel="noreferrer noopener"
     >

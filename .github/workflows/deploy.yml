@@ -39,6 +39,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Post share and translation links
+        run: node scripts/test-post-links.mjs
+
       # the script that publishes with a write token after the merge: better to find out here that it is broken
       - name: Test the publish script
         run: ./scripts/test-publish-pages

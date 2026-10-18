@@ -38,6 +38,7 @@ pnpm preview       # serve dist/
 pnpm check         # generates .json/search.json (the search modal imports it), then types of .astro/.ts/.tsx and of
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
+node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
 ```
 
 ## Conventions
@@ -47,7 +48,26 @@ pnpm test          # vitest, unit tests of src/lib
 - `astro check` must report 0 errors. A wrong frontmatter field fails the build by design; keep it that way.
 - Match the surrounding code's comment density; comments never restate the obvious.
 
+## Editorial workflow
+
+- Keep each post in two linked, discoverable layers: a source base containing the author's facts,
+  context, observations, significant wording, sources, uncertainties and deferred ideas; and a short,
+  polished publication version derived from that base. Keep both easy to find for future revisions.
+- Store public source bases and original photographs under `editorial/<translationKey>/`, outside
+  Astro content collections and `public/`; link the source base and both publication files. Optimized
+  website images belong in `public/images/<translationKey>/`.
+- New facts and substantive corrections update the source base first, then the publication version.
+  Editorial cuts must not remove context from the source base.
+- Do not attribute decisions, experiences or conclusions to the author without their confirmation.
+  Distinguish observations and hypotheses from verified facts.
+- These editorial layers are separate from the required Polish and English translations of each post.
+  Keep private notes and information about private projects out of this public repository; link the
+  layers only through references safe for public disclosure, without exposing private locations.
+
 ## Gotchas
+
+- Post language switching resolves `translationKey` to each language's slug in the header; never
+  translate a post URL by prefix alone. Share URLs use the rendered page path, not a content ID.
 
 - Frontmatter is YAML: a value containing `: ` must be quoted, or the build dies with "Nested mappings are
   not allowed".

@@ -101,7 +101,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
               className="social-icons"
               title={title}
               description={description}
-              slug={post.id}
+              slug={Astro.url.pathname.replace(/^\/|\/$/g, "")}
             />
           </div>
         </div>

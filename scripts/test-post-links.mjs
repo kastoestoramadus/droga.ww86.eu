@@ -18,7 +18,7 @@ for (const file of htmlFiles("dist")) {
   if (!shares.length) continue;
   const route = "/" + relative("dist", file).replace(/\/index\.html$/, "");
   for (const link of shares) {
-    const url = new URL(link.getAttribute("href"));
+    const url = new URL(link.getAttribute("href").replaceAll("&amp;", "&"));
     const target = new URL(url.searchParams.get(url.hostname.includes("facebook") ? "u" : "url"));
     assert.equal(decodeURI(target.pathname).replace(/\/$/, ""), route, `Share URL on ${route}`);
   }
