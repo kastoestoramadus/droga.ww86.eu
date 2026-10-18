@@ -13,6 +13,6 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 -   [Codzienność](/categories/codzienność)
 -   18 Oct, 2026
 
-Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do testów pelletu op
+Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentonitu\](https://pubs.usgs.gov/
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
