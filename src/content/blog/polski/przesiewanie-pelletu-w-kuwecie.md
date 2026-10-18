@@ -11,7 +11,7 @@ draft: false
 
 <!-- Baza merytoryczna: editorial/pellet-sifting/source.md; translationKey: pellet-sifting. -->
 
-Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do testów pelletu opałowego. Przesiewanie go małą łopatką trwało bardzo długo, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki i małych partii — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
+Zależało mi na niskiej cenie i surowcu drzewnym zamiast [wydobywanego bentonitu](https://pubs.usgs.gov/publication/b1082M), więc wybrałem pellet opałowy. Przesiewanie go małą łopatką trwało bardzo długo, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki i małych partii — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
 
 ## Jak przesiewam pellet?
 
@@ -39,12 +39,18 @@ Przesiewanie nie dezynfekuje: odzyskane granulki nie stają się sanitarnie czys
   <figcaption>Granulki zostają u góry, drobiny spadają na dno.</figcaption>
 </figure>
 
+## Koszty i dalsze pomysły
+
+Gotowa kuweta przesiewowa z podwójnym dnem to alternatywa, ale przy moim planie „liczba kotów + 1 kuweta” koszt jest znaczny. Wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
+
+Mam też wątpliwość co do zużywania surowca spożywczego lub paszowego w kuwecie: [World's Best deklaruje całe ziarna kukurydzy](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/) w Multiple Cat Unscented. Nie dotyczy to automatycznie innych żwirków kukurydzianych.
+
 ## Co z nadmiarem siatki?
 
 Nowy, niewykorzystany nadmiar siatki można rozważyć na [palik mchowy](https://zielony-parapet.pl/blog/palik-z-mchu-sekretem-duzych-lisci-pnaczy-jak-pobudzic-rosliny-pnace-do-wzrostu) — rurkę z wilgotnym sphagnum, podlewaną od góry, w którą pnącze wrasta korzeniami powietrznymi. To wymaga podlewania i odpowiedniego materiału; przydatności mojej siatki nie potwierdziłem i nie chodzi o siatkę używaną w kuwecie.
 
 ## A odsiew i ogródek?
 
-Mam zajawkę permakulturową: wolę rozkład materii na miejscu, bez przekopywania i obsługi osobnej pryzmy. Rozsypywałem odsiew z moczem między trawą, licząc, że dotrze do ziemi bez przygniatania roślin. To mój eksperyment, nie sprawdzona rada nawozowa.
+Mam zajawkę permakulturową: wolę rozkład materii na miejscu, bez przekopywania i obsługi osobnej pryzmy. [Organiczna ściółka pomaga zatrzymać wilgoć, wzbogaca glebę i ogranicza pielenie](https://www.rhs.org.uk/soil-composts-mulches/mulch), a [nieprzekopywanie sprzyja życiu glebowemu](https://www.rhs.org.uk/soil-composts-mulches/no-dig-gardening). To ogólne korzyści tych metod, nie potwierdzenie przydatności odsiewu z kuwety. Rozsypywałem odsiew z moczem między trawą, licząc, że dotrze do ziemi bez przygniatania roślin. To mój eksperyment, nie sprawdzona rada nawozowa.
 
 Nie mam potwierdzenia jego bezpieczeństwa. W odsiewie mogą zostać drobiny kału. Opisana przez [CDC droga przenoszenia toksoplazmozy](https://www.cdc.gov/toxoplasmosis/causes/index.html) dotyczy kału zakażonego kota i skażonej gleby, nie samego moczu. Nie oznacza to, że mój kot jest zakażony lub trawnik skażony. [EPA odradza odchody zwierząt i koci żwirek w domowym kompoście](https://www.epa.gov/recycle/composting-home); samo odsianie trocin nie rozstrzyga tej niepewności.

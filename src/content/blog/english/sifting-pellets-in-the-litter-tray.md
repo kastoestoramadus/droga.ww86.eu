@@ -11,7 +11,7 @@ draft: false
 
 <!-- Source base: editorial/pellet-sifting/source.md; translationKey: pellet-sifting. -->
 
-Bentonite seemed convenient and cheap to me, but environmental concerns led me to try heating pellets. Sifting them with a small scoop took a very long time, and leaving mesh in the trays and lifting it periodically also worked poorly. Today I tried a large piece of mesh and small batches — it went very quickly, though that is my impression, not a timed comparison.
+I wanted a low price and a wood-based material rather than [mined bentonite](https://pubs.usgs.gov/publication/b1082M), so I chose heating pellets. Sifting them with a small scoop took a very long time, and leaving mesh in the trays and lifting it periodically also worked poorly. Today I tried a large piece of mesh and small batches — it went very quickly, though that is my impression, not a timed comparison.
 
 ## How I sift the pellets
 
@@ -39,12 +39,18 @@ Sifting does not disinfect the recovered pellets or make them hygienically clean
   <figcaption>Pellets stay on top; fine particles fall to the bottom.</figcaption>
 </figure>
 
+## Costs and further ideas
+
+A purpose-made sifting litter tray with a double bottom is an alternative, but the cost is substantial for my plan of one tray per cat plus one extra. I prefer to use ordinary trays. I am also considering clips around the container rim to hold the mesh taut — just an idea for now; the current method already works well enough for me.
+
+I also have reservations about using a potential food or feed ingredient in a litter tray: [World's Best states that Multiple Cat Unscented uses whole-kernel corn](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/). That does not automatically apply to other corn litters.
+
 ## What about the surplus mesh?
 
 New, unused surplus mesh could be considered for a [moss pole](https://www.sydneyplantguy.com/moss-poles): a tube of moist sphagnum, watered from the top, into which a climbing plant can grow aerial roots. It needs watering and suitable materials; I have not confirmed that my mesh is suitable, and I do not mean mesh used in the litter tray.
 
 ## What about the garden?
 
-I am interested in permaculture: I prefer organic matter decomposing in place, without digging or maintaining a separate pile. I have scattered sifted material containing urine among the grass, hoping it would reach the soil without weighing the plants down. This is my experiment, not proven fertilizer advice.
+I am interested in permaculture: I prefer organic matter decomposing in place, without digging or maintaining a separate pile. [Organic mulch helps retain moisture, enriches the soil and reduces weeding](https://www.rhs.org.uk/soil-composts-mulches/mulch), while [no-dig gardening supports soil life](https://www.rhs.org.uk/soil-composts-mulches/no-dig-gardening). Those are general benefits of these methods, not confirmation that sifted litter material is suitable. I have scattered sifted material containing urine among the grass, hoping it would reach the soil without weighing the plants down. This is my experiment, not proven fertilizer advice.
 
 I have no confirmation that it is safe. Fragments of feces may remain in the sifted material. The [toxoplasmosis transmission route described by the CDC](https://www.cdc.gov/toxoplasmosis/causes/index.html) concerns an infected cat's feces and contaminated soil, rather than urine itself. This does not establish that my cat is infected or my lawn contaminated. [The EPA advises against pet waste and cat litter in home compost](https://www.epa.gov/recycle/composting-home); sifting alone does not resolve that uncertainty.

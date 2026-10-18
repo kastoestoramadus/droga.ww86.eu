@@ -16,7 +16,52 @@ nie drugi artykuł. Najpierw aktualizuj tę bazę, potem obie wersje publikacyjn
 - Po zdjęciach wyłącznie dodatki: niewykorzystany nadmiar siatki oraz eksperyment ogrodowy.
   Nie ma osobnej sekcji ponownie wprowadzającej historię usprawnienia; jej fakty pozostają
   w tej bazie i zostały zwięźle wykorzystane na początku publikacji PL i EN.
-- Bez nowych twierdzeń merytorycznych, pomiarów lub zmian źródeł.
+- Uzupełnienia o koszcie i surowcach są rozwinięte niżej; wstęp pozostaje trzyzdaniowy.
+  Nowe źródła nie zmieniają subiektywnego charakteru oceny szybkości ani niepewności sanitarnej.
+
+## Uzupełnienia autora: koszt, alternatywy i dalsze pomysły
+
+- Pellet opałowy jest najtańszym wyborem autora spośród rozważanych przez niego opcji.
+  Nie znamy miesięcznego zużycia ani pełnego kosztu użytkowania; nie ogłaszamy zwycięzcy rynku.
+- Autor zna sprawdzonego producenta kuwet z podwójnym dnem, lecz nie podał marki.
+  Koszt ocenia jako znaczny przy swoim planie „liczba kotów + 1 kuweta”. Nie zgadujemy marki
+  i nie twierdzimy, że producent jest tylko jeden. Zwykłe kuwety pozwalają wykorzystać obecny zestaw.
+- Uchwyty lub zaczepy na brzegach pojemnika do napinania siatki to dalszy pomysł,
+  nie wykonana modyfikacja. Obecne rozwiązanie jest według autora już bardzo szybkie i wystarczające.
+- Producent World's Best podaje całe ziarna kukurydzy jako surowiec Multiple Cat Unscented.
+  To informacja o tym produkcie, nie wszystkich żwirkach kukurydzianych.
+  Autor ma osobistą wątpliwość wobec używania surowca spożywczego/paszowego w kuwecie;
+  nie mamy dowodu, że ten zakup pozbawia kogokolwiek żywności.
+- Ogólne materiały RHS o ściółkowaniu i uprawie bez przekopywania wyjaśniają motywację ogrodową,
+  lecz nie potwierdzają przydatności ani bezpieczeństwa zużytego odsiewu z kuwety.
+
+## Migawka researchu cen i surowców — 2026-10-18
+
+- [Castorama: pellet A1 6 mm, 15 kg](https://www.castorama.pl/pellet-drzewny-a1-6-mm-15-kg/5902768222241_CAPL.prd):
+  wynik wyszukiwania pokazywał 37,98 zł, czyli ok. 2,53 zł/kg. Cena nie była dostępna w odczycie
+  pełnej strony; to migawka wyniku, nie niezależnie potwierdzona aktualna oferta.
+- [Zooplus: Super Benek Compact](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/compact/335113):
+  pełna strona potwierdziła 33,96 zł za 10 l (ok. 8,8 kg), czyli ok. 3,86 zł/kg dla tego wariantu
+  bez abonamentu. Inne opakowania i abonament mają inne ceny.
+- Te pojedyncze oferty nie ustalają najniższego kosztu miesięcznego, zużycia, kosztu dostawy
+  ani najtańszego produktu na rynku. Nie znamy też produktu kupowanego przez autora.
+  Publikacja opisuje szukanie taniego rozwiązania, bez tabeli cen i rankingu.
+- [ENplus](https://enplus-pellets.eu/language/en-ca/consumers-ca/) podaje, że pellet powstaje głównie
+  z trocin i wiórów; ponad 85% surowca pelletu certyfikowanego pochodzi z przemysłu drzewnego.
+  To nie dowodzi pochodzenia ani certyfikacji pelletu autora.
+- [Stora Enso](https://www.storaenso.com/en/products/pellets) potwierdza wykorzystanie ubocznych trocin,
+  wiórów i suchych zrębków z własnych tartaków. ENplus opisuje ten przykład także w
+  [materiale o Stora Enso](https://enplus-pellets.eu/2025/04/22/more-than-a-decade-with-us-stora-enso/).
+- [USGS](https://pubs.usgs.gov/publication/b1082M) dokumentuje wydobycie bentonitu. Drewno jako
+  odnawialny surowiec i możliwość wykorzystania resztek uzasadniają motywację autora,
+  ale nie stanowią pełnego porównania cyklu życia konkretnego pelletu i żwirku.
+  Nie ustalono pełnego LCA tych produktów ani procentowych oszczędności emisji.
+- [Nature's Miracle: Premium Clumping Corn Cob Litter](https://www.naturesmiracle.com/products/other-messes/premium-clumping-corn-cob-litter)
+  to przykład deklaracji corn cob, czyli osadki kolby, w odróżnieniu od całych ziaren World's Best.
+  [Certech / Super Benek](https://www.certech.com.pl/goods_category/kukurydziane-pl/) mówi o bazie
+  kukurydzianej, ale nie potwierdza części rośliny: nie przypisujemy mu całych ziaren.
+- Podstawą krótkich pozytywnych twierdzeń o ściółkowaniu w publikacji są poradniki RHS
+  wskazane niżej; nie przenosimy ich na używany materiał z kuwety.
 
 ## Fakty i kontekst potwierdzone przez autora
 
@@ -82,6 +127,15 @@ Sprawdzone 2026-10-18; wspierają wyłącznie wskazane twierdzenia, nie oceniaj�
   budowa z siatki i sphagnum, wilgotne środowisko wrastania korzeni. Link w PL.
 - [Sydney Plant Guy: Moss Poles](https://www.sydneyplantguy.com/moss-poles):
   idea palika jako pionowego przedłużenia podłoża, wymagającego nawadniania. Link w EN.
+
+- [World's Best: Multiple Cat Unscented](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/):
+  producent deklaruje whole-kernel corn. Nie przenosimy jego marketingowych ocen bezpieczeństwa
+  i ekologii na artykuł ani nie uogólniamy składu na inne marki.
+- [RHS: Mulches and mulching](https://www.rhs.org.uk/soil-composts-mulches/mulch): ogólnie retencja
+  wilgoci, poprawa gleby i mniej pracy przy podlewaniu oraz odchwaszczaniu.
+- [RHS: No-dig gardening](https://www.rhs.org.uk/soil-composts-mulches/no-dig-gardening): ogólne
+  uzasadnienie pozostawiania materii na powierzchni i unikania zaburzania gleby.
+  Oba źródła dotyczą odpowiednich materiałów ogrodowych, nie odsiewu z kuwety.
 
 ## Fotografie i zachowanie oryginałów
 
