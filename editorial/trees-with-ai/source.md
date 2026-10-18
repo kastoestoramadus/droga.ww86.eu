@@ -106,3 +106,17 @@ Publikacja zawiera wyłącznie własne podziękowanie autora. Nie publikuje tele
 Autor chce więcej fotografii z wniosku widocznych w głównej części: zdjęcia przegląda się łatwo, więc skracanie tekstu nie powinno oznaczać chowania dokumentacji fotograficznej. Poprzednia publikacja pokazywała pień D1, a rząd D2–D4 był dostępny dopiero w rozwijanej instrukcji.
 
 W widocznej galerii umieszczamy wszystkie cztery fotografie wyodrębnione z przesłanego PDF-a: pień D1, koronę tego samego D1, rząd D2–D4 i dwa osobne drzewa D5/D6. Każda występuje raz; zdjęcie rzędu przenosimy z instrukcji do galerii. Krótkie podpisy objaśniają, co widać i jak zdjęcia wiążą się z oznaczeniami w zgłoszeniu. Kliknięcie otwiera większy obraz. Nie przycinamy napisów i nie dopisujemy diagnoz zdrowia, pewnych gatunków ani wieku. Przypomnienie o własnych pomiarach dotyczy całej galerii. Pozostałe szczegóły pozostają w zamkniętych sekcjach.
+
+
+## Etapowe nasadzenia z zapasem — propozycja autora, 2026-10-18
+
+Autor proponuje rozważenie gęstszych nasadzeń początkowych niż docelowe, z zapasem na nieprzyjęcie sadzonek i inne ubytki oraz ze z góry zaplanowanym późniejszym przerzedzaniem. Jego celem jest wcześniejszy efekt zieleni i sytuacja, w której pojedynczy ubytek nie wymusza ponownego rozpoczynania od małej sadzonki. Układ końcowy może być nieregularny, zależny od tego, co się przyjmie. Chodzi o projektowanie kolejnych etapów i opiekę, zamiast samej obietnicy efektu za 40 lat. To propozycja dla odpowiednich grup drzew i zadrzewień, np. parkowych, nie nakaz sadzenia wszystkich drzew miejskich gęsto.
+
+Nie podano rozstawu, procentu zapasu, gatunków ani terminu przerzedzeń; nie wymyślamy ich. Plan powinien uwzględniać glebę, wodę, docelowe korony, pielęgnację oraz reakcję na ubytki. Terminy przeglądów i przerzedzeń planuje się przed nasileniem konkurencji, a nie dopiero wtedy, gdy drzewa „będą za duże”. Nie przenosimy wskazówek leśnych wprost na ciasne uliczne misy. Zapas sadzonek nie gwarantuje przeżycia grupy podczas suszy lub choroby i nie odtwarza od razu funkcji dużych usuwanych drzew. Nie jest to uzasadnienie wycinki istniejących okazów.
+
+Źródła pierwotne sprawdzone 2026-10-18:
+- [Forest Research, Woodland and grassland creation on sites requiring intervention (2026), PDF](https://cdn.forestresearch.gov.uk/2026/01/FRBK001_Woodland-and-grassland-creation-on-sites-requiring-intervention.pdf), rozdział 5, sekcja 6.3 „Tree planting densities”, strona drukowana 93 (98 PDF): większa gęstość jako jedna z metod uwzględnienia strat przy zakładaniu zadrzewień na trudnych gruntach. To kontekst zadrzewień, nie instrukcja ulicznej obsady Ursusa. Pobrano oryginalny PDF, odczytano tekst i obejrzano odpowiednią stronę.
+- [Forest Research, Carrying out thinning operations](https://www.forestresearch.gov.uk/climate-change/carrying-out-thinning-operations/): termin, intensywność i planowanie przerzedzeń mają znaczenie; późne zabiegi mogą zwiększać ryzyko wiatrowe, a zmiana konkurencji o wodę i osłony zmienia warunki wzrostu. Źródło nie daje uniwersalnego terminarza dla parku miejskiego.
+- [Forest Research, Establishment & management](https://www.forestresearch.gov.uk/climate-change/adaptation-measures/establishment-and-management/): znaczenie wody, warunków glebowych i zaplanowanej pielęgnacji. Nie wynika z niego, że sam większy zapas drzew usuwa ryzyko suszy.
+
+Krótka publikacja przedstawia propozycję w istniejącej zamkniętej sekcji o nasadzeniach. Nie rozbudowuje wstępu, galerii ani listy wykonanych działań, a pełny kontekst pozostaje w tej bazie.

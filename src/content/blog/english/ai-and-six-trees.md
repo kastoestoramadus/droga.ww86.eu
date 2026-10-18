@@ -141,6 +141,12 @@ This is my proposal, not a statement of current law. It is only a starting point
 
 The idea of “plant small trees and things will be fine in 40 years” does not convince me. Forty years here illustrates postponing compensation, not a calculated growth period for every tree. I want us to protect what we already have and consider today's residents. New trees are needed, but planting them does not make years of loss disappear.
 
+### Planting in planned stages
+
+I would also like park tree groups to consider **denser initial planting than the final layout**, allowing for seedlings that do not establish, with later thinning planned from the start. My aim is earlier greenery and less risk of starting again with a small sapling after every loss. The eventual layout may be irregular, depending on which trees establish.
+
+[Forest Research describes higher planting density as one way of allowing for losses when creating woodland on difficult sites](https://cdn.forestresearch.gov.uk/2026/01/FRBK001_Woodland-and-grassland-creation-on-sites-requiring-intervention.pdf) — chapter 5, section 6.3. This needs a local design considering soil, water and ongoing care. [Thinning should be planned early](https://www.forestresearch.gov.uk/climate-change/carrying-out-thinning-operations/), before competition intensifies. I would not apply it automatically to cramped street tree pits; extra saplings cannot replace care or retaining large trees.
+
 </details>
 
 <details>
