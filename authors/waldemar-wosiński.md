@@ -31,6 +31,6 @@ To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połącz
 -   [Codzienność](/categories/codzienność)
 -   18 Oct, 2026
 
-Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do szukania alternat
+Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do testów pelletu op
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
