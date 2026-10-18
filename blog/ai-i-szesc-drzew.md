@@ -149,6 +149,17 @@ Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docel
 
 [Forest Research opisuje zwiększoną gęstość jako jedną z metod uwzględniania strat przy zakładaniu zadrzewień na trudnych gruntach](https://cdn.forestresearch.gov.uk/2026/01/FRBK001_Woodland-and-grassland-creation-on-sites-requiring-intervention.pdf) — rozdział 5, sekcja 6.3. To pomysł do lokalnego projektu, z oceną gleby, wody i pielęgnacji. [Przerzedzenia trzeba planować wcześnie](https://www.forestresearch.gov.uk/climate-change/carrying-out-thinning-operations/), zanim nasili się konkurencja. Nie przenosiłbym tego automatycznie na ciasne misy uliczne; zapas sadzonek nie zastąpi też opieki ani zachowania dużych drzew.
 
+Polecane z Zielonego Ursusa: podobne sprawy w naszej dzielnicy
+
+Te cztery teksty stowarzyszenia Bezpieczny i Zielony Ursus dobrze uzupełniają tę historię:
+
+-   [Starania o nowy pomnik przyrody w Ursusie kontra (nie)moc dzielnicy](https://zielonyursus.pl/starania-o-nowy-pomnik-przyrody-w-ursusie-kontra-niemoc-dzielnicy/) (11.01.2024) — najbliższy przykład: wniosek mieszkańca o ochronę topoli przy Bodycha i jego relacja ze współpracy z BOŚ.
+-   [Polemika w sprawie nowego przebiegu ulicy Gierdziejewskiego](https://zielonyursus.pl/polemika-w-sprawie-nowego-przebiegu-ulicy-gierdziejewskiego/) (13.11.2024) — argumenty stowarzyszenia za zachowaniem istniejących drzew przy Eko Parku zamiast zastępowania ich małymi sadzonkami.
+-   [Co dalej z nowym Domem Kultury przy Gierdziejewskiego?](https://zielonyursus.pl/co-dalej-z-nowym-domem-kultury-przy-gierdziejewskiego/) (01.12.2023) — lokalny przykład problemu rekompensaty: nowe, młodsze drzewa mają pojawić się dopiero po budowie.
+-   [Ursus – inwestycje – wrzesień 2026](https://zielonyursus.pl/ursus-inwestycje-wrzesien-2026/) (03.10.2026) — szczególnie fragment „Przetarg na nowe drzewa”: sadzenie połączone z trzyletnią pielęgnacją, ochroną gleby i podlewaniem.
+
+To lokalne relacje i stanowiska społeczne, opisujące sprawy na dzień publikacji, a nie aktualny status postępowań ani wykładnia prawa.
+
 Prompt do skopiowania dla własnego AI
 
 To propozycja na kolejną sprawę, nie zapis moich wcześniejszych rozmów. Wklej ją z własnymi materiałami, usuwając niepotrzebne dane osobowe:

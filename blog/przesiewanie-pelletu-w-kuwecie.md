@@ -68,7 +68,15 @@ Kukurydziany — [Super Benek Corn Cat Natural, Zooplus](https://www.zooplus.pl/
 
 Masy żwirków są przybliżone, podane przez sklep. 10 kg to wspólna jednostka porównania, nie rozmiar oferowanych worków. To cena zakupu, nie koszt miesięcznego używania. Pellet w tabeli jest przykładem ceny opału; nie potwierdziłem przydatności tego produktu do kuwety.
 
-Gotowa kuweta przesiewowa z podwójnym dnem to alternatywa, ale przy moim planie „liczba kotów + 1 kuweta” koszt jest znaczny. Wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
+### Gotowa alternatywa: PeeWee EcoMinor
+
+[PeeWee EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/) to sensowne gotowe rozwiązanie z fabrycznym podwójnym dnem: w górnym pojemniku jest sito, a dolny zbiera mocz i trociny. [Proshop](https://www.proshop.pl/Koty/PeeWee-EcoMinor-kuweta-dla-kota-czarnaantracytowo-szara/3507620) pokazywał **164 zł brutto** za czarną/antracytowo-szarą kuwetę (18.10.2026, bez dostawy). Producent zaleca [oryginalne granulki PeeWee](https://peeweeinternational.eu/ned/), więc to osobny system od mojego sposobu z siatką i pelletem opałowym.
+
+![Otwarta kuweta PeeWee EcoMinor w kolorze antracytowo-szarym, z widoczną kratką górnego pojemnika i dolną tacką](/images/pellet-sifting/peewee-ecominor.webp)
+
+EcoMinor: sito jest częścią górnego pojemnika. Fotografia produktowa: [PeeWee International B.V.](https://peeweeinternational.eu/pol/kattenbakken/ecominor/)
+
+Przy moim planie „liczba kotów + 1 kuweta” koszt zakupu kilku takich kuwet rośnie. Ja wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
 
 Mam też wątpliwość co do zużywania surowca spożywczego lub paszowego w kuwecie: [World’s Best deklaruje całe ziarna kukurydzy](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/) w Multiple Cat Unscented. Nie dotyczy to automatycznie innych żwirków kukurydzianych.
 

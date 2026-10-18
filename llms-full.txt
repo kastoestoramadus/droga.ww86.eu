@@ -299,6 +299,17 @@ Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docel
 
 [Forest Research opisuje zwiększoną gęstość jako jedną z metod uwzględniania strat przy zakładaniu zadrzewień na trudnych gruntach](https://cdn.forestresearch.gov.uk/2026/01/FRBK001_Woodland-and-grassland-creation-on-sites-requiring-intervention.pdf) — rozdział 5, sekcja 6.3. To pomysł do lokalnego projektu, z oceną gleby, wody i pielęgnacji. [Przerzedzenia trzeba planować wcześnie](https://www.forestresearch.gov.uk/climate-change/carrying-out-thinning-operations/), zanim nasili się konkurencja. Nie przenosiłbym tego automatycznie na ciasne misy uliczne; zapas sadzonek nie zastąpi też opieki ani zachowania dużych drzew.
 
+Polecane z Zielonego Ursusa: podobne sprawy w naszej dzielnicy
+
+Te cztery teksty stowarzyszenia Bezpieczny i Zielony Ursus dobrze uzupełniają tę historię:
+
+-   [Starania o nowy pomnik przyrody w Ursusie kontra (nie)moc dzielnicy](https://zielonyursus.pl/starania-o-nowy-pomnik-przyrody-w-ursusie-kontra-niemoc-dzielnicy/) (11.01.2024) — najbliższy przykład: wniosek mieszkańca o ochronę topoli przy Bodycha i jego relacja ze współpracy z BOŚ.
+-   [Polemika w sprawie nowego przebiegu ulicy Gierdziejewskiego](https://zielonyursus.pl/polemika-w-sprawie-nowego-przebiegu-ulicy-gierdziejewskiego/) (13.11.2024) — argumenty stowarzyszenia za zachowaniem istniejących drzew przy Eko Parku zamiast zastępowania ich małymi sadzonkami.
+-   [Co dalej z nowym Domem Kultury przy Gierdziejewskiego?](https://zielonyursus.pl/co-dalej-z-nowym-domem-kultury-przy-gierdziejewskiego/) (01.12.2023) — lokalny przykład problemu rekompensaty: nowe, młodsze drzewa mają pojawić się dopiero po budowie.
+-   [Ursus – inwestycje – wrzesień 2026](https://zielonyursus.pl/ursus-inwestycje-wrzesien-2026/) (03.10.2026) — szczególnie fragment „Przetarg na nowe drzewa”: sadzenie połączone z trzyletnią pielęgnacją, ochroną gleby i podlewaniem.
+
+To lokalne relacje i stanowiska społeczne, opisujące sprawy na dzień publikacji, a nie aktualny status postępowań ani wykładnia prawa.
+
 Prompt do skopiowania dla własnego AI
 
 To propozycja na kolejną sprawę, nie zapis moich wcześniejszych rozmów. Wklej ją z własnymi materiałami, usuwając niepotrzebne dane osobowe:
@@ -489,7 +500,15 @@ Kukurydziany — [Super Benek Corn Cat Natural, Zooplus](https://www.zooplus.pl/
 
 Masy żwirków są przybliżone, podane przez sklep. 10 kg to wspólna jednostka porównania, nie rozmiar oferowanych worków. To cena zakupu, nie koszt miesięcznego używania. Pellet w tabeli jest przykładem ceny opału; nie potwierdziłem przydatności tego produktu do kuwety.
 
-Gotowa kuweta przesiewowa z podwójnym dnem to alternatywa, ale przy moim planie „liczba kotów + 1 kuweta” koszt jest znaczny. Wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
+### Gotowa alternatywa: PeeWee EcoMinor
+
+[PeeWee EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/) to sensowne gotowe rozwiązanie z fabrycznym podwójnym dnem: w górnym pojemniku jest sito, a dolny zbiera mocz i trociny. [Proshop](https://www.proshop.pl/Koty/PeeWee-EcoMinor-kuweta-dla-kota-czarnaantracytowo-szara/3507620) pokazywał **164 zł brutto** za czarną/antracytowo-szarą kuwetę (18.10.2026, bez dostawy). Producent zaleca [oryginalne granulki PeeWee](https://peeweeinternational.eu/ned/), więc to osobny system od mojego sposobu z siatką i pelletem opałowym.
+
+![Otwarta kuweta PeeWee EcoMinor w kolorze antracytowo-szarym, z widoczną kratką górnego pojemnika i dolną tacką](/images/pellet-sifting/peewee-ecominor.webp)
+
+EcoMinor: sito jest częścią górnego pojemnika. Fotografia produktowa: [PeeWee International B.V.](https://peeweeinternational.eu/pol/kattenbakken/ecominor/)
+
+Przy moim planie „liczba kotów + 1 kuweta” koszt zakupu kilku takich kuwet rośnie. Ja wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
 
 Mam też wątpliwość co do zużywania surowca spożywczego lub paszowego w kuwecie: [World’s Best deklaruje całe ziarna kukurydzy](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/) w Multiple Cat Unscented. Nie dotyczy to automatycznie innych żwirków kukurydzianych.
 
