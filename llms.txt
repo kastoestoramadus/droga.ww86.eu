@@ -27,10 +27,14 @@ This file helps language models discover the most useful content on this site.
 
 - [Pierwszy wpis](https://droga.ww86.eu/blog/pierwszy-wpis.md): Na razie szkielet bloga, treść wkrótce.
 
+- [Pellet w kuwecie: przesiewanie na siatce](https://droga.ww86.eu/blog/przesiewanie-pelletu-w-kuwecie.md): Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój sposób na oddzielanie całych granulek od trocin.
+
 
 ## Categories
 
 - [Categories](https://droga.ww86.eu/categories.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Codzienność](https://droga.ww86.eu/categories/codzienność.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Notatki](https://droga.ww86.eu/categories/notatki.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
@@ -49,6 +53,12 @@ This file helps language models discover the most useful content on this site.
 
 - [Tags](https://droga.ww86.eu/tags.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
+- [Kot](https://droga.ww86.eu/tags/kot.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Pellet](https://droga.ww86.eu/tags/pellet.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
 - [Start](https://droga.ww86.eu/tags/start.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Usprawnienia](https://droga.ww86.eu/tags/usprawnienia.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 
