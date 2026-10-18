@@ -25,9 +25,25 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Zależy mi na zachowaniu dużych drzew, zamiast odkładania rekompensaty na dziesięciolecia.
 
-![Pień topoli przy budynku modelarni, ze strzałką D1 i podpisem obwodu 360 cm](/images/trees-with-ai/d1-trunk.webp)
+## Cztery zdjęcia z mojego zgłoszenia
 
-D1 na fotografii z załącznika. Podpis oznacza mój pomiar, nie wynik urzędowych oględzin.
+To te fotografie pozwalają powiązać drzewa z oznaczeniami D1–D6. Kliknij zdjęcie, żeby obejrzeć je większe. Podane obwody to moje pomiary na wysokości 130 cm.
+
+[![Pień topoli przy modelarni, ze strzałką D1 i podpisem obwodu 360 cm](/images/trees-with-ai/d1-trunk.webp)](/images/trees-with-ai/d1-trunk.webp)
+
+D1: największy zmierzony przeze mnie pień — 360 cm obwodu.
+
+[![Korona drzewa D1 nad budynkiem modelarni, z podpisem D1 360 cm korona](/images/trees-with-ai/d1-crown.webp)](/images/trees-with-ai/d1-crown.webp)
+
+D1 z drugiej perspektywy: korona tego samego drzewa przy modelarni.
+
+[![Rząd topoli przy modelarni z oznaczeniami D2 250 cm, D3 240 cm i D4 130 cm](/images/trees-with-ai/d2-d4.webp)](/images/trees-with-ai/d2-d4.webp)
+
+D2, D3 i D4: trzy kolejne drzewa w rzędzie — odpowiednio 250, 240 i 130 cm obwodu.
+
+[![Dwa osobne drzewa przy ogrodzeniu: D6 po lewej 320 cm, D5 po prawej 280 cm](/images/trees-with-ai/d5-d6.webp)](/images/trees-with-ai/d5-d6.webp)
+
+D6 po lewej (320 cm) i D5 po prawej (280 cm). To dwa osobne drzewa.
 
 Chcesz zrobić coś podobnego? Rozwiń tylko to, co Cię interesuje.
 
@@ -96,10 +112,6 @@ D6
 Jak D5
 
 To pomiary własne i propozycje oznaczenia gatunków. D5 i D6 są osobnymi drzewami — ich obwodów nie sumujemy.
-
-![Rząd topoli przy modelarni z oznaczeniami D2 250 cm, D3 240 cm i D4 130 cm](/images/trees-with-ai/d2-d4.webp)
-
-Te same identyfikatory powinny występować na mapie, zdjęciach i w tabeli.
 
 ### Czy wystarczy odpowiednio gruby pień?
 
