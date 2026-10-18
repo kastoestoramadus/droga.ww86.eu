@@ -11,7 +11,7 @@ description: "Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój s
 -   [Codzienność](/categories/codzienność)
 -   18 Oct, 2026
 
-Zależało mi na niskiej cenie i surowcu drzewnym zamiast [wydobywanego bentonitu](https://pubs.usgs.gov/publication/b1082M), więc wybrałem pellet opałowy. Przesiewanie go małą łopatką zajmowało dużo czasu, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
+Zależało mi na niskiej cenie i surowcu drzewnym zamiast [nie biodegradowalnego bentonitu](https://pubs.usgs.gov/publication/b1082M), więc wybrałem pellet opałowy. Przesiewanie go małą łopatką zajmowało dużo czasu, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
 
 ## Jak przesiewam pellet?
 
