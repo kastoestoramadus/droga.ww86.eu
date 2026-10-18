@@ -150,6 +150,20 @@ Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docel
 </details>
 
 <details>
+<summary>Polecane z Zielonego Ursusa: podobne sprawy w naszej dzielnicy</summary>
+
+Te cztery teksty stowarzyszenia Bezpieczny i Zielony Ursus dobrze uzupełniają tę historię:
+
+- [Starania o nowy pomnik przyrody w Ursusie kontra (nie)moc dzielnicy](https://zielonyursus.pl/starania-o-nowy-pomnik-przyrody-w-ursusie-kontra-niemoc-dzielnicy/) (11.01.2024) — najbliższy przykład: wniosek mieszkańca o ochronę topoli przy Bodycha i jego relacja ze współpracy z BOŚ.
+- [Polemika w sprawie nowego przebiegu ulicy Gierdziejewskiego](https://zielonyursus.pl/polemika-w-sprawie-nowego-przebiegu-ulicy-gierdziejewskiego/) (13.11.2024) — argumenty stowarzyszenia za zachowaniem istniejących drzew przy Eko Parku zamiast zastępowania ich małymi sadzonkami.
+- [Co dalej z nowym Domem Kultury przy Gierdziejewskiego?](https://zielonyursus.pl/co-dalej-z-nowym-domem-kultury-przy-gierdziejewskiego/) (01.12.2023) — lokalny przykład problemu rekompensaty: nowe, młodsze drzewa mają pojawić się dopiero po budowie.
+- [Ursus – inwestycje – wrzesień 2026](https://zielonyursus.pl/ursus-inwestycje-wrzesien-2026/) (03.10.2026) — szczególnie fragment „Przetarg na nowe drzewa”: sadzenie połączone z trzyletnią pielęgnacją, ochroną gleby i podlewaniem.
+
+To lokalne relacje i stanowiska społeczne, opisujące sprawy na dzień publikacji, a nie aktualny status postępowań ani wykładnia prawa.
+
+</details>
+
+<details>
 <summary>Prompt do skopiowania dla własnego AI</summary>
 
 To propozycja na kolejną sprawę, nie zapis moich wcześniejszych rozmów. Wklej ją z własnymi materiałami, usuwając niepotrzebne dane osobowe:

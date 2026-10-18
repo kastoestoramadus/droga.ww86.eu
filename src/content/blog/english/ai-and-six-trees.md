@@ -150,6 +150,20 @@ I would also like park tree groups to consider **denser initial planting than th
 </details>
 
 <details>
+<summary>Related reading from Zielony Ursus: local tree campaigns</summary>
+
+These four Polish-language articles by the Bezpieczny i Zielony Ursus residents’ association complement this story:
+
+- [Efforts to designate a new natural monument in Ursus](https://zielonyursus.pl/starania-o-nowy-pomnik-przyrody-w-ursusie-kontra-niemoc-dzielnicy/) (11 January 2024) — the closest parallel: a resident’s proposal to protect a poplar on Bodycha Street and his account of working with BOŚ.
+- [A response to the proposed realignment of Gierdziejewskiego Street](https://zielonyursus.pl/polemika-w-sprawie-nowego-przebiegu-ulicy-gierdziejewskiego/) (13 November 2024) — the association’s case for retaining existing trees by Eko Park rather than replacing them with small saplings.
+- [What next for the new cultural centre on Gierdziejewskiego Street?](https://zielonyursus.pl/co-dalej-z-nowym-domem-kultury-przy-gierdziejewskiego/) (1 December 2023) — a local example of delayed compensation: younger replacement trees planned only after construction.
+- [Ursus investment roundup: September 2026](https://zielonyursus.pl/ursus-inwestycje-wrzesien-2026/) (3 October 2026) — see “Przetarg na nowe drzewa”: planting combined with three years of care, soil protection and watering.
+
+These are local accounts and civic positions reflecting their publication dates, rather than current case statuses or legal guidance.
+
+</details>
+
+<details>
 <summary>A prompt to copy for your own AI</summary>
 
 This is a suggestion for a new case, not a transcript of my earlier conversations. Add your own materials, removing unnecessary personal information:

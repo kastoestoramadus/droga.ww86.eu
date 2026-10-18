@@ -120,3 +120,25 @@ Nie podano rozstawu, procentu zapasu, gatunków ani terminu przerzedzeń; nie wy
 - [Forest Research, Establishment & management](https://www.forestresearch.gov.uk/climate-change/adaptation-measures/establishment-and-management/): znaczenie wody, warunków glebowych i zaplanowanej pielęgnacji. Nie wynika z niego, że sam większy zapas drzew usuwa ryzyko suszy.
 
 Krótka publikacja przedstawia propozycję w istniejącej zamkniętej sekcji o nasadzeniach. Nie rozbudowuje wstępu, galerii ani listy wykonanych działań, a pełny kontekst pozostaje w tej bazie.
+
+
+## Lektury lokalne: Zielony Ursus — przegląd 2026-10-18
+
+Dobór na prośbę autora: pierwszeństwo dla inicjatyw pomnikowych mieszkańców, zachowania dużych drzew, opóźnienia rekompensaty i pielęgnacji nasadzeń. Przeczytano pełne cztery wpisy; poniższe polecenia nie potwierdzają aktualnego stanu opisanych postępowań. Portal należy do stowarzyszenia mieszkańców, a jego polemiki i oceny nie są dokumentami urzędowymi ani samodzielną podstawą prawną. Nie przejmujemy oskarżeń o intencje urzędników ani prognoz wycinki jako ustalonych faktów.
+
+<details>
+<summary>Polecane z Zielonego Ursusa: podobne sprawy w naszej dzielnicy</summary>
+
+Te cztery teksty stowarzyszenia Bezpieczny i Zielony Ursus dobrze uzupełniają tę historię:
+
+- [Starania o nowy pomnik przyrody w Ursusie kontra (nie)moc dzielnicy](https://zielonyursus.pl/starania-o-nowy-pomnik-przyrody-w-ursusie-kontra-niemoc-dzielnicy/) (11.01.2024) — najbliższy przykład: wniosek mieszkańca o ochronę topoli przy Bodycha i jego relacja ze współpracy z BOŚ.
+- [Polemika w sprawie nowego przebiegu ulicy Gierdziejewskiego](https://zielonyursus.pl/polemika-w-sprawie-nowego-przebiegu-ulicy-gierdziejewskiego/) (13.11.2024) — argumenty stowarzyszenia za zachowaniem istniejących drzew przy Eko Parku zamiast zastępowania ich małymi sadzonkami.
+- [Co dalej z nowym Domem Kultury przy Gierdziejewskiego?](https://zielonyursus.pl/co-dalej-z-nowym-domem-kultury-przy-gierdziejewskiego/) (01.12.2023) — lokalny przykład problemu rekompensaty: nowe, młodsze drzewa mają pojawić się dopiero po budowie.
+- [Ursus – inwestycje – wrzesień 2026](https://zielonyursus.pl/ursus-inwestycje-wrzesien-2026/) (03.10.2026) — szczególnie fragment „Przetarg na nowe drzewa”: sadzenie połączone z trzyletnią pielęgnacją, ochroną gleby i podlewaniem.
+
+To lokalne relacje i stanowiska społeczne, opisujące sprawy na dzień publikacji, a nie aktualny status postępowań ani wykładnia prawa.
+
+</details>
+
+
+Najbliższy wpis Michała Sutyńca opisuje zgłoszenie z czerwca 2023 dotyczące topoli o deklarowanym obwodzie 520 cm przy Bodycha i pomoc BOŚ; brak tu weryfikacji późniejszego ustanowienia ochrony. Polemika Marcina Dziubaka dotyczy projektu drogi i istniejącego cienia. Tekst Krzysztofa Daukszewicza z 2023 podnosi problem sadzenia młodszych drzew dopiero po budowie. Jego podsumowanie z 2026 opisuje wymagania przetargowe i opiekę po posadzeniu; nie traktujemy ich jako dowodu wykonania prac. Lista w publikacji jest opcjonalna, bez wydłużania otwarcia wpisu.
