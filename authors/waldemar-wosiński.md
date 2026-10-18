@@ -19,7 +19,7 @@ Krótki opis autora, do uzupełnienia.
 -   [Przyroda](/categories/przyroda)
 -   18 Oct, 2026
 
-Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. C
+Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, \*\*zgłosiłem sześć dr
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
