@@ -2,7 +2,7 @@
 title: "AI i sześć drzew: od zajawki do zgłoszenia"
 translationKey: "trees-with-ai"
 description: "Jak AI pomagało mi pisać do urzędów o ochronie drzew w Ursusie. Historia zgłoszenia, instrukcja dla kolejnych osób i miejsca, gdzie szukać pomocy."
-date: 2026-10-19
+date: 2026-10-18
 categories: ["Przyroda"]
 author: "Waldemar Wosiński"
 tags: ["drzewa", "AI", "Ursus", "działanie społeczne"]
@@ -12,6 +12,8 @@ draft: false
 <!-- Source base: editorial/trees-with-ai/source.md; translationKey: trees-with-ai. -->
 
 Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. Chciałem sprawdzić możliwość objęcia ich ochroną jako pomników przyrody. AI bardzo pomogło mi w przygotowywaniu maili do urzędów: łatwiej było przejść od „warto coś z tym zrobić” do konkretnych pytań i zgłoszenia.
+
+W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking Otodom i Heksagonu z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Tym bardziej zależy mi na zabezpieczaniu istniejących drzew i na tym, żeby obietnica nowych nasadzeń nie ułatwiała pozbywania się dużych okazów.
 
 Nie poszło jednym kliknięciem. Zdjęcia, pomiary i informacje wysyłałem partiami, a Biuro Ochrony Środowiska poprosiło o jeden spójny materiał. Ostatecznie powstał PDF: mapa, sześć oznaczeń D1–D6, tabela i odpowiadające im zdjęcia. Poprawiłem też własny błąd: dwa sąsiadujące drzewa opisałem wcześniej jako jedno wielopniowe. **Dobry wniosek musi pozwalać rozpoznać każde drzewo.** Sam elegancki tekst tego nie załatwia.
 
@@ -83,6 +85,14 @@ Dziupla czy ubytek są powodem do oceny, a zdjęcie nie rozstrzyga bezpieczeńst
 - **Wstępna konsultacja wykonawcy:** przykładowo [Osprey Pracownia](https://osprey-pracownia.pl/) deklaruje bezpłatne konsultacje dla właścicieli terenów w rejonie Poznania i Gorzowa. Ustal, co obejmują: rozmowa lub wycena nie oznaczają bezpłatnej ekspertyzy terenowej.
 
 Nie znalazłem potwierdzonego, powszechnie dostępnego programu darmowych pełnych badań prywatnych drzew w Warszawie. Przy szukaniu dotacji w gminie lub WFOŚiGW trzeba sprawdzić aktualny nabór, uprawnionego wnioskodawcę oraz to, czy finansowana jest diagnostyka, czy wyłącznie pielęgnacja. Archiwalny konkurs nie jest dostępną dziś ofertą.
+
+## Nasadzenia zastępcze: liczmy więcej niż sztuki
+
+Mam też postulat dla miast: jeśli ktoś chce wyciąć drzewa i proponuje nasadzenia w zamian, **suma średnic pni sadzonych drzew powinna być co najmniej równa sumie średnic pni usuwanych** — porównywanych na tej samej wysokości. Chciałbym, żeby mieszkańcy żądali takiego minimum, zamiast zadowalać się samą liczbą sadzonek.
+
+To moja propozycja, nie opis obowiązujących przepisów. I dopiero punkt wyjścia: dziesięć pni o średnicy 10 cm nie odtwarza automatycznie korony ani funkcji jednego drzewa o średnicy 100 cm. [Forest Research pokazuje, że korzyści zależą od wielkości, kondycji i gatunku drzewa oraz zmieniają się z czasem](https://www.forestresearch.gov.uk/research/quantification-and-valuation-of-benefits-provided-by-urban-trees/selecting-urban-trees-for-ecosystem-service-provision/). Warto więc pytać także o docelowe korony, warunki wzrostu, przeżywalność i czas odtworzenia utraconych korzyści.
+
+Podejście „posadzimy małe, a za 40 lat będzie dobrze” mnie nie przekonuje. Czterdzieści lat to tutaj obraz odsuwania rekompensaty na przyszłość, nie wyliczony czas wzrostu każdego drzewa. Chcę, żebyśmy chronili to, co już mamy, i uwzględniali potrzeby dzisiejszych mieszkańców. Nowe drzewa są potrzebne, ale ich posadzenie nie sprawia, że wieloletnia strata znika.
 
 ## Prompt do wykorzystania z własnym AI
 

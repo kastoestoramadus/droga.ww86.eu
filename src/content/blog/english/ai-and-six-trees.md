@@ -2,7 +2,7 @@
 title: "AI and six trees: from an idea to an application"
 translationKey: "trees-with-ai"
 description: "How AI helped me write to the authorities about protecting trees in Ursus. The application story, a practical guide and places to look for support."
-date: 2026-10-19
+date: 2026-10-18
 categories: ["Nature"]
 author: "Waldemar Wosiński"
 tags: ["trees", "AI", "Ursus", "community action"]
@@ -12,6 +12,8 @@ draft: false
 <!-- Source base: editorial/trees-with-ai/source.md; translationKey: trees-with-ai. -->
 
 Large poplars grow beside the former model workshop of the Ursus engineering works, near Cierlicka and Dyrekcyjna streets in Warsaw. I wanted to explore protecting them as natural monuments. AI helped me a great deal with writing emails to the authorities: it made the move from “someone should do something” to specific questions and a proposal easier.
+
+For me, protecting these trees matters doubly in Ursus: green space is scarce, and buildings are particularly densely packed on my estate. The [2022 Otodom and Heksagon ranking](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) already placed Ursus among Warsaw's least green districts. That makes me all the more determined to protect existing trees and prevent promises of new planting from making large trees easier to remove.
 
 It took more than one click. I sent photographs, measurements and information in separate messages, and the city's Environmental Protection Department asked for a coherent package. Eventually there was a PDF: a map, six identifiers from D1 to D6, a table and matching photographs. I also corrected my own mistake: I had described two neighbouring trees as one tree with several stems. **A useful application must let someone identify each tree.** Elegant wording alone cannot do that.
 
@@ -83,6 +85,14 @@ A cavity or defect calls for assessment, and a photograph cannot settle safety. 
 - **An initial contractor consultation:** for example, [Osprey Pracownia](https://osprey-pracownia.pl/) advertises free consultations for landowners around Poznań and Gorzów. Confirm what is included: a conversation or quotation is not a free on-site expert assessment.
 
 I did not find a verified, generally available programme offering free full assessments of private trees in Warsaw. When looking for municipal or regional environmental fund grants, check the current application window, eligible applicants and whether diagnostics qualify, or only tree care. An archived call is not an offer available today.
+
+## Replacement planting: count more than saplings
+
+I also have a proposal for cities: when someone wants to remove trees and offers replacements, **the sum of the new trees' trunk diameters should at least equal the sum of the removed trees' trunk diameters**, measured at the same height. I would like residents to demand this minimum rather than accept a simple count of saplings.
+
+This is my proposal, not a statement of current law. It is only a starting point: ten trunks measuring 10 cm in diameter do not automatically recreate the canopy or functions of one tree measuring 100 cm. [Forest Research shows that benefits depend on tree size, condition and species, and change over time](https://www.forestresearch.gov.uk/research/quantification-and-valuation-of-benefits-provided-by-urban-trees/selecting-urban-trees-for-ecosystem-service-provision/). We should also ask about eventual canopies, growing conditions, survival and the time needed to restore lost benefits.
+
+The idea of “plant small trees and things will be fine in 40 years” does not convince me. Forty years here illustrates postponing compensation, not a calculated growth period for every tree. I want us to protect what we already have and consider today's residents. New trees are needed, but planting them does not make years of loss disappear.
 
 ## A prompt to use with your own AI
 

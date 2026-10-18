@@ -1,6 +1,6 @@
 # Sześć drzew i AI — baza merytoryczna
 
-Stan ustaleń: 2026-10-18; data publikacji: 2026-10-19. Publiczna baza redakcyjna, poza kolekcją Astro. Najpierw aktualizuj bazę, potem obie wersje wpisu.
+Stan ustaleń: 2026-10-18; data publikacji: 2026-10-18. Publiczna baza redakcyjna, poza kolekcją Astro. Najpierw aktualizuj bazę, potem obie wersje wpisu.
 
 - [Publikacja PL](../../src/content/blog/polski/ai-i-szesc-drzew.md)
 - [Publikacja EN](../../src/content/blog/english/ai-and-six-trees.md)
@@ -66,3 +66,18 @@ Odrzucone jako aktualne oferty: mazowiecki OP-P1 z 2022 r. (zamknięty), kujawsk
 ## Dalsze kroki i pytania
 
 Ustalić aktualny status sprawy w BOŚ; ewentualnie potwierdzić identyfikację gatunków i wyniki oględzin. Nie dopisywać wizyty urzędu ani sukcesu bez dowodu. Nie publikować przyszłych danych jako stanu z września. Przy zagrożeniu wycinką sprawdzać konkretny grunt, drzewo, organ i dokumenty; prośba o ocenę nie gwarantuje wstrzymania prac. Przykładowy prompt ma wymagać źródeł pierwotnych, brakujących danych i rozróżnienia obserwacji od ekspertyzy.
+
+
+## Uzupełnienie autora — Ursus i nasadzenia zastępcze (2026-10-18)
+
+Autor wskazuje niedostatek zieleni w Ursusie i dużą gęstość zabudowy, zwłaszcza na swoim osiedlu. Uważa, że ochrona istniejących dużych drzew ma tu podwójne znaczenie i nie należy ułatwiać ich wycinania obietnicą nowych nasadzeń. Nie podajemy nazwy ani pomiaru gęstości jego osiedla, bo ich nie ustalono.
+
+Postulat autora dla miast: jeżeli proponowane są nasadzenia w zamian za usunięcie drzew, żądać co najmniej takiej samej SUMY ŚREDNIC pni sadzonych drzew, jak suma średnic usuwanych. To średnice, nie liczba sztuk ani obwody. Jest to jego propozycja kryterium, nie ustalone prawo ani naukowy przelicznik równoważności. Nie zastępować jej po cichu innym kryterium. Pomiar należałoby ujednolicić na jednej wysokości. Samo spełnienie sumy średnic nie kompensuje automatycznie powierzchni koron, przekrojów pni, siedlisk i korzyści; w publikacji należy to krótko wyjaśnić, nie odbierając autorowi postulatu.
+
+Autor krytykuje zastępowanie dużych drzew niewielkimi sadzonkami i odkładanie wyrównania strat na „40 lat”. To obraz wieloletniej straty i jego sprzeciw, nie potwierdzony okres wzrostu wszystkich gatunków ani termin odtworzenia konkretnych usług. W publikacji porównanie pozostaje hipotetycznym argumentem, bez przypisywania takiej obietnicy konkretnej osobie lub inwestycji.
+
+Źródła sprawdzone przy uzupełnieniu:
+- [Otodom i Heksagon, ranking zielonych dzielnic, komunikat autorów badania z 2022-04-12](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu): Ursus wraz z Włochami i Pragą-Północ wśród najmniej zielonych części Warszawy. Ocena obejmowała m.in. duże drzewa, roślinność i dostępność zieleni. To dane historyczne rankingu, nie inwentaryzacja drzew na 2026 r. i nie dowód, że Ursus zajmuje dziś ostatnie miejsce.
+- [Forest Research — Selecting urban trees for ecosystem service provision](https://www.forestresearch.gov.uk/research/quantification-and-valuation-of-benefits-provided-by-urban-trees/selecting-urban-trees-for-ecosystem-service-provision/): wielkość, kondycja i gatunek wpływają na korzyści, które zmieniają się w czasie; modele dla brytyjskich drzew nie są lokalnym pomiarem dla Ursusa. Źródło uzasadnia rozróżnienie liczby sadzonek od zastąpienia funkcji drzewa, nie dokładnie 40-letni termin ani proponowaną regułę sumy średnic.
+
+Autor następnie polecił opublikować wpis dziś. Data publikacji zmieniona z 2026-10-19 na 2026-10-18, zgodnie z nowszą dyspozycją.
