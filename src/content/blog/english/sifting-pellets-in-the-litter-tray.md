@@ -11,18 +11,20 @@ draft: false
 
 <!-- Source base: editorial/pellet-sifting/source.md; translationKey: pellet-sifting. -->
 
-I wanted a low price and a wood-based material rather than [mined bentonite](https://pubs.usgs.gov/publication/b1082M), so I chose heating pellets. Sifting them with a small scoop took a very long time, and leaving mesh in the trays and lifting it periodically also worked poorly. Today I tried a large piece of mesh and small batches — it went very quickly, though that is my impression, not a timed comparison.
+I wanted a low price and a wood-based material rather than [mined bentonite](https://pubs.usgs.gov/publication/b1082M), so I chose heating pellets. Sifting them with a small scoop took a lot of time, and leaving mesh in the trays and lifting it periodically also worked poorly. Today I tried a large piece of mesh — it went very quickly, though that is my impression, not a timed comparison.
 
 ## How I sift the pellets
 
-I use fine mesh bought at Castorama, two ordinary litter trays and a temporary container. The trays normally stand in two different places; I add the extra container for cleaning. I need space for material waiting to be sifted, recovered pellets and the fine particles.
+I use fine mesh bought at Castorama, two ordinary litter trays and a temporary container. The trays normally stand in two different places; I add the extra container for cleaning. I need space for material waiting to be sifted, recovered pellets and the fine particles. The mesh holds much larger batches than a scoop. When I tried sifting the whole tray’s contents at once, material stuck underneath, clogged the openings and required more force.
 
 1. I collect the contents of the trays in one container; I usually scoop the feces into mixed waste before sifting.
-2. I lay the mesh over a tray, leaving enough hanging over the rim to grip, and hold it taut like a sieve.
-3. **I sift in small batches, moving the mesh.** Whole pellets stay on it; fine sawdust falls into the tray underneath.
+2. I lay the mesh over a tray, leaving enough hanging over the rim to grip.
+3. **I put a batch of pellets on the mesh, pull it taut from two sides and shake it left and right.** Whole pellets stay on it; fine sawdust falls into the tray underneath.
 4. I set the pellets aside for reuse and repeat with the next batch. After cleaning, I store the mesh separately.
 
-Sifting does not disinfect the recovered pellets or make them hygienically clean, and small fragments of feces can be difficult to remove. Whether a particular heating pellet product is suitable for a cat needs to be checked with its manufacturer.
+When choosing pellets, I also want as little smell as possible and no added fragrances.
+
+Sifting does not disinfect the recovered pellets or make them hygienically clean, and small fragments of feces can be difficult to remove. The composition and suitability of a particular heating pellet for a litter tray need to be confirmed with its manufacturer; a heating-fuel certificate or a mild smell alone cannot establish that.
 
 <figure>
   <img src="/images/pellet-sifting/setup.webp" srcset="/images/pellet-sifting/setup-480.webp 480w, /images/pellet-sifting/setup.webp 960w" sizes="(max-width: 768px) 100vw, 960px" width="960" height="720" alt="Three containers, white mesh, a scoop and a paper bag arranged on garden paving slabs" decoding="async" />
@@ -40,6 +42,16 @@ Sifting does not disinfect the recovered pellets or make them hygienically clean
 </figure>
 
 ## Costs and further ideas
+
+Example purchase prices checked on **18 October 2026**, including VAT, excluding delivery and subscription discounts:
+
+| Type and example | Pack and price | Equivalent price per 10 kg |
+|---|---|---|
+| Heating pellets — [BSH A2, Leroy Merlin](https://www.leroymerlin.pl/produkty/pellet-drzewny-a2-18-mj-kg-10kg-bsh-96546052.html) | 10 kg: PLN 25.90 | **PLN 25.90** |
+| Bentonite — [Super Benek Compact, Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/compact/335113) | 10 l, approx. 8.8 kg: PLN 33.96 | **approx. PLN 38.59** |
+| Corn litter — [Super Benek Corn Cat Natural, Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/benek_corn_cat/458791) | 7 l, approx. 4.4 kg: PLN 22.96 | **approx. PLN 52.18** |
+
+Litter weights are approximate figures supplied by the shop. The 10 kg unit allows comparison; it is not the size of the packs on offer. These are purchase prices, not monthly running costs. The heating pellet is a price example; I have not confirmed its suitability for a litter tray.
 
 A purpose-made sifting litter tray with a double bottom is an alternative, but the cost is substantial for my plan of one tray per cat plus one extra. I prefer to use ordinary trays. I am also considering clips around the container rim to hold the mesh taut — just an idea for now; the current method already works well enough for me.
 

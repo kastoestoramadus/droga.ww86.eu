@@ -68,7 +68,7 @@ nie drugi artykuł. Najpierw aktualizuj tę bazę, potem obie wersje publikacyjn
 - Autor ma kota. Bentonit postrzega jako wygodny i tani, ale jego zastrzeżenia ekologiczne
   skłoniły go do szukania alternatywy. Słyszał o żwirku kukurydzianym; sam testował tani
   pellet opałowy. To jego motywacja, nie zweryfikowane porównanie wpływu produktów na środowisko.
-- Przesiewanie małą łopatką trwało bardzo długo.
+- Przesiewanie małą łopatką zajmowało dużo czasu.
 - Kupił siatkę drobnooczkową w Castoramie. Trudno było znaleźć odpowiednie oczko.
   Prawdopodobnie jest to siatka do zbrojenia tynków, ale produkt i materiał są niepotwierdzone.
   Kupił znacznie więcej, niż potrzebował: być może 10 m² lub więcej, lecz ilość jest niepewna.
@@ -79,12 +79,12 @@ nie drugi artykuł. Najpierw aktualizuj tę bazę, potem obie wersje publikacyjn
 - Podczas pracy są trzy role: materiał czekający na przesiewanie, odzyskane całe granulki,
   odsiane drobiny. Nie przypisujemy pojemnikom na zdjęciu niepotwierdzonej kolejności.
 - Najpierw zawartość kuwet zbiera do jednego zbiornika. Zakłada siatkę na kuwetę z zapasem
-  poza brzegiem, chwyta ją i napina jak sito. Przesiewa MAŁYMI porcjami, poruszając siatką;
-  według autora małe partie działają lepiej. Całe granulki zostają na siatce, trociny spadają do
+  poza brzegiem, napina ją z DWÓCH STRON i potrząsa LEWO–PRAWO. Na siatce przesiewa
+  porcje ZNACZNIE WIĘKSZE niż na łopatce, ale nie całą zawartość kuwety naraz. Całe granulki zostają na siatce, trociny spadają do
   kuwety pod nią. Granulki odkłada do dalszego użycia.
 - Kał wybiera łopatką do odpadów zmieszanych, zwykle przed przesiewaniem.
   Drobne fragmenty kału bywają trudne do usunięcia. Przesiewanie nie dezynfekuje.
-- Dzisiejszy test dużej siatki małymi partiami był według autora bardzo szybki. To osobiste
+- Dzisiejszy test dużej siatki, z porcjami znacznie większymi niż na łopatce, był według autora bardzo szybki. To osobiste
   spostrzeżenie, nie pomiar porównawczy. Brak pomiaru czasu i oszczędności. Brak modelu siatki, rozmiaru oczek, składu i certyfikacji
   pelletu. Nie twierdzimy, że każdy pellet opałowy nadaje się dla kota; przydatność konkretnego
   produktu trzeba sprawdzić u producenta.
@@ -154,3 +154,33 @@ lub generowania treści. Wersje WWW nie zachowują metadanych EXIF; oryginały p
 
 Pliki WWW: `public/images/pellet-sifting/`. Podpisy i alty PL/EN są w odpowiednich publikacjach.
 Nie publikujemy ścieżek prywatnych ani informacji o innych projektach.
+
+
+## Doprecyzowanie wielkości porcji przez autora — 2026-10-18
+
+Autor preferuje sformułowanie „zajmowało dużo czasu” w opisie przesiewania łopatką. Małe ilości dotyczą łopatki. Duża siatka pozwala przesiewać znacznie większe porcje; nadal chodzi o pracę porcjami, a nie całą zawartość kuwety naraz. Wcześniejsze akcentowanie małych partii na siatce było mylące i zostało skorygowane. Nie określono masy ani objętości porcji. Porównanie wielkości porcji i uzasadnienie znajdują się przy opisie wyposażenia; instrukcja opisuje nałożenie porcji, napięcie siatki z dwóch stron i potrząsanie lewo–prawo, bez powtarzania porównania.
+
+
+## Doprecyzowanie mechaniki przez autora — 2026-10-18
+
+Autor napina siatkę z dwóch stron i potrząsa nią lewo–prawo. Stosunkowo duże porcje przesiewa w ten sposób szybko; nadal jest to subiektywna ocena, bez pomiarów. Przy próbie całej zawartości kuwety naraz materiał przyklejał się od spodu, zatykał oczka i wymagało to większej siły. To uzasadnia porcje znacznie większe niż na łopatce, ale mniejsze niż cała zawartość kuwety jednocześnie. Autor nie podał przyczyny przyklejania: nie przypisujemy go wilgoci ani innemu niepotwierdzonemu czynnikowi.
+
+
+## Preferencja zapachu i porównanie cen — uzupełnienie 2026-10-18
+
+Autor chce pelletu o jak najmniejszym zapachu, bez dodatków zapachowych. To preferencja użytkowa, nie test bezpieczeństwa. Nie przypisujemy autorowi potwierdzenia składu lub przydatności konkretnego produktu. Sam certyfikat opałowy nie stanowi przeznaczenia do kuwety; skład i przydatność należy potwierdzić u producenta.
+
+Autor chce w dalszej części krótkiej tabeli cen zakupu bentonitu, pelletu opałowego i żwirku kukurydzianego w przeliczeniu na 10 kg. Wymagane są faktyczna masa paczki, cena, sklep i produkt, źródło i data sprawdzenia; bez kosztu dostawy. Przeliczenie: cena paczki / masa paczki w kg * 10. Litry nie są kilogramami; nie zakładamy gęstości, a przy braku masy oznaczamy brak danych. Cena zakupu 10 kg nie jest kosztem miesięcznym ani porównaniem zużycia.
+
+
+## Zweryfikowane przykłady cen do tabeli — 2026-10-18
+
+Pełne strony sklepów potwierdziły następujące przykłady cen detalicznych z VAT, bez dostawy, przy zakupie pojedynczym bez abonamentu. Nie jest to produkt kupowany przez autora ani ranking całego rynku. Wspólna jednostka 10 kg służy porównaniu ceny zakupu, nie miesięcznych kosztów lub zużycia.
+
+| Produkt i sklep | Opakowanie | Cena opakowania | Przeliczenie na 10 kg |
+|---|---|---|---|
+| [Pellet opałowy BSH A2 18 MJ/kg — Leroy Merlin](https://www.leroymerlin.pl/produkty/pellet-drzewny-a2-18-mj-kg-10kg-bsh-96546052.html) | 10 kg netto | 25,90 zł | 25,90 zł |
+| [Super Benek Compact, bentonit — Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/compact/335113) | 10 l, ok. 8,8 kg | 33,96 zł | 33,96 / 8,8 * 10 = ok. 38,59 zł |
+| [Super Benek Corn Cat Natural — Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/benek_corn_cat/458791) | 7 l, ok. 4,4 kg | 22,96 zł | 22,96 / 4,4 * 10 = ok. 52,18 zł |
+
+Wagi żwirków są przybliżonymi masami podanymi przez sklep, a nie własnym przeliczeniem litrów na kilogramy. Ceny za 10 kg żwirków są więc także przybliżone. Jednostka 10 kg nie oznacza istnienia takiego opakowania. Ceny i dostępność mogą się zmienić. Pellet BSH służy wyłącznie jako przykład ceny paliwa; nie potwierdzono przydatności tego produktu dla zwierząt ani jego używania przez autora. Nie wnioskujemy o miesięcznych oszczędnościach, chłonności czy wydajności. W tej trójce pellet ma najniższą cenę na 10 kg; nie dowodzi to najniższej ceny w całym rynku.

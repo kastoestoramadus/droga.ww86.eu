@@ -11,18 +11,20 @@ draft: false
 
 <!-- Baza merytoryczna: editorial/pellet-sifting/source.md; translationKey: pellet-sifting. -->
 
-Zależało mi na niskiej cenie i surowcu drzewnym zamiast [wydobywanego bentonitu](https://pubs.usgs.gov/publication/b1082M), więc wybrałem pellet opałowy. Przesiewanie go małą łopatką trwało bardzo długo, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki i małych partii — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
+Zależało mi na niskiej cenie i surowcu drzewnym zamiast [wydobywanego bentonitu](https://pubs.usgs.gov/publication/b1082M), więc wybrałem pellet opałowy. Przesiewanie go małą łopatką zajmowało dużo czasu, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
 
 ## Jak przesiewam pellet?
 
-Używam siatki drobnooczkowej z Castoramy, dwóch zwykłych kuwet i tymczasowego pojemnika. Na co dzień kuwety stoją w dwóch miejscach; dodatkowy pojemnik przydaje się podczas sprzątania. Potrzebuję miejsca na materiał czekający na przesiewanie, odzyskane granulki i odsiane drobiny.
+Używam siatki drobnooczkowej z Castoramy, dwóch zwykłych kuwet i tymczasowego pojemnika. Na co dzień kuwety stoją w dwóch miejscach; dodatkowy pojemnik przydaje się podczas sprzątania. Potrzebuję miejsca na materiał czekający na przesiewanie, odzyskane granulki i odsiane drobiny. Na siatce mieszczą się porcje znacznie większe niż na łopatce. Gdy próbowałem przesiewać całą zawartość kuwety naraz, materiał przyklejał się od spodu, zatykał oczka i musiałem używać większej siły.
 
 1. Zawartość kuwet zbieram do jednego pojemnika; zwykle przed przesiewaniem wybieram kał łopatką do odpadów zmieszanych.
-2. Zakładam siatkę na kuwetę z zapasem poza brzegiem. Chwytam ją i napinam jak sito.
-3. **Przesiewam małymi partiami, poruszając siatką.** Całe granulki zostają na niej, a drobne trociny spadają do kuwety pod spodem.
+2. Zakładam siatkę na kuwetę z zapasem poza brzegiem.
+3. **Nakładam porcję pelletu, napinam siatkę z dwóch stron i potrząsam nią lewo–prawo.** Całe granulki zostają na niej, a drobne trociny spadają do kuwety pod spodem.
 4. Odkładam granulki do dalszego użycia i powtarzam z następną porcją. Po sprzątaniu przechowuję siatkę osobno.
 
-Przesiewanie nie dezynfekuje: odzyskane granulki nie stają się sanitarnie czyste, a drobne fragmenty kału bywają trudne do wybrania. Przydatność konkretnego pelletu opałowego dla kota trzeba sprawdzić u producenta.
+Wybierając pellet, zależy mi też na możliwie słabym zapachu i braku dodatków zapachowych.
+
+Przesiewanie nie dezynfekuje: odzyskane granulki nie stają się sanitarnie czyste, a drobne fragmenty kału bywają trudne do wybrania. Skład i przydatność konkretnego pelletu opałowego do kuwety trzeba potwierdzić u producenta; sam certyfikat opałowy ani słaby zapach tego nie rozstrzygają.
 
 <figure>
   <img src="/images/pellet-sifting/setup.webp" srcset="/images/pellet-sifting/setup-480.webp 480w, /images/pellet-sifting/setup.webp 960w" sizes="(max-width: 768px) 100vw, 960px" width="960" height="720" alt="Trzy pojemniki, biała siatka, łopatka i papierowa torba ustawione na płytach ogrodowych" decoding="async" />
@@ -40,6 +42,16 @@ Przesiewanie nie dezynfekuje: odzyskane granulki nie stają się sanitarnie czys
 </figure>
 
 ## Koszty i dalsze pomysły
+
+Przykładowe ceny zakupu sprawdzone **18 października 2026**, z VAT, bez dostawy i bez abonamentu:
+
+| Rodzaj i przykład | Opakowanie i cena | W przeliczeniu na 10 kg |
+|---|---|---|
+| Pellet opałowy — [BSH A2, Leroy Merlin](https://www.leroymerlin.pl/produkty/pellet-drzewny-a2-18-mj-kg-10kg-bsh-96546052.html) | 10 kg: 25,90 zł | **25,90 zł** |
+| Bentonit — [Super Benek Compact, Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/compact/335113) | 10 l, ok. 8,8 kg: 33,96 zł | **ok. 38,59 zł** |
+| Kukurydziany — [Super Benek Corn Cat Natural, Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/benek_corn_cat/458791) | 7 l, ok. 4,4 kg: 22,96 zł | **ok. 52,18 zł** |
+
+Masy żwirków są przybliżone, podane przez sklep. 10 kg to wspólna jednostka porównania, nie rozmiar oferowanych worków. To cena zakupu, nie koszt miesięcznego używania. Pellet w tabeli jest przykładem ceny opału; nie potwierdziłem przydatności tego produktu do kuwety.
 
 Gotowa kuweta przesiewowa z podwójnym dnem to alternatywa, ale przy moim planie „liczba kotów + 1 kuweta” koszt jest znaczny. Wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
 
