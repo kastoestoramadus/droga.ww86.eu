@@ -293,6 +293,12 @@ To moja propozycja, nie opis obowiązujących przepisów. I dopiero punkt wyjśc
 
 Podejście „posadzimy małe, a za 40 lat będzie dobrze” mnie nie przekonuje. Czterdzieści lat to tutaj obraz odsuwania rekompensaty na przyszłość, nie wyliczony czas wzrostu każdego drzewa. Chcę, żebyśmy chronili to, co już mamy, i uwzględniali potrzeby dzisiejszych mieszkańców. Nowe drzewa są potrzebne, ale ich posadzenie nie sprawia, że wieloletnia strata znika.
 
+### Nasadzenia planowane etapami
+
+Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docelowy układ**, z zapasem na nieprzyjęcie sadzonek i z planem późniejszego przerzedzania. Chodzi mi o wcześniejszą zieleń i mniejsze ryzyko zaczynania od małej sadzonki po każdym ubytku. Końcowy układ może być nieregularny, zależnie od tego, co się przyjmie.
+
+[Forest Research opisuje zwiększoną gęstość jako jedną z metod uwzględniania strat przy zakładaniu zadrzewień na trudnych gruntach](https://cdn.forestresearch.gov.uk/2026/01/FRBK001_Woodland-and-grassland-creation-on-sites-requiring-intervention.pdf) — rozdział 5, sekcja 6.3. To pomysł do lokalnego projektu, z oceną gleby, wody i pielęgnacji. [Przerzedzenia trzeba planować wcześnie](https://www.forestresearch.gov.uk/climate-change/carrying-out-thinning-operations/), zanim nasili się konkurencja. Nie przenosiłbym tego automatycznie na ciasne misy uliczne; zapas sadzonek nie zastąpi też opieki ani zachowania dużych drzew.
+
 Prompt do skopiowania dla własnego AI
 
 To propozycja na kolejną sprawę, nie zapis moich wcześniejszych rozmów. Wklej ją z własnymi materiałami, usuwając niepotrzebne dane osobowe:
