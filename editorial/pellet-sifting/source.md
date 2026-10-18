@@ -7,6 +7,17 @@ nie drugi artykuł. Najpierw aktualizuj tę bazę, potem obie wersje publikacyjn
 - [Tekst angielski](../../src/content/blog/english/sifting-pellets-in-the-litter-tray.md)
 - Wspólny klucz tłumaczeń: `pellet-sifting`. Warstwy redakcyjne nie są wersjami językowymi.
 
+## Układ publikacji po przeglądzie redakcyjnym
+
+- Jeden wstęp w trzech zdaniach: osobista motywacja do testowania pelletu, problem wolnego
+  przesiewania łopatką i wcześniejszych siatek, subiektywnie szybki wynik dzisiejszej próby.
+- Następnie wyposażenie, krótka instrukcja i fotografie. Nie powtarzamy mechanizmu osobno
+  w akapicie oraz na liście kroków.
+- Po zdjęciach wyłącznie dodatki: niewykorzystany nadmiar siatki oraz eksperyment ogrodowy.
+  Nie ma osobnej sekcji ponownie wprowadzającej historię usprawnienia; jej fakty pozostają
+  w tej bazie i zostały zwięźle wykorzystane na początku publikacji PL i EN.
+- Bez nowych twierdzeń merytorycznych, pomiarów lub zmian źródeł.
+
 ## Fakty i kontekst potwierdzone przez autora
 
 - Autor ma kota. Bentonit postrzega jako wygodny i tani, ale jego zastrzeżenia ekologiczne

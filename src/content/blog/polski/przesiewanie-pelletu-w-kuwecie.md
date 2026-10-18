@@ -11,17 +11,18 @@ draft: false
 
 <!-- Baza merytoryczna: editorial/pellet-sifting/source.md; translationKey: pellet-sifting. -->
 
-Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do szukania alternatywy. Sam testuję tani pellet opałowy.
+Bentonit wydawał mi się wygodny i tani, ale zastrzeżenia ekologiczne skłoniły mnie do testów pelletu opałowego. Przesiewanie go małą łopatką trwało bardzo długo, a siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dziś spróbowałem dużej siatki i małych partii — poszło bardzo szybko, choć to moje wrażenie, nie pomiar.
 
-**Siatkę zakładam na kuwetę, zostawiając zapas poza brzegiem. Chwytam ją, napinam jak sito i przesiewam pellet małymi partiami — tak działa lepiej.** Całe granulki zostają na siatce, a drobne trociny spadają do kuwety pod spodem. Granulki odkładam do dalszego użycia.
+## Jak przesiewam pellet?
 
-Na co dzień mam dwie zwykłe kuwety w dwóch miejscach. Do sprzątania dokładam tymczasowy pojemnik. Potrzebuję trzech miejsc: na materiał czekający na przesiewanie, na odzyskane granulki i na odsiane drobiny. Nie trzeba specjalnej kuwety z sitem — u mnie tę rolę pełni siatka drobnooczkowa z Castoramy.
+Używam siatki drobnooczkowej z Castoramy, dwóch zwykłych kuwet i tymczasowego pojemnika. Na co dzień kuwety stoją w dwóch miejscach; dodatkowy pojemnik przydaje się podczas sprzątania. Potrzebuję miejsca na materiał czekający na przesiewanie, odzyskane granulki i odsiane drobiny.
 
 1. Zawartość kuwet zbieram do jednego pojemnika; zwykle przed przesiewaniem wybieram kał łopatką do odpadów zmieszanych.
-2. Nakładam małą porcję na napiętą siatkę i poruszam nią nad kuwetą.
-3. Odkładam całe granulki i powtarzam. Po sprzątaniu przechowuję siatkę osobno.
+2. Zakładam siatkę na kuwetę z zapasem poza brzegiem. Chwytam ją i napinam jak sito.
+3. **Przesiewam małymi partiami, poruszając siatką.** Całe granulki zostają na niej, a drobne trociny spadają do kuwety pod spodem.
+4. Odkładam granulki do dalszego użycia i powtarzam z następną porcją. Po sprzątaniu przechowuję siatkę osobno.
 
-Przesiewanie oddziela frakcje, ale nie dezynfekuje: odzyskane granulki nie stają się przez to sanitarnie czyste. Drobne fragmenty kału bywają trudne do wybrania. Używam pelletu opałowego; przydatność konkretnego produktu dla kota trzeba sprawdzić u producenta.
+Przesiewanie nie dezynfekuje: odzyskane granulki nie stają się sanitarnie czyste, a drobne fragmenty kału bywają trudne do wybrania. Przydatność konkretnego pelletu opałowego dla kota trzeba sprawdzić u producenta.
 
 <figure>
   <img src="/images/pellet-sifting/setup.webp" srcset="/images/pellet-sifting/setup-480.webp 480w, /images/pellet-sifting/setup.webp 960w" sizes="(max-width: 768px) 100vw, 960px" width="960" height="720" alt="Trzy pojemniki, biała siatka, łopatka i papierowa torba ustawione na płytach ogrodowych" decoding="async" />
@@ -38,11 +39,9 @@ Przesiewanie oddziela frakcje, ale nie dezynfekuje: odzyskane granulki nie staj�
   <figcaption>Granulki zostają u góry, drobiny spadają na dno.</figcaption>
 </figure>
 
-## Skąd to usprawnienie?
+## Co z nadmiarem siatki?
 
-Przesiewanie małą łopatką trwało bardzo długo. Siatki zostawiane w kuwetach i okresowo podnoszone też działały słabo. Dzisiejszy test dużej siatki małymi partiami poszedł bardzo szybko. To moje wrażenie, nie pomiar ze stoperem.
-
-Przy okazji: nowy, niewykorzystany nadmiar siatki można rozważyć na [palik mchowy](https://zielony-parapet.pl/blog/palik-z-mchu-sekretem-duzych-lisci-pnaczy-jak-pobudzic-rosliny-pnace-do-wzrostu) — rurkę z wilgotnym sphagnum, podlewaną od góry, w którą pnącze wrasta korzeniami powietrznymi. To wymaga podlewania i odpowiedniego materiału; przydatności mojej siatki nie potwierdziłem i nie chodzi o siatkę używaną w kuwecie.
+Nowy, niewykorzystany nadmiar siatki można rozważyć na [palik mchowy](https://zielony-parapet.pl/blog/palik-z-mchu-sekretem-duzych-lisci-pnaczy-jak-pobudzic-rosliny-pnace-do-wzrostu) — rurkę z wilgotnym sphagnum, podlewaną od góry, w którą pnącze wrasta korzeniami powietrznymi. To wymaga podlewania i odpowiedniego materiału; przydatności mojej siatki nie potwierdziłem i nie chodzi o siatkę używaną w kuwecie.
 
 ## A odsiew i ogródek?
 
