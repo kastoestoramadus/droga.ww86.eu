@@ -184,3 +184,22 @@ Pełne strony sklepów potwierdziły następujące przykłady cen detalicznych z
 | [Super Benek Corn Cat Natural — Zooplus](https://www.zooplus.pl/shop/koty/zwirek_dla_kota/benek/benek_corn_cat/458791) | 7 l, ok. 4,4 kg | 22,96 zł | 22,96 / 4,4 * 10 = ok. 52,18 zł |
 
 Wagi żwirków są przybliżonymi masami podanymi przez sklep, a nie własnym przeliczeniem litrów na kilogramy. Ceny za 10 kg żwirków są więc także przybliżone. Jednostka 10 kg nie oznacza istnienia takiego opakowania. Ceny i dostępność mogą się zmienić. Pellet BSH służy wyłącznie jako przykład ceny paliwa; nie potwierdzono przydatności tego produktu dla zwierząt ani jego używania przez autora. Nie wnioskujemy o miesięcznych oszczędnościach, chłonności czy wydajności. W tej trójce pellet ma najniższą cenę na 10 kg; nie dowodzi to najniższej ceny w całym rynku.
+
+
+## Gotowa alternatywa PeeWee — uzupełnienie 2026-10-18
+
+Autor wskazał markę PeeWee i chce pokazać ją pozytywnie jako sensowny gotowy system, z jednym oficjalnym zdjęciem oraz orientacyjną ceną konkretnego modelu. Nie jest to jego relacja z testowania produktu ani twierdzenie, że tylko ta firma robi takie kuwety.
+
+Wybrano otwarty model EcoMinor. [PeeWee International, opis EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/) potwierdza fabryczną dwuczęściową konstrukcję: górny pojemnik z kratką, dolny zbierający mocz i trociny. [PeeWee Sweden](https://peewee.se/ecominor/) potwierdza nazwę i otwarty model; nie przenosimy marketingowych gwarancji zapachu, bezpieczeństwa i wydajności na tekst autora. [Oficjalna strona systemu](https://peeweeinternational.eu/ned/) zaleca oryginalne granulki PeeWee i odradza inne. Nie zalecamy więc automatycznie pelletu opałowego z tabeli w kuwecie PeeWee; to gotowy system odrębny od doświadczenia autora z siatką.
+
+[Proshop, EcoMinor czarna/antracytowo-szara, numer produktu 3507620, EAN 8718885080537](https://www.proshop.pl/Koty/PeeWee-EcoMinor-kuweta-dla-kota-czarnaantracytowo-szara/3507620): pełna strona odczytana 2026-10-18 pokazywała 164,00 zł brutto (133,33 zł netto), wysyłkę od 20,00 zł. To cena tej kuwety, nie zestawu EcoDome XXL z pelletem. Wcześniej przekazany wynik 162,00 zł różnił się od bieżącego odczytu; publikacja używa 164,00 zł. Cena i dostępność mogą się zmienić. Nie deklarujemy ceny najniższej na rynku.
+
+Przy preferowanym przez autora układzie „liczba kotów + 1 kuweta” zakup kilku gotowych kuwet zwiększa łączny koszt; nie jest to gwarancja behawioralna ani powód do odrzucania gotowego rozwiązania. Autor nadal chce wykorzystać własne zwykłe kuwety i siatkę. Uchwyty do napinania pozostają pomysłem.
+
+### Pochodzenie i sposób użycia fotografii produktu
+
+- Strona źródłowa: [oficjalna karta EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/).
+- [Dokładny plik fotografii](https://peeweeinternational.eu/wp-content/uploads/2022/01/PEEWEE-_-ECOMINOR-11-_-Antracite-Grey-_-1000-px.jpg-700x700.jpg), odczyt 2026-10-18. Pokazuje otwartą kuwetę z widocznym sitem. Fotografia pochodzi z galerii PeeWee International B.V.; indywidualnego fotografa nie wskazano przy materiale.
+- Zachowana pobrana kopia: [peewee-ecominor-official.jpg](originals/peewee-ecominor-official.jpg). Prawa pozostają przy uprawnionych; nie jest to zdjęcie autora bloga i nie oznaczamy go licencją CC ani własną.
+- Nie uzyskano potwierdzenia licencji z portalu mypeewee.nl/download/: domena miała wygasły certyfikat TLS, którego nie obchodzono. Skorzystano z innej, oficjalnej i publicznie dostępnej galerii po prawidłowym HTTPS; nie z obrazów sklepu ani hotlinku.
+- Jedna fotografia służy wyjaśnieniu i porównaniu widocznej fabrycznej konstrukcji z sitem, w samodzielnym artykule o przesiewaniu. Podajemy źródło i udostępniającego w podpisie; zachowujemy pełny kadr, zmieniając tylko rozmiar i format dla WWW. To ograniczone wykorzystanie redakcyjne, nie twierdzenie o otwartej licencji lub pozwoleniu na dowolne dalsze rozpowszechnianie. Kontekst: art. 29, 34 i 35 [ustawy o prawie autorskim, tekst jednolity 2025 poz. 24](https://eli.gov.pl/eli/DU/2025/24/ogl), sprawdzone w oficjalnym tekście Sejmu.

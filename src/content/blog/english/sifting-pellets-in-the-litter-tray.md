@@ -53,7 +53,16 @@ Example purchase prices checked on **18 October 2026**, including VAT, excluding
 
 Litter weights are approximate figures supplied by the shop. The 10 kg unit allows comparison; it is not the size of the packs on offer. These are purchase prices, not monthly running costs. The heating pellet is a price example; I have not confirmed its suitability for a litter tray.
 
-A purpose-made sifting litter tray with a double bottom is an alternative, but the cost is substantial for my plan of one tray per cat plus one extra. I prefer to use ordinary trays. I am also considering clips around the container rim to hold the mesh taut — just an idea for now; the current method already works well enough for me.
+### A ready-made alternative: PeeWee EcoMinor
+
+[PeeWee EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/) is a sensible ready-made option with a factory-built double bottom: the upper tray contains a sieve, while the lower tray collects urine and sawdust. [Proshop](https://www.proshop.pl/Koty/PeeWee-EcoMinor-kuweta-dla-kota-czarnaantracytowo-szara/3507620) listed the black/anthracite-grey tray at **PLN 164 including VAT** (18 October 2026, excluding delivery). The manufacturer recommends [original PeeWee pellets](https://peeweeinternational.eu/ned/), so this is a separate system from my mesh-and-heating-pellet method.
+
+<figure style="max-width: 28rem; margin-inline: auto;">
+  <img src="/images/pellet-sifting/peewee-ecominor.webp" srcset="/images/pellet-sifting/peewee-ecominor-480.webp 480w, /images/pellet-sifting/peewee-ecominor.webp 700w" sizes="(max-width: 640px) 100vw, 448px" width="700" height="700" alt="An open anthracite-grey PeeWee EcoMinor litter tray, showing the sieve in the upper tray and the lower collection tray" loading="lazy" decoding="async" />
+  <figcaption>EcoMinor: the sieve is built into the upper tray. Product photograph: <a href="https://peeweeinternational.eu/pol/kattenbakken/ecominor/">PeeWee International B.V.</a></figcaption>
+</figure>
+
+For my plan of one tray per cat plus one extra, buying several of these increases the total purchase cost. I prefer to use ordinary trays. I am also considering clips around the container rim to hold the mesh taut — just an idea for now; the current method is already quick enough for me.
 
 I also have reservations about using a potential food or feed ingredient in a litter tray: [World's Best states that Multiple Cat Unscented uses whole-kernel corn](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/). That does not automatically apply to other corn litters.
 

@@ -53,7 +53,16 @@ Przykładowe ceny zakupu sprawdzone **18 października 2026**, z VAT, bez dostaw
 
 Masy żwirków są przybliżone, podane przez sklep. 10 kg to wspólna jednostka porównania, nie rozmiar oferowanych worków. To cena zakupu, nie koszt miesięcznego używania. Pellet w tabeli jest przykładem ceny opału; nie potwierdziłem przydatności tego produktu do kuwety.
 
-Gotowa kuweta przesiewowa z podwójnym dnem to alternatywa, ale przy moim planie „liczba kotów + 1 kuweta” koszt jest znaczny. Wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
+### Gotowa alternatywa: PeeWee EcoMinor
+
+[PeeWee EcoMinor](https://peeweeinternational.eu/pol/kattenbakken/ecominor/) to sensowne gotowe rozwiązanie z fabrycznym podwójnym dnem: w górnym pojemniku jest sito, a dolny zbiera mocz i trociny. [Proshop](https://www.proshop.pl/Koty/PeeWee-EcoMinor-kuweta-dla-kota-czarnaantracytowo-szara/3507620) pokazywał **164 zł brutto** za czarną/antracytowo-szarą kuwetę (18.10.2026, bez dostawy). Producent zaleca [oryginalne granulki PeeWee](https://peeweeinternational.eu/ned/), więc to osobny system od mojego sposobu z siatką i pelletem opałowym.
+
+<figure style="max-width: 28rem; margin-inline: auto;">
+  <img src="/images/pellet-sifting/peewee-ecominor.webp" srcset="/images/pellet-sifting/peewee-ecominor-480.webp 480w, /images/pellet-sifting/peewee-ecominor.webp 700w" sizes="(max-width: 640px) 100vw, 448px" width="700" height="700" alt="Otwarta kuweta PeeWee EcoMinor w kolorze antracytowo-szarym, z widoczną kratką górnego pojemnika i dolną tacką" loading="lazy" decoding="async" />
+  <figcaption>EcoMinor: sito jest częścią górnego pojemnika. Fotografia produktowa: <a href="https://peeweeinternational.eu/pol/kattenbakken/ecominor/">PeeWee International B.V.</a></figcaption>
+</figure>
+
+Przy moim planie „liczba kotów + 1 kuweta” koszt zakupu kilku takich kuwet rośnie. Ja wolę wykorzystać zwykłe kuwety. Rozważam jeszcze zaczepy na brzegach pojemnika do napinania siatki — na razie to pomysł, obecny sposób już mi wystarcza.
 
 Mam też wątpliwość co do zużywania surowca spożywczego lub paszowego w kuwecie: [World's Best deklaruje całe ziarna kukurydzy](https://www.worldsbestcatlitter.com/scoopable-multiple-cat-clumping-litter/) w Multiple Cat Unscented. Nie dotyczy to automatycznie innych żwirków kukurydzianych.
 
