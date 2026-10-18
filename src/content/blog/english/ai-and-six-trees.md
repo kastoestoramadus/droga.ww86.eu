@@ -26,10 +26,41 @@ Beside the former model workshop of the Ursus engineering works, near Cierlicka 
 For me, this matters doubly in Ursus: green space is scarce, and buildings are particularly densely packed on my estate. The [2022 ranking](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) already placed Ursus among Warsaw's least green districts. I want to preserve large trees rather than postpone compensation for decades.
 
 
-<figure style="max-width: 28rem; margin-inline: auto;">
-  <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 768px) 100vw, 720px" width="720" height="960" alt="A poplar trunk beside the former model workshop, annotated D1 with a circumference of 360 cm" decoding="async" />
-  <figcaption>D1 in a photograph from the attachment. The label records my measurement, not an official inspection result.</figcaption>
+## Four photographs from my submission
+
+These photographs connect the trees to identifiers D1–D6. Click a photo to view it larger. Circumferences are my measurements at 130 cm above ground.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.5rem; align-items: start;">
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d1-trunk.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="A poplar trunk beside the model workshop, annotated D1 with a circumference of 360 cm" decoding="async" />
+  </a>
+  <figcaption>D1: the largest trunk I measured — 360 cm in circumference.</figcaption>
 </figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d1-crown.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d1-crown.webp" srcset="/images/trees-with-ai/d1-crown-480.webp 480w, /images/trees-with-ai/d1-crown.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="The crown of D1 above the model workshop, annotated D1 360 cm korona" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>Another view of D1: the crown of the same tree beside the workshop.</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d2-d4.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d2-d4.webp" srcset="/images/trees-with-ai/d2-d4-480.webp 480w, /images/trees-with-ai/d2-d4.webp 960w" sizes="(max-width: 640px) 100vw, 360px" width="960" height="720" alt="A row of poplars beside the workshop, labelled D2 250 cm, D3 240 cm and D4 130 cm" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>D2, D3 and D4: three more trees in the row — circumferences of 250, 240 and 130 cm respectively.</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d5-d6.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d5-d6.webp" srcset="/images/trees-with-ai/d5-d6-480.webp 480w, /images/trees-with-ai/d5-d6.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="Two separate trees by the fence: D6 on the left at 320 cm and D5 on the right at 280 cm" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>D6 on the left (320 cm) and D5 on the right (280 cm). These are two separate trees.</figcaption>
+</figure>
+
+</div>
 
 Want to do something similar? Open only the sections that interest you.
 
@@ -70,10 +101,6 @@ My table recorded the following circumferences at 130 cm above ground:
 
 These are my measurements and provisional identifications. D5 and D6 are separate trees: their circumferences are not added together.
 
-<figure>
-  <img src="/images/trees-with-ai/d2-d4.webp" srcset="/images/trees-with-ai/d2-d4-480.webp 480w, /images/trees-with-ai/d2-d4.webp 960w" sizes="(max-width: 768px) 100vw, 960px" width="960" height="720" alt="A row of poplars beside the model workshop, labelled D2 250 cm, D3 240 cm and D4 130 cm" loading="lazy" decoding="async" />
-  <figcaption>The same identifiers should appear on the map, photographs and table.</figcaption>
-</figure>
 
 ### Is a large enough trunk sufficient?
 

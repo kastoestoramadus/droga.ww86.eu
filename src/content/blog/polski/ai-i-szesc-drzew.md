@@ -26,10 +26,41 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Zależy mi na zachowaniu dużych drzew, zamiast odkładania rekompensaty na dziesięciolecia.
 
 
-<figure style="max-width: 28rem; margin-inline: auto;">
-  <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 768px) 100vw, 720px" width="720" height="960" alt="Pień topoli przy budynku modelarni, ze strzałką D1 i podpisem obwodu 360 cm" decoding="async" />
-  <figcaption>D1 na fotografii z załącznika. Podpis oznacza mój pomiar, nie wynik urzędowych oględzin.</figcaption>
+## Cztery zdjęcia z mojego zgłoszenia
+
+To te fotografie pozwalają powiązać drzewa z oznaczeniami D1–D6. Kliknij zdjęcie, żeby obejrzeć je większe. Podane obwody to moje pomiary na wysokości 130 cm.
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: 1.5rem; align-items: start;">
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d1-trunk.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="Pień topoli przy modelarni, ze strzałką D1 i podpisem obwodu 360 cm" decoding="async" />
+  </a>
+  <figcaption>D1: największy zmierzony przeze mnie pień — 360 cm obwodu.</figcaption>
 </figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d1-crown.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d1-crown.webp" srcset="/images/trees-with-ai/d1-crown-480.webp 480w, /images/trees-with-ai/d1-crown.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="Korona drzewa D1 nad budynkiem modelarni, z podpisem D1 360 cm korona" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>D1 z drugiej perspektywy: korona tego samego drzewa przy modelarni.</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d2-d4.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d2-d4.webp" srcset="/images/trees-with-ai/d2-d4-480.webp 480w, /images/trees-with-ai/d2-d4.webp 960w" sizes="(max-width: 640px) 100vw, 360px" width="960" height="720" alt="Rząd topoli przy modelarni z oznaczeniami D2 250 cm, D3 240 cm i D4 130 cm" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>D2, D3 i D4: trzy kolejne drzewa w rzędzie — odpowiednio 250, 240 i 130 cm obwodu.</figcaption>
+</figure>
+
+<figure style="margin: 0;">
+  <a href="/images/trees-with-ai/d5-d6.webp" target="_blank" rel="noopener">
+    <img src="/images/trees-with-ai/d5-d6.webp" srcset="/images/trees-with-ai/d5-d6-480.webp 480w, /images/trees-with-ai/d5-d6.webp 720w" sizes="(max-width: 640px) 100vw, 360px" width="720" height="960" alt="Dwa osobne drzewa przy ogrodzeniu: D6 po lewej 320 cm, D5 po prawej 280 cm" loading="lazy" decoding="async" />
+  </a>
+  <figcaption>D6 po lewej (320 cm) i D5 po prawej (280 cm). To dwa osobne drzewa.</figcaption>
+</figure>
+
+</div>
 
 Chcesz zrobić coś podobnego? Rozwiń tylko to, co Cię interesuje.
 
@@ -70,10 +101,6 @@ W moim zestawieniu obwody na wysokości 130 cm wynosiły:
 
 To pomiary własne i propozycje oznaczenia gatunków. D5 i D6 są osobnymi drzewami — ich obwodów nie sumujemy.
 
-<figure>
-  <img src="/images/trees-with-ai/d2-d4.webp" srcset="/images/trees-with-ai/d2-d4-480.webp 480w, /images/trees-with-ai/d2-d4.webp 960w" sizes="(max-width: 768px) 100vw, 960px" width="960" height="720" alt="Rząd topoli przy modelarni z oznaczeniami D2 250 cm, D3 240 cm i D4 130 cm" loading="lazy" decoding="async" />
-  <figcaption>Te same identyfikatory powinny występować na mapie, zdjęciach i w tabeli.</figcaption>
-</figure>
 
 ### Czy wystarczy odpowiednio gruby pień?
 

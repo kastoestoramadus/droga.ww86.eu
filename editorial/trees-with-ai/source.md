@@ -99,3 +99,10 @@ Wskazówek z 10 i 17 września udzielała Ewelina Wiącek-Piechowicz, główny s
 - [RODO, art. 6 ust. 1 lit. f i art. 85](https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32016R0679): ważne są cel, proporcjonalność i wolność wypowiedzi. Ocena redakcyjna: krótkie, rzetelne podziękowanie ograniczone do imienia, nazwiska, instytucji i pomocy zawodowej jest uzasadnione relacją o własnej sprawie obywatelskiej. Nie opieramy się na tezie, że pracownik urzędu nie ma prywatności. To ocena konkretnego, wąskiego użycia, nie gwarancja prawna dowolnej publikacji.
 
 Publikacja zawiera wyłącznie własne podziękowanie autora. Nie publikuje telefonu, adresu mailowego, skanów, podpisu graficznego ani treści korespondencji. Nie sugeruje poparcia urzędniczki dla całego bloga, AI lub postulatu sumy średnic. Autor upoważnił do zamieszczenia takiego podziękowania we wpisie; nie upoważnił do wysyłania jej wiadomości, więc nie kontaktowano się z nią.
+
+
+## Galeria dokumentacji — uzupełnienie 2026-10-18
+
+Autor chce więcej fotografii z wniosku widocznych w głównej części: zdjęcia przegląda się łatwo, więc skracanie tekstu nie powinno oznaczać chowania dokumentacji fotograficznej. Poprzednia publikacja pokazywała pień D1, a rząd D2–D4 był dostępny dopiero w rozwijanej instrukcji.
+
+W widocznej galerii umieszczamy wszystkie cztery fotografie wyodrębnione z przesłanego PDF-a: pień D1, koronę tego samego D1, rząd D2–D4 i dwa osobne drzewa D5/D6. Każda występuje raz; zdjęcie rzędu przenosimy z instrukcji do galerii. Krótkie podpisy objaśniają, co widać i jak zdjęcia wiążą się z oznaczeniami w zgłoszeniu. Kliknięcie otwiera większy obraz. Nie przycinamy napisów i nie dopisujemy diagnoz zdrowia, pewnych gatunków ani wieku. Przypomnienie o własnych pomiarach dotyczy całej galerii. Pozostałe szczegóły pozostają w zamkniętych sekcjach.
