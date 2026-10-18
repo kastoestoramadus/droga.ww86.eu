@@ -81,3 +81,21 @@ Autor krytykuje zastępowanie dużych drzew niewielkimi sadzonkami i odkładanie
 - [Forest Research — Selecting urban trees for ecosystem service provision](https://www.forestresearch.gov.uk/research/quantification-and-valuation-of-benefits-provided-by-urban-trees/selecting-urban-trees-for-ecosystem-service-provision/): wielkość, kondycja i gatunek wpływają na korzyści, które zmieniają się w czasie; modele dla brytyjskich drzew nie są lokalnym pomiarem dla Ursusa. Źródło uzasadnia rozróżnienie liczby sadzonek od zastąpienia funkcji drzewa, nie dokładnie 40-letni termin ani proponowaną regułę sumy średnic.
 
 Autor następnie polecił opublikować wpis dziś. Data publikacji zmieniona z 2026-10-19 na 2026-10-18, zgodnie z nowszą dyspozycją.
+
+
+## Układ redakcyjny i podziękowanie — uzupełnienie 2026-10-18
+
+Autor chce jednego obszernego dokumentu merytorycznego i oddzielnego, krótkiego tekstu redakcyjnego. Ten plik pozostaje pełną bazą; uproszczenie publikacji nie usuwa faktów z bazy. Główna część wpisu eksponuje własne wykonane działania: zgłoszenie sześciu drzew, dokumentację i odpowiedzi urzędów. Chronologia, tabela, przepisy, konsultacje, nasadzenia i prompt są dostępne na żądanie w zamkniętych domyślnie sekcjach HTML details. Czytelnik nie musi ich rozwijać, żeby zrozumieć historię.
+
+Numer WOU.1331.284.2026 potwierdzono w temacie skierowanego do SKZ pisma autora z 2026-09-21 jako znak odpowiedzi MWKZ z tego dnia. Nie potwierdzono osobnego znaku nadanego przez BOŚ. Publikacja pokazuje konkretny znak wraz z jego urzędem i zakresem, nie jako numer ustanowionego pomnika ani numer rejestracyjny BOŚ.
+
+Wskazówek z 10 i 17 września udzielała Ewelina Wiącek-Piechowicz, główny specjalista w BOŚ, Wydział Ochrony Systemu Przyrodniczego Miasta. Autor chce podziękować jej za cierpliwość i dokładne wyjaśnianie wymaganej dokumentacji. Korespondencja potwierdza wymagania lokalizacji, uzasadnienia, zdjęć i spójnego przypisania mapy, pomiarów oraz gatunków. Wiadomość z 10 września potwierdza też jej obecność w tym miejscu poprzedniego dnia i brak możliwości wejścia; nie oznacza to wykonanych oględzin samych drzew ani potwierdzenia gatunków.
+
+### Sprawdzenie podziękowania imiennego
+
+- [Publiczna informacja Wydziału Architektury Politechniki Warszawskiej z 2026-03-12](https://arch.pw.edu.pl/Aktualnosci/Informacje-nadeslane/VI-spotkanie-Skarpa-Warszawska-monument-historii-i-natury-26-marca-2026) wymienia Ewelinę Wiącek-Piechowicz jako kontakt zawodowy przy wydarzeniu organizowanym przez BOŚ. Potwierdza publiczny kontekst nazwiska; nie jest zgodą na dowolne ponowne wykorzystanie danych.
+- [UODO — udostępnianie danych pracowników urzędu](https://www.uodo.gov.pl/pl/677/4274): samo zatrudnienie w urzędzie nie oznacza automatycznie pełnienia funkcji publicznej; znaczenie mają obowiązki. Nie wywodzimy z nazwy stanowiska, że cała korespondencja albo wszystkie dane są jawne.
+- [Art. 5 ust. 2 ustawy o dostępie do informacji publicznej](https://eli.gov.pl/api/acts/DU/2022/902/text.html) dotyczy dostępu do informacji związanych z funkcjami publicznymi; nie jest ogólną licencją publikowania danych pracowników.
+- [RODO, art. 6 ust. 1 lit. f i art. 85](https://eur-lex.europa.eu/legal-content/PL/TXT/?uri=CELEX:32016R0679): ważne są cel, proporcjonalność i wolność wypowiedzi. Ocena redakcyjna: krótkie, rzetelne podziękowanie ograniczone do imienia, nazwiska, instytucji i pomocy zawodowej jest uzasadnione relacją o własnej sprawie obywatelskiej. Nie opieramy się na tezie, że pracownik urzędu nie ma prywatności. To ocena konkretnego, wąskiego użycia, nie gwarancja prawna dowolnej publikacji.
+
+Publikacja zawiera wyłącznie własne podziękowanie autora. Nie publikuje telefonu, adresu mailowego, skanów, podpisu graficznego ani treści korespondencji. Nie sugeruje poparcia urzędniczki dla całego bloga, AI lub postulatu sumy średnic. Autor upoważnił do zamieszczenia takiego podziękowania we wpisie; nie upoważnił do wysyłania jej wiadomości, więc nie kontaktowano się z nią.

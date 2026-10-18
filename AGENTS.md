@@ -58,6 +58,9 @@ node scripts/test-post-links.mjs # after build: share URLs and translated post d
   website images belong in `public/images/<translationKey>/`.
 - New facts and substantive corrections update the source base first, then the publication version.
   Editorial cuts must not remove context from the source base.
+- Keep the publication opening brief and emphasize the author's completed actions and documented results.
+  Put longer instructions, chronology and supporting research in optional, initially closed `details`
+  sections when they would otherwise overwhelm the reader; preserve the full substance in the source base.
 - Do not attribute decisions, experiences or conclusions to the author without their confirmation.
   Distinguish observations and hypotheses from verified facts.
 - These editorial layers are separate from the required Polish and English translations of each post.

@@ -11,22 +11,30 @@ draft: false
 
 <!-- Source base: editorial/trees-with-ai/source.md; translationKey: trees-with-ai. -->
 
-Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, rosną duże topole. Chciałem sprawdzić możliwość objęcia ich ochroną jako pomników przyrody. AI bardzo pomogło mi w przygotowywaniu maili do urzędów: łatwiej było przejść od „warto coś z tym zrobić” do konkretnych pytań i zgłoszenia.
+Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, **zgłosiłem sześć drzew do objęcia ochroną jako pomniki przyrody**. AI bardzo pomogło mi przygotowywać maile i przejść od pomysłu do konkretnego działania.
 
-W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking Otodom i Heksagonu z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Tym bardziej zależy mi na zabezpieczaniu istniejących drzew i na tym, żeby obietnica nowych nasadzeń nie ułatwiała pozbywania się dużych okazów.
+### Co udało mi się zrobić?
 
-Nie poszło jednym kliknięciem. Zdjęcia, pomiary i informacje wysyłałem partiami, a Biuro Ochrony Środowiska poprosiło o jeden spójny materiał. Ostatecznie powstał PDF: mapa, sześć oznaczeń D1–D6, tabela i odpowiadające im zdjęcia. Poprawiłem też własny błąd: dwa sąsiadujące drzewa opisałem wcześniej jako jedno wielopniowe. **Dobry wniosek musi pozwalać rozpoznać każde drzewo.** Sam elegancki tekst tego nie załatwia.
+- **Zebrałem zdjęcia i własne pomiary sześciu drzew.** Największy obwód wyniósł 360 cm. A jak go zmierzyłem — nie pytajcie. 🙂
+- **17 września 2026 przekazałem do Biura Ochrony Środowiska uporządkowany PDF:** mapę z oznaczeniami D1–D6, tabelę i odpowiadające im fotografie.
+- **Uzyskałem odpowiedź konserwatora:** teren znajduje się w zabytkowym zespole dawnej fabryki, a na 24 września SKZ nie otrzymał wniosku o usunięcie drzew z tej działki.
 
-Największy zmierzony przeze mnie obwód wyniósł 360 cm. A jak go zmierzyłem — nie pytajcie. 🙂 Gatunki podałem wstępnie, do potwierdzenia podczas oględzin.
+**Konkretny ślad korespondencji: WOU.1331.284.2026** — znak odpowiedzi Mazowieckiego Wojewódzkiego Konserwatora Zabytków z 21 września, wskazującej właściwy urząd. Dokumentację zgłoszenia pomnikowego przekazałem do miejskiego BOŚ. Na 18 października w przejrzanej korespondencji nie ma jeszcze potwierdzenia ustanowienia pomnika.
 
-To jeszcze nie historia o ustanowionych pomnikach. To historia o tym, jak z pomocą AI zrobiłem konkretny krok w ich kierunku. Jeśli też masz takie drzewo w okolicy, poniżej zostawiam punkt startowy.
+**Dziękuję pani Ewelinie Wiącek-Piechowicz z Biura Ochrony Środowiska za cierpliwość i konkretne wskazówki, jakie dane oraz załączniki są potrzebne.** Pomogły mi doprowadzić dokumentację do spójnej postaci.
 
-<figure>
+W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Zależy mi na zachowaniu dużych drzew, zamiast odkładania rekompensaty na dziesięciolecia.
+
+
+<figure style="max-width: 28rem; margin-inline: auto;">
   <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 768px) 100vw, 720px" width="720" height="960" alt="Pień topoli przy budynku modelarni, ze strzałką D1 i podpisem obwodu 360 cm" decoding="async" />
   <figcaption>D1 na fotografii z załącznika. Podpis oznacza mój pomiar, nie wynik urzędowych oględzin.</figcaption>
 </figure>
 
-## Gdzie sprawa trafiła i co wiadomo?
+Chcesz zrobić coś podobnego? Rozwiń tylko to, co Cię interesuje.
+
+<details>
+<summary>Dokładny przebieg sprawy i jej status</summary>
 
 - **5 września 2026:** napisałem do Mazowieckiego Wojewódzkiego Konserwatora Zabytków, z BOŚ w kopii, o walorach drzew i zasadach ich ochrony.
 - **10–17 września:** BOŚ przekazało wymagania i prosiło o uzupełnienia; 17 września wysłałem uporządkowany PDF.
@@ -35,7 +43,10 @@ To jeszcze nie historia o ustanowionych pomnikach. To historia o tym, jak z pomo
 
 W korespondencji przejrzanej **18 października 2026** nie znalazłem końcowego rozstrzygnięcia w sprawie pomnika. Odpowiedź konserwatora nie oznacza ani ustanowienia ochrony pomnikowej, ani gwarancji, że sytuacja nie ulegnie zmianie.
 
-## Jak przygotować podobne zgłoszenie?
+</details>
+
+<details>
+<summary>Jak zgłosić kolejne drzewo: instrukcja, pomiary i przepisy</summary>
 
 W Warszawie [mieszkaniec zgłasza propozycję do BOŚ, bez specjalnego formularza](https://warszawa19115.pl/web/guest/-/pomniki-przyrody). Potrzebne są: określenie obiektu, dokładna lokalizacja, uzasadnienie i dane wnioskodawcy do korespondencji. W innym miejscu zacznij od swojej gminy i jej aktualnej procedury.
 
@@ -70,7 +81,10 @@ To pomiary własne i propozycje oznaczenia gatunków. D5 i D6 są osobnymi drzew
 
 Próg nie daje automatycznej ochrony. Pomnik ustanawia rada gminy uchwałą; projekt wymaga uzgodnienia z RDOŚ — [art. 44 ustawy o ochronie przyrody](https://eli.gov.pl/eli/DU/2026/1315/ogl). Samo wysłanie zgłoszenia nie jest automatycznym zakazem wycinki.
 
-## „Jest niebezpieczne” — o jakie dowody pytać?
+</details>
+
+<details>
+<summary>Gdy ktoś chce wyciąć drzewo: badania i alternatywy</summary>
 
 Dziupla czy ubytek są powodem do oceny, a zdjęcie nie rozstrzyga bezpieczeństwa. Warto poprosić zarządcę o podstawę kwalifikacji do usunięcia: kto i kiedy oceniał drzewo, jakie ryzyko stwierdzono oraz jakie alternatywy rozważono.
 
@@ -78,7 +92,10 @@ Dziupla czy ubytek są powodem do oceny, a zdjęcie nie rozstrzyga bezpieczeńst
 
 [ZZW opisuje własną praktykę oględzin, pielęgnacji i badań](https://zzw.waw.pl/nasze-dzialania/zielen/drzewa/), a także miejską mapę „Wiem o wycince”. Można zacząć od dokumentów i pytania do właściwego urzędu, czy dla tego konkretnego drzewa jest wniosek lub zezwolenie. Brak pozycji na mapie nie przesądza legalności prac. Gdy sprawa jest pilna, podaj dokładną lokalizację i stan faktyczny urzędowi lub lokalnej organizacji zajmującej się drzewami.
 
-## Gdzie szukać bezpłatnej pomocy lub finansowania?
+</details>
+
+<details>
+<summary>Gdzie szukać bezpłatnej pomocy i finansowania</summary>
 
 - **Projekt społeczny:** [„Dialog dla drzew” Fundacji EkoRozwoju](https://fer.org.pl/projekty/dialog-dla-drzew-obywatelskie-wspolzarzadzanie-zielona-infrastruktura/) trwa od kwietnia 2026 do września 2027 i obejmuje indywidualne konsultacje, porady oraz interwencje dla mieszkańców i grup. Kontakt podano na stronie projektu. Zapytaj o dostępność i zakres pomocy; strona nie obiecuje każdemu darmowej tomografii.
 - **Drzewo miejskie:** zgłoś potrzebę oceny jego zarządcy, w Warszawie także przez [19115](https://warszawa19115.pl/). To ścieżka zgłoszenia problemu, nie voucher na dowolne badanie prywatnego drzewa.
@@ -86,7 +103,10 @@ Dziupla czy ubytek są powodem do oceny, a zdjęcie nie rozstrzyga bezpieczeńst
 
 Nie znalazłem potwierdzonego, powszechnie dostępnego programu darmowych pełnych badań prywatnych drzew w Warszawie. Przy szukaniu dotacji w gminie lub WFOŚiGW trzeba sprawdzić aktualny nabór, uprawnionego wnioskodawcę oraz to, czy finansowana jest diagnostyka, czy wyłącznie pielęgnacja. Archiwalny konkurs nie jest dostępną dziś ofertą.
 
-## Nasadzenia zastępcze: liczmy więcej niż sztuki
+</details>
+
+<details>
+<summary>Mój postulat: nasadzenia według sumy średnic</summary>
 
 Mam też postulat dla miast: jeśli ktoś chce wyciąć drzewa i proponuje nasadzenia w zamian, **suma średnic pni sadzonych drzew powinna być co najmniej równa sumie średnic pni usuwanych** — porównywanych na tej samej wysokości. Chciałbym, żeby mieszkańcy żądali takiego minimum, zamiast zadowalać się samą liczbą sadzonek.
 
@@ -94,7 +114,10 @@ To moja propozycja, nie opis obowiązujących przepisów. I dopiero punkt wyjśc
 
 Podejście „posadzimy małe, a za 40 lat będzie dobrze” mnie nie przekonuje. Czterdzieści lat to tutaj obraz odsuwania rekompensaty na przyszłość, nie wyliczony czas wzrostu każdego drzewa. Chcę, żebyśmy chronili to, co już mamy, i uwzględniali potrzeby dzisiejszych mieszkańców. Nowe drzewa są potrzebne, ale ich posadzenie nie sprawia, że wieloletnia strata znika.
 
-## Prompt do wykorzystania z własnym AI
+</details>
+
+<details>
+<summary>Prompt do skopiowania dla własnego AI</summary>
 
 To propozycja na kolejną sprawę, nie zapis moich wcześniejszych rozmów. Wklej ją z własnymi materiałami, usuwając niepotrzebne dane osobowe:
 
@@ -123,3 +146,5 @@ Zagrożenie wycinką: [fakty i dokumenty albo „nie wiem”].
 7. Na końcu podaj kolejne kroki i kwestie do potwierdzenia w urzędzie.
    Nie obiecuj ustanowienia ochrony ani wstrzymania wycinki.
 ```
+
+</details>

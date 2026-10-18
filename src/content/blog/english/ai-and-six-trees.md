@@ -11,22 +11,30 @@ draft: false
 
 <!-- Source base: editorial/trees-with-ai/source.md; translationKey: trees-with-ai. -->
 
-Large poplars grow beside the former model workshop of the Ursus engineering works, near Cierlicka and Dyrekcyjna streets in Warsaw. I wanted to explore protecting them as natural monuments. AI helped me a great deal with writing emails to the authorities: it made the move from “someone should do something” to specific questions and a proposal easier.
+Beside the former model workshop of the Ursus engineering works, near Cierlicka and Dyrekcyjna streets in Warsaw, **I proposed six trees for protection as natural monuments**. AI helped me a great deal with writing the emails and turning an idea into concrete action.
 
-For me, protecting these trees matters doubly in Ursus: green space is scarce, and buildings are particularly densely packed on my estate. The [2022 Otodom and Heksagon ranking](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) already placed Ursus among Warsaw's least green districts. That makes me all the more determined to protect existing trees and prevent promises of new planting from making large trees easier to remove.
+### What did I manage to do?
 
-It took more than one click. I sent photographs, measurements and information in separate messages, and the city's Environmental Protection Department asked for a coherent package. Eventually there was a PDF: a map, six identifiers from D1 to D6, a table and matching photographs. I also corrected my own mistake: I had described two neighbouring trees as one tree with several stems. **A useful application must let someone identify each tree.** Elegant wording alone cannot do that.
+- **I collected photographs and my own measurements of six trees.** The largest circumference was 360 cm. Don't ask how I measured it. 🙂
+- **On 17 September 2026, I sent the city's Environmental Protection Department (BOŚ) a consolidated PDF:** a map labelled D1–D6, a table and matching photographs.
+- **I obtained a reply from the heritage conservator:** the site lies within the listed former factory complex, and as of 24 September the municipal conservator (SKZ) had received no application to remove trees from that plot.
 
-The largest circumference I measured was 360 cm. Don't ask how I measured it. 🙂 I gave provisional species identifications, to be confirmed during a site inspection.
+**A concrete correspondence reference: WOU.1331.284.2026** — the reference of the Mazovian regional heritage conservator's reply of 21 September identifying the competent authority. I submitted the natural monument documentation to the city's BOŚ. The correspondence reviewed as of 18 October does not yet confirm designation.
 
-This is not yet a story of trees that have been designated natural monuments. It is a story of a concrete step towards that goal, with help from AI. If you have a tree like this nearby, here is somewhere to start.
+**Thank you to Ewelina Wiącek-Piechowicz of the Environmental Protection Department for her patience and specific guidance on the information and attachments required.** Her advice helped me assemble a coherent package.
 
-<figure>
+For me, this matters doubly in Ursus: green space is scarce, and buildings are particularly densely packed on my estate. The [2022 ranking](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) already placed Ursus among Warsaw's least green districts. I want to preserve large trees rather than postpone compensation for decades.
+
+
+<figure style="max-width: 28rem; margin-inline: auto;">
   <img src="/images/trees-with-ai/d1-trunk.webp" srcset="/images/trees-with-ai/d1-trunk-480.webp 480w, /images/trees-with-ai/d1-trunk.webp 720w" sizes="(max-width: 768px) 100vw, 720px" width="720" height="960" alt="A poplar trunk beside the former model workshop, annotated D1 with a circumference of 360 cm" decoding="async" />
   <figcaption>D1 in a photograph from the attachment. The label records my measurement, not an official inspection result.</figcaption>
 </figure>
 
-## Where did the case go, and what is known?
+Want to do something similar? Open only the sections that interest you.
+
+<details>
+<summary>The full timeline and current status</summary>
 
 - **5 September 2026:** I wrote to the Mazovian regional heritage conservator, copying the city's Environmental Protection Department (BOŚ), about the trees' value and their protection.
 - **10–17 September:** BOŚ explained its requirements and requested additional information; I sent the consolidated PDF on 17 September.
@@ -35,7 +43,10 @@ This is not yet a story of trees that have been designated natural monuments. It
 
 In the correspondence reviewed on **18 October 2026**, I found no final outcome on natural monument designation. The conservator's reply establishes neither that designation nor a guarantee that circumstances will stay the same.
 
-## How can you prepare a similar proposal?
+</details>
+
+<details>
+<summary>How to propose another tree: steps, measurements and law</summary>
 
 In Warsaw, [residents submit proposals to BOŚ without a special form](https://warszawa19115.pl/web/guest/-/pomniki-przyrody). The city asks for the type of object, its precise location, reasons for protection and the applicant's correspondence details. Elsewhere in Poland, start with your municipality and its current procedure. This guide concerns the Polish system.
 
@@ -70,7 +81,10 @@ These are my measurements and provisional identifications. D5 and D6 are separat
 
 Meeting a threshold does not create protection. Designation requires a municipal council resolution, with the draft agreed with the regional environmental protection director — [Article 44 of the Nature Conservation Act](https://eli.gov.pl/eli/DU/2026/1315/ogl). Submitting a proposal does not automatically prohibit removal.
 
-## “It is dangerous”: what evidence can you ask for?
+</details>
+
+<details>
+<summary>When removal is proposed: assessment and alternatives</summary>
 
 A cavity or defect calls for assessment, and a photograph cannot settle safety. Ask the tree's manager for the basis of a removal recommendation: who assessed it, when, what risk was identified and what alternatives were considered.
 
@@ -78,7 +92,10 @@ A cavity or defect calls for assessment, and a photograph cannot settle safety. 
 
 [Warsaw's Greenery Authority describes its inspections, care and testing](https://zzw.waw.pl/nasze-dzialania/zielen/drzewa/), and the city's “Wiem o wycince” tree removal map. Start with documents and ask the relevant authority whether an application or permission exists for that particular tree. Absence from the map does not determine whether work is lawful. For an urgent case, give the authority or a local tree protection organisation the precise location and facts.
 
-## Where can you find free help or funding?
+</details>
+
+<details>
+<summary>Where to look for free support and funding</summary>
 
 - **A community project:** [Fundacja EkoRozwoju's “Dialog dla drzew”](https://fer.org.pl/projekty/dialog-dla-drzew-obywatelskie-wspolzarzadzanie-zielona-infrastruktura/) runs from April 2026 to September 2027 and includes individual advice, consultations and interventions for residents and groups. Contact details are on the project page. Ask about availability and scope; it does not promise free tomography for everyone.
 - **A municipal tree:** report the need for assessment to its manager, including through [Warsaw 19115](https://warszawa19115.pl/). This is a route for reporting a problem, not a voucher for any test on a privately owned tree.
@@ -86,7 +103,10 @@ A cavity or defect calls for assessment, and a photograph cannot settle safety. 
 
 I did not find a verified, generally available programme offering free full assessments of private trees in Warsaw. When looking for municipal or regional environmental fund grants, check the current application window, eligible applicants and whether diagnostics qualify, or only tree care. An archived call is not an offer available today.
 
-## Replacement planting: count more than saplings
+</details>
+
+<details>
+<summary>My proposal: replacement planting by total trunk diameter</summary>
 
 I also have a proposal for cities: when someone wants to remove trees and offers replacements, **the sum of the new trees' trunk diameters should at least equal the sum of the removed trees' trunk diameters**, measured at the same height. I would like residents to demand this minimum rather than accept a simple count of saplings.
 
@@ -94,7 +114,10 @@ This is my proposal, not a statement of current law. It is only a starting point
 
 The idea of “plant small trees and things will be fine in 40 years” does not convince me. Forty years here illustrates postponing compensation, not a calculated growth period for every tree. I want us to protect what we already have and consider today's residents. New trees are needed, but planting them does not make years of loss disappear.
 
-## A prompt to use with your own AI
+</details>
+
+<details>
+<summary>A prompt to copy for your own AI</summary>
 
 This is a suggestion for a new case, not a transcript of my earlier conversations. Add your own materials, removing unnecessary personal information:
 
@@ -123,3 +146,5 @@ Threat of removal: [facts and documents, or “unknown”].
 7. Finish with next steps and points to confirm with the authority.
    Do not promise designation or a halt to removal.
 ```
+
+</details>
