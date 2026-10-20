@@ -49,6 +49,10 @@ test("a URL is checkable only when public http(s) without credentials or private
   expect(isCheckablePublicUrl("http://[::1]/").reason).toBe("private-destination");
   expect(isCheckablePublicUrl("http://[fe80::1]/").reason).toBe("private-destination");
   expect(isCheckablePublicUrl("http://[fc00::1]/").reason).toBe("private-destination");
+  expect(isCheckablePublicUrl("http://2130706433/").reason).toBe("private-destination");
+  expect(isCheckablePublicUrl("http://127.1/").reason).toBe("private-destination");
+  expect(isCheckablePublicUrl("http://0x7f.0.0.1/").reason).toBe("private-destination");
+  expect(isCheckablePublicUrl("http://127.0.0.1.evil.example/").reason ?? "ok").toBe("ok");
   expect(isCheckablePublicUrl("not a url").reason).toBe("invalid-url");
 });
 
@@ -110,7 +114,8 @@ test("403 on both methods is blocked (bot-blocking), never dead", async () => {
 });
 
 test("a timeout stays unknown, never dead", async () => {
-  const { fetch } = fakeFetch({ "HEAD /slow": Object.assign(new Error("timeout"), { name: "TimeoutError" }) });
+  const timeout = Object.assign(new Error("too slow"), { name: "TimeoutError" });
+  const { fetch } = fakeFetch({ "HEAD /slow": timeout, "GET /slow": timeout });
   const result = await checkUrl("https://example.com/slow", { fetchImpl: fetch, timeoutMs: 10 });
   expect(result.outcome).toBe("unknown");
   expect(result.detail).toBe("timeout");
