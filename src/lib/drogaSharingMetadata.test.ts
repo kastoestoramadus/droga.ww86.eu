@@ -124,6 +124,25 @@ describe("alternateLinks", () => {
     expect(alternateLinks(site, "/blog/ney-post/", ["pl", "en"], unkeyed)).toEqual([]);
   });
 
+  test("a taxonomy term page gets no alternates: term slugs differ per language", () => {
+    expect(alternateLinks(site, "/categories/przyroda/", ["pl", "en"], slugs)).toEqual([]);
+    expect(alternateLinks(site, "/en/categories/everyday-life/", ["pl", "en"], slugs)).toEqual([]);
+    expect(alternateLinks(site, "/tags/drzewa/", ["pl", "en"], slugs)).toEqual([]);
+    expect(alternateLinks(site, "/en/tags/trees/", ["pl", "en"], slugs)).toEqual([]);
+  });
+
+  test("the taxonomy index pages still swap only the language prefix", () => {
+    expect(alternateLinks(site, "/categories/", ["pl", "en"], slugs)).toEqual([
+      { hreflang: "pl", href: "https://droga.ww86.eu/categories" },
+      { hreflang: "en", href: "https://droga.ww86.eu/en/categories" },
+      { hreflang: "x-default", href: "https://droga.ww86.eu/categories" },
+    ]);
+  });
+
+  test("the 404 page gets no alternates: no translated 404 route is built", () => {
+    expect(alternateLinks(site, "/404", ["pl", "en"], slugs)).toEqual([]);
+  });
+
   test("default language in a subdirectory keeps its prefix", () => {
     const sub: SiteUrlConfig = { ...site, defaultLanguageInSubdir: true };
     expect(alternateLinks(sub, "/pl/blog/x/", ["pl", "en"], { pl: { k: "x" }, en: { k: "y" } })).toEqual([
