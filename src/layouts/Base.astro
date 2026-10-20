@@ -1,7 +1,17 @@
 ---
 import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
 import config from "@/config/config.json";
+import languages from "@/config/language.json";
 import theme from "@/config/theme.json";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { autodiscoveryLink } from "@/lib/drogaFeed";
+import {
+  alternateLinks,
+  canonicalUrl,
+  resolveOgImage,
+  type PostSlugIndex,
+  type SiteUrlConfig,
+} from "@/lib/drogaSharingMetadata";
 import { getLangFromUrl } from "@/lib/utils/languageParser";
 import { plainify } from "@/lib/utils/textConverter";
 import Footer from "@/partials/Footer.astro";
@@ -37,6 +47,57 @@ const { title, meta_title, description, image, noindex, canonical, lang } =
   Astro.props;
 
 const language = lang || getLangFromUrl(Astro.url);
+
+const siteUrl: SiteUrlConfig = {
+  baseUrl: config.site.base_url,
+  basePath: config.site.base_path,
+  defaultLanguage: config.settings.default_language,
+  defaultLanguageInSubdir: config.settings.default_language_in_subdir,
+  trailingSlash: config.site.trailing_slash,
+};
+
+// Post slugs per language keyed by translationKey; alternates pair through it,
+// never through a URL prefix swap (slugs differ between languages).
+const disabledLanguages = config.settings.disable_languages as string[];
+const enabledLanguages = languages
+  .map(({ languageCode }) => languageCode)
+  .filter((code) => !disabledLanguages.includes(code));
+
+const slugIndex: PostSlugIndex = {};
+const postsByLang = new Map(
+  await Promise.all(
+    enabledLanguages.map(
+      async (code) => [code, await getSinglePage("blog", code)] as const,
+    ),
+  ),
+);
+for (const [code, posts] of postsByLang) {
+  slugIndex[code] = Object.fromEntries(
+    posts
+      .filter((post) => post.data.translationKey)
+      .map((post) => [post.data.translationKey!, post.id.split("/").pop()!]),
+  );
+}
+
+const canonicalHref = canonical ?? canonicalUrl(siteUrl, Astro.url.pathname);
+const alternates = alternateLinks(
+  siteUrl,
+  Astro.url.pathname,
+  enabledLanguages,
+  slugIndex,
+);
+
+// Feed autodiscovery for the page's own language (/rss.xml, /en/rss.xml).
+const feedLink = autodiscoveryLink(siteUrl, language, config.site.title);
+
+// Article metadata only when the rendered route is a post; dates and author
+// names come from the post frontmatter unchanged.
+const routeSlug = decodeURI(Astro.url.pathname).split("/").filter(Boolean).pop();
+const currentPost = postsByLang.get(language)?.find(
+  (post) => post.id.split("/").pop() === routeSlug,
+);
+const isPost = Boolean(currentPost && currentPost.data.translationKey);
+const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
 ---
 
 <!doctype html>
@@ -86,7 +147,26 @@ const language = lang || getLangFromUrl(Astro.url);
     </title>
 
     <!-- canonical url -->
-    {canonical && <link rel="canonical" href={canonical} item-prop="url" />}
+    <link rel="canonical" href={canonicalHref} item-prop="url" />
+
+    <!-- language alternates -->
+    {
+      alternates.map((alternate) => (
+        <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />
+      ))
+    }
+
+    <!-- rss autodiscovery -->
+    {
+      feedLink && (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={feedLink.title}
+          href={feedLink.href}
+        />
+      )
+    }
 
     <!-- noindex robots -->
     {noindex && <meta name="robots" content="noindex,nofollow" />}
@@ -119,11 +199,21 @@ const language = lang || getLangFromUrl(Astro.url);
         description ? description : config.metadata.meta_description,
       )}
     />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
-    />
+    <meta property="og:type" content={isPost ? "article" : "website"} />
+    {
+      isPost && currentPost?.data.date && (
+        <meta
+          property="article:published_time"
+          content={currentPost.data.date.toISOString()}
+        />
+      )
+    }
+    {
+      isPost && currentPost?.data.author && (
+        <meta property="article:author" content={plainify(currentPost.data.author)} />
+      )
+    }
+    <meta property="og:url" content={canonicalHref} />
 
     <!-- twitter-title -->
     <meta
@@ -142,20 +232,10 @@ const language = lang || getLangFromUrl(Astro.url);
     />
 
     <!-- og-image -->
-    <meta
-      property="og:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    {ogImage && <meta property="og:image" content={ogImage} />}
 
     <!-- twitter-image -->
-    <meta
-      name="twitter:image"
-      content={`${config.site.base_url}${
-        image ? image : config.metadata.meta_image
-      }`}
-    />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body class="flex flex-col min-h-screen">
