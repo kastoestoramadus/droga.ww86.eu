@@ -80,6 +80,24 @@ function webpVp8lBytes(width: number, height: number): Uint8Array {
   return bytes;
 }
 
+/** Minimal lossy WebP: RIFF/WEBP container with a VP8 chunk (frame tag, sync code, dimensions). */
+function webpVp8Bytes(width: number, height: number): Uint8Array {
+  const chunk = new Uint8Array(4 + 4 + 10);
+  chunk.set([0x56, 0x50, 0x38, 0x20], 0); // "VP8 "
+  new DataView(chunk.buffer).setUint32(4, 10, true); // chunk data size
+  chunk.set([0x30, 0x01, 0x00], 8); // frame tag
+  chunk.set([0x9d, 0x01, 0x2a], 11); // sync code
+  const bytes = new Uint8Array(12 + chunk.length);
+  bytes.set([0x52, 0x49, 0x46, 0x46], 0);
+  new DataView(bytes.buffer).setUint32(4, chunk.length + 4, true);
+  bytes.set([0x57, 0x45, 0x42, 0x50], 8);
+  bytes.set(chunk, 12);
+  const dv = new DataView(bytes.buffer);
+  dv.setUint16(26, width, true);
+  dv.setUint16(28, height, true);
+  return bytes;
+}
+
 function publicImage(path: string, bytes: Uint8Array): PublicImage {
   return { path, bytes, sha256: `sha-${path}` };
 }
@@ -136,6 +154,10 @@ describe("imageDimensions", () => {
 
   it("reads WebP VP8L", () => {
     expect(imageDimensions(webpVp8lBytes(720, 960))).toEqual({ format: "webp", width: 720, height: 960 });
+  });
+
+  it("reads lossy WebP VP8", () => {
+    expect(imageDimensions(webpVp8Bytes(720, 960))).toEqual({ format: "webp", width: 720, height: 960 });
   });
 
   it("returns null for unknown bytes", () => {
@@ -291,13 +313,14 @@ describe("largestAssets", () => {
 });
 
 describe("mapProvenance", () => {
-  it("maps public stems to editorial originals, stripping suffixes like -official", () => {
+  it("maps public stems to editorial originals, stripping suffixes like -official and -480", () => {
     const rows = mapProvenance(
-      ["/images/trees-with-ai/d1-trunk.webp", "/images/pellet-sifting/peewee-ecominor.webp", "/images/trees-with-ai/d1-crown.webp"],
+      ["/images/trees-with-ai/d1-trunk.webp", "/images/trees-with-ai/d1-trunk-480.webp", "/images/pellet-sifting/peewee-ecominor.webp", "/images/trees-with-ai/d1-crown.webp"],
       ["editorial/trees-with-ai/originals/d1-trunk.jpg", "editorial/pellet-sifting/originals/peewee-ecominor-official.jpg"],
     );
     const byPath = new Map(rows.map((r) => [r.publicPath, r]));
     expect(byPath.get("/images/trees-with-ai/d1-trunk.webp")).toMatchObject({ matchedOriginal: "editorial/trees-with-ai/originals/d1-trunk.jpg", source: "editorial-original" });
+    expect(byPath.get("/images/trees-with-ai/d1-trunk-480.webp")).toMatchObject({ source: "editorial-original" });
     expect(byPath.get("/images/pellet-sifting/peewee-ecominor.webp")).toMatchObject({ source: "editorial-original" });
     expect(byPath.get("/images/trees-with-ai/d1-crown.webp")).toMatchObject({ matchedOriginal: null, source: "no-matching-editorial-original" });
   });
