@@ -4,9 +4,9 @@
     "base_url": "https://droga.ww86.eu",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "",
-    "logo_darkmode": "",
+    "favicon": "/images/droga-brand/favicon.png",
+    "logo": "/images/droga-brand/logo.png",
+    "logo_darkmode": "/images/droga-brand/logo-dark.png",
     "logo_width": "150",
     "logo_height": "30",
     "logo_text": "Droga"
@@ -47,7 +47,7 @@
   },
   "metadata": {
     "meta_author": "Waldemar Wosiński",
-    "meta_image": "/images/og-image.png",
+    "meta_image": "/images/droga-brand/og-default.png",
     "meta_description": "Droga: notatki o ludziach, zmianie i tym, co robimy razem."
   },
   "llms": {
