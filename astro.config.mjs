@@ -58,10 +58,17 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
     };
   });
 
+// PR previews build the same site under /preview/pr-<N>/ on the existing gh-pages
+// branch: SITE_BASE overrides the base for one build, config.site.base_path stays
+// the production root. `site` keeps the production URL so meta and sitemap never
+// learn preview addresses.
+const base = process.env.SITE_BASE || config.site.base_path || "/";
+const isPreviewBuild = base !== "/" && base !== "";
+
 // https://astro.build/config
 export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
-  base: config.site.base_path ? config.site.base_path : "/",
+  base,
   trailingSlash: config.site.trailing_slash ? "always" : "ignore",
   vite: { plugins: [tailwindcss()] },
   fonts: fontsConfig,
@@ -69,7 +76,9 @@ export default defineConfig({
   image: { service: sharp() },
   integrations: [
     react(),
-    sitemap(),
+    // the sitemap lists production pages only; a preview build is noindex and
+    // must not publish its prefixed URLs as discoverable content
+    ...(isPreviewBuild ? [] : [sitemap()]),
     AutoImport({
       imports: [
         "@/shortcodes/Button",

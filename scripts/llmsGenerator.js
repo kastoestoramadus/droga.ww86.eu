@@ -591,6 +591,14 @@ function generateLlmsFullTxtContent(pages, siteUrl, siteName) {
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function generateLlmsFiles() {
+  // A preview build (SITE_BASE=/preview/pr-<N>) is an isolated noindex copy; its
+  // URLs must not land in an LLM discovery file, so it gets no llms.txt at all.
+  const siteBase = process.env.SITE_BASE || "/";
+  if (siteBase !== "/") {
+    console.log(`🚫 Preview build (base ${siteBase}): skipping llms.txt generation`);
+    return;
+  }
+
   const config = getConfig();
   const llms = config.llms;
 

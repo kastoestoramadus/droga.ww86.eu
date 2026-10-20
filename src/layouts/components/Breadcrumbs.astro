@@ -1,10 +1,14 @@
 ---
+import { SITE_BASE, stripBase, withBase } from "@/lib/basePath";
 import { supportedLang } from "@/lib/utils/languageParser";
 import { humanize } from "@/lib/utils/textConverter";
 
 const { className }: { className?: string } = Astro.props;
 
-const paths = Astro.url.pathname.split("/").filter((x) => x);
+// the language and the crumb segments sit below the build base (preview builds
+// serve the site under /preview/pr-<N>/); hrefs get the base back
+const pagePath = stripBase(Astro.url.pathname, SITE_BASE);
+const paths = pagePath.split("/").filter((x) => x);
 
 let lang = "";
 if (supportedLang.includes(paths[0])) {
@@ -13,19 +17,20 @@ if (supportedLang.includes(paths[0])) {
 
 let baseHref = lang ? `/${lang}/` : "/";
 
+const homeHref = withBase(baseHref, SITE_BASE);
 let parts = [
   {
     label: "Home",
-    href: baseHref,
+    href: homeHref,
     "aria-label":
-      Astro.url.pathname === baseHref || Astro.url.pathname === `${baseHref}/`
+      Astro.url.pathname === homeHref || Astro.url.pathname === `${homeHref}/`
         ? "page"
         : undefined,
   },
 ];
 
 paths.forEach((label: string, i: number) => {
-  const href = `${baseHref}${paths.slice(0, i + 1).join("/")}`;
+  const href = withBase(`${baseHref}${paths.slice(0, i + 1).join("/")}`, SITE_BASE);
   label !== "page" &&
     parts.push({
       label: humanize(label.replace(".html", "").replace(/[-_]/g, " ")) || "",
