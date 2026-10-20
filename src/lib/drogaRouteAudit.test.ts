@@ -168,17 +168,17 @@ test("a translation destination must use the right language prefix", () => {
 });
 
 test("the language switcher of a page is audited like translation links", () => {
-  const pages = [
-    { path: "/en/about", anchors: new Set<string>(), translations: [{ language: "pl", path: "/about" }, { language: "en", path: "/en/about" }] },
-  ];
-  const result = auditLinks(pages, [], options);
-  expect(result.problems).toEqual([]);
-  const broken = auditLinks(
-    [{ ...pages[0], translations: [{ language: "pl", path: "/en/about" }] }],
-    [],
-    options,
-  ).problems;
-  expect(broken).toEqual([
+  const enAbout: BuiltPage = {
+    path: "/en/about",
+    anchors: new Set<string>(),
+    translations: [
+      { language: "pl", path: "/about" },
+      { language: "en", path: "/en/about" },
+    ],
+  };
+  expect(auditLinks([page("/about"), enAbout], [], options).problems).toEqual([]);
+  const broken: BuiltPage = { ...enAbout, translations: [{ language: "pl", path: "/en/about" }] };
+  expect(auditLinks([page("/about"), broken], [], options).problems).toEqual([
     '[/en/about] /en/about (translation pl): destination must be the canonical route, got "/en/about"',
   ]);
 });
