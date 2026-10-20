@@ -41,13 +41,9 @@ test("--skip-build labels the build phase skipped and keeps the rest running", (
   const plan = planPhases({ buildRoot: "dist", skipBuild: true, liveLinks: false });
   const build = plan.find((p) => p.name === "build");
   expect(build?.skipReason).toContain("--skip-build");
-  expect(plan.filter((p) => p.name !== "build" && p.name !== "links-live").map((p) => p.skipReason)).toEqual([
-    undefined,
-    undefined,
-    undefined,
-    undefined,
-    undefined,
-  ]);
+  expect(
+    plan.filter((p) => p.name !== "build" && p.name !== "links-live").map((p) => p.skipReason),
+  ).toEqual(Array<undefined>(6).fill(undefined));
 });
 
 test("a custom build root reaches the route and media phases and disables the build phase", () => {
