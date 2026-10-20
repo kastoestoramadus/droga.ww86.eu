@@ -119,6 +119,11 @@ describe("alternateLinks", () => {
     ]);
   });
 
+  test("a post route with no translationKey gets no alternates rather than a guessed prefix swap", () => {
+    const unkeyed: PostSlugIndex = { pl: {}, en: {} };
+    expect(alternateLinks(site, "/blog/ney-post/", ["pl", "en"], unkeyed)).toEqual([]);
+  });
+
   test("default language in a subdirectory keeps its prefix", () => {
     const sub: SiteUrlConfig = { ...site, defaultLanguageInSubdir: true };
     expect(alternateLinks(sub, "/pl/blog/x/", ["pl", "en"], { pl: { k: "x" }, en: { k: "y" } })).toEqual([
