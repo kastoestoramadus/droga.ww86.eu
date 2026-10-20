@@ -1,0 +1,267 @@
+/*
+ * Siatka — geometric/typographic direction (variant 772).
+ * Unlayered on purpose: these overrides must win over Tailwind's
+ * component and utility layers without !important sprawl.
+ * Scope: shape system (hard corners, hairline grid), type hierarchy
+ * (Space Grotesk display over Inter text), spatial rhythm. Reading
+ * accessibility is preserved: body sizes, contrast ratios and focus
+ * visibility are never reduced here.
+ */
+
+/* ---------- shape system: the grid is the ornament ---------- */
+
+.header,
+footer,
+section .container .rounded-2xl,
+input,
+select,
+textarea,
+button,
+.btn,
+a.btn,
+.blockquote,
+pre,
+code,
+img,
+.rounded,
+.rounded-lg,
+.rounded-xl,
+.rounded-2xl,
+.rounded-full {
+  border-radius: 0;
+}
+
+/* ---------- header: hairline construction ---------- */
+
+.header {
+  border-bottom: 2px solid var(--color-text-dark);
+  background-color: var(--color-body);
+}
+
+.dark .header {
+  border-bottom-color: var(--color-darkmode-text-dark);
+  background-color: var(--color-darkmode-body);
+}
+
+.navbar-nav a,
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* ---------- siatka motif: CMYK grid squares ---------- */
+
+.siatka-rule {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.siatka-rule::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: var(--color-primary);
+}
+
+.siatka-rule::after {
+  content: "";
+  display: flex;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    #f81878 0 33.3%,
+    #7868f8 33.3% 66.6%,
+    #68f818 66.6% 100%
+  );
+}
+
+/* ---------- page headers: grid paper, left-aligned ---------- */
+
+section .container .rounded-2xl.bg-gradient-to-b,
+.geometric-page-header {
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--color-border) 0 1px,
+      transparent 1px 56px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-border) 0 1px,
+      transparent 1px 56px
+    );
+  background-color: var(--color-body);
+  border-left: 6px solid var(--color-text-dark);
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.dark section .container .rounded-2xl.bg-gradient-to-b,
+.dark .geometric-page-header {
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--color-darkmode-border) 0 1px,
+      transparent 1px 56px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--color-darkmode-border) 0 1px,
+      transparent 1px 56px
+    );
+  background-color: var(--color-darkmode-body);
+  border-left-color: var(--color-darkmode-text-dark);
+}
+
+/* ---------- type hierarchy ---------- */
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  letter-spacing: -0.02em;
+}
+
+section .container .rounded-2xl h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--color-text-light);
+}
+
+.dark .eyebrow {
+  color: var(--color-darkmode-text-light);
+}
+
+/* ---------- cards, buttons, forms: squared and ruled ---------- */
+
+.btn,
+a.btn {
+  border: 2px solid var(--color-text-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.btn-primary,
+a.btn-primary {
+  background-color: var(--color-text-dark);
+  border-color: var(--color-text-dark);
+  color: var(--color-body);
+}
+
+.btn-primary:hover,
+a.btn-primary:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.btn-outline-primary,
+a.btn-outline-primary {
+  color: var(--color-text-dark);
+}
+
+.dark .btn,
+.dark a.btn {
+  border-color: var(--color-darkmode-text-dark);
+}
+
+.dark .btn-primary,
+.dark a.btn-primary {
+  background-color: var(--color-darkmode-text-dark);
+  border-color: var(--color-darkmode-text-dark);
+  color: var(--color-darkmode-body);
+}
+
+.dark .btn-primary:hover,
+.dark a.btn-primary:hover {
+  background-color: var(--color-darkmode-primary);
+  border-color: var(--color-darkmode-primary);
+  color: #101012;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--color-border);
+}
+
+.dark input,
+.dark select,
+.dark textarea {
+  border-color: var(--color-darkmode-border);
+}
+
+/* ---------- footer: closed by a double rule ---------- */
+
+footer {
+  border-top: 2px solid var(--color-text-dark);
+}
+
+.dark footer {
+  border-top-color: var(--color-darkmode-text-dark);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ---------- homepage hero: ruled, left-set like the page headers ---------- */
+
+.geometric-hero {
+  text-align: left;
+  border-left: 6px solid var(--color-text-dark);
+  padding-left: 2rem;
+}
+
+.dark .geometric-hero {
+  border-left-color: var(--color-darkmode-text-dark);
+}
+
+.geometric-hero h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+}
+
+/* ---------- blog cards: ruled panels on the grid ---------- */
+
+.geometric-card {
+  border: 1px solid var(--color-border);
+  padding: 1.5rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.dark .geometric-card {
+  border-color: var(--color-darkmode-border);
+}
+
+.geometric-card:hover {
+  border-color: var(--color-text-dark);
+  box-shadow: 6px 6px 0 0 var(--color-border);
+}
+
+.dark .geometric-card:hover {
+  border-color: var(--color-darkmode-text-dark);
+  box-shadow: 6px 6px 0 0 var(--color-darkmode-light);
+}
