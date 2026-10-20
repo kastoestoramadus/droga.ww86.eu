@@ -347,7 +347,10 @@ export function auditExportHygiene(input: ExportHygieneInput): readonly Finding[
   return findings;
 }
 
-export function largestAssets(files: readonly PublicImage[], topN: number): readonly { path: string; byteLength: number }[] {
+export function largestAssets(
+  files: readonly { path: string; bytes: Uint8Array }[],
+  topN: number,
+): readonly { path: string; byteLength: number }[] {
   return [...files]
     .map((f) => ({ path: f.path, byteLength: f.bytes.byteLength }))
     .sort((a, b) => b.byteLength - a.byteLength || a.path.localeCompare(b.path))
