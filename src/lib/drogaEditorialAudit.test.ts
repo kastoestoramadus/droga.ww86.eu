@@ -270,6 +270,25 @@ test("unconfirmed brief fields are reported as missing owner input", () => {
   ).toBe(true);
 });
 
+test("a pointer comment key that disagrees with the frontmatter key is an identity error", () => {
+  const findings = auditDrogaEditorial(
+    withInput({
+      posts: [
+        { ...post("pl", "a.md", "topic", "editorial/topic/source.md"), pointerKey: "other" },
+        post("en", "a.md", "topic", "editorial/topic/source.md"),
+      ],
+    }),
+  );
+  expect(
+    findings.some(
+      (f) =>
+        f.severity === "error" &&
+        f.category === "translation-key" &&
+        f.message.includes('pointer comment says translationKey "other"'),
+    ),
+  ).toBe(true);
+});
+
 test("parseSourceBasePointer reads both label variants and the translationKey echo", () => {
   expect(
     parseSourceBasePointer(
