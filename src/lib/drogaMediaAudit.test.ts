@@ -295,6 +295,19 @@ describe("auditExportHygiene", () => {
     });
     expect(findings.map((f) => f.kind)).toContain("editorial-in-llms");
   });
+
+  it("reports a built page that references an editorial path as an advisory", () => {
+    const findings = auditExportHygiene({
+      distFiles: [],
+      distHashes: new Map(),
+      originals,
+      llmsTexts: [],
+      distTexts: new Map([["blog/post/index.html", "<!-- Source base: editorial/trees-with-ai/source.md -->"]]),
+    });
+    expect(findings).toEqual([
+      expect.objectContaining({ kind: "editorial-reference-in-dist", severity: "advisory", where: "blog/post/index.html" }),
+    ]);
+  });
 });
 
 describe("largestAssets", () => {

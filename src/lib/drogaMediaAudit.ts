@@ -59,7 +59,8 @@ export type FindingKind =
   | "editorial-path-in-dist"
   | "original-bytes-in-dist"
   | "original-name-in-dist"
-  | "editorial-in-llms";
+  | "editorial-in-llms"
+  | "editorial-reference-in-dist";
 
 export interface Finding {
   readonly kind: FindingKind;
@@ -85,6 +86,8 @@ export interface ExportHygieneInput {
   readonly distHashes: ReadonlyMap<string, string>;
   readonly originals: readonly EditorialOriginal[];
   readonly llmsTexts: readonly string[];
+  /** Text assets of dist (HTML/JS/JSON/TXT/XML) keyed by path, scanned for editorial references. */
+  readonly distTexts?: ReadonlyMap<string, string>;
 }
 
 export type ProvenanceSource = "editorial-original" | "no-matching-editorial-original";
@@ -344,6 +347,19 @@ export function auditExportHygiene(input: ExportHygieneInput): readonly Finding[
       findings.push({ kind: "editorial-in-llms", severity: "error", where: `llms[${i}]`, detail: "llms export references the editorial source base" });
     }
   });
+  // A path reference inside a built page (the provenance comment) is not a content leak by itself:
+  // the source bases are public repository layers. It stays visible as an advisory so a future
+  // build cannot start exporting editorial material silently.
+  for (const [file, text] of input.distTexts ?? []) {
+    if (/editorial\//.test(text)) {
+      findings.push({
+        kind: "editorial-reference-in-dist",
+        severity: "advisory",
+        where: file,
+        detail: "built text asset references an editorial/ path (provenance comment; source base itself is not exported)",
+      });
+    }
+  }
   return findings;
 }
 

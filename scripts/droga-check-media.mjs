@@ -105,7 +105,13 @@ function collectDist(distDir) {
   const llmsTexts = llmsNames
     .filter((name) => existsSync(join(distDir, name)))
     .map((name) => readFileSync(join(distDir, name), "utf8"));
-  return { dir: distDir, files, hashes, llmsTexts };
+  const texts = new Map();
+  for (const path of walkFiles(distDir)) {
+    if (/\.(html|js|json|txt|xml)$/i.test(path) && statSync(path).size <= 8 * 1024 * 1024) {
+      texts.set(toPosix(relative(distDir, path)), readFileSync(path, "utf8"));
+    }
+  }
+  return { dir: distDir, files, hashes, llmsTexts, texts };
 }
 
 const flags = readFlags(process.argv.slice(2));
@@ -123,6 +129,7 @@ const exportFindings =
         distHashes: dist.hashes,
         originals: originals.map((o) => ({ path: o.path, sha256: o.sha256 })),
         llmsTexts: dist.llmsTexts,
+        distTexts: dist.texts,
       });
 const findings = [...galleryFindings, ...exportFindings];
 const errors = findings.filter((f) => f.severity === "error");
