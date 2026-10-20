@@ -15,6 +15,7 @@ const post = (language: string, file: string, translationKey: string, sourceBase
   path: `src/content/blog/${language === "pl" ? "polski" : "english"}/${file}`,
   translationKey,
   sourceBase,
+  pointerKey: undefined,
 });
 
 const base = (key: string, linkedPosts: readonly string[], hasBrief = true): EditorialBase => ({
