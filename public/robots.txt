@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /api/*
+
+# PR previews are isolated copies, not content of this site
+Disallow: /preview/

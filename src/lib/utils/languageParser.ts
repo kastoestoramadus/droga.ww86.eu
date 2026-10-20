@@ -1,5 +1,6 @@
 import config from "../../config/config.json";
 import languagesJSON from "../../config/language.json";
+import { stripBase, withBase } from "../basePath";
 const { default_language } = config.settings;
 
 const locales: { [key: string]: any } = {};
@@ -21,8 +22,11 @@ const languages = Object.keys(locales);
 export { languages, locales };
 
 export function getLangFromUrl(url: URL): string {
-  const [, lang] = url.pathname.split("/");
-  if (locales.hasOwnProperty(lang)) {
+  // Under a preview base (/preview/pr-<N>) the language sits one level deeper; strip
+  // the base first. The code list comes from language.json, not the asynchronously
+  // filled locales object, so detection cannot race the menu imports.
+  const [, lang] = stripBase(url.pathname).split("/");
+  if (languagesJSON.some((l) => l.languageCode === lang)) {
     return lang;
   }
   return default_language;
@@ -111,5 +115,6 @@ export const slugSelector = (url: string, lang: string) => {
     }
   }
 
-  return constructedUrl;
+  // A preview build serves the whole site under its base; every link keeps it.
+  return withBase(constructedUrl);
 };

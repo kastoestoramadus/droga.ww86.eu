@@ -32,10 +32,6 @@
         {
           "name": "Tags",
           "url": "/tags"
-        },
-        {
-          "name": "404 Page",
-          "url": "/404"
         }
       ]
     }

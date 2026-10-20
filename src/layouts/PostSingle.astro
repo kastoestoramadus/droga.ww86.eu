@@ -3,6 +3,7 @@ import BlogCard from "@/components/BlogCard.astro";
 import Share from "@/components/Share.astro";
 import config from "@/config/config.json";
 import Disqus from "@/helpers/Disqus";
+import { stripBase } from "@/lib/basePath";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import { slugSelector } from "@/lib/utils/languageParser";
@@ -101,7 +102,8 @@ const { title, description, author, categories, image, date, tags } = post.data;
               className="social-icons"
               title={title}
               description={description}
-              slug={Astro.url.pathname.replace(/^\/|\/$/g, "")}
+              // below the build base: share URLs always carry the production slug
+              slug={stripBase(Astro.url.pathname).replace(/^\/|\/$/g, "")}
             />
           </div>
         </div>

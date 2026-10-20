@@ -1,0 +1,187 @@
+/* Reading experience for article content: measure, leading, link and focus
+   presentation, overflow safety. Palette and fonts stay with the theme. */
+
+/* Measure: text blocks cap at 65ch (Tailwind Typography's own default,
+   mid-range of the 45-75ch readability heuristic; WCAG sets no measure limit).
+   Media, tables and code keep the full column width. */
+.content :where(p, ul, ol, dl) {
+  max-width: 65ch;
+}
+
+/* Leading: match the site-wide body rhythm (leading-relaxed = 1.625);
+   the prose default of 1.5 diverged from it. */
+.content :where(p) {
+  line-height: 1.625;
+}
+
+/* Links: theme primary plus underline, so recognition never relies on
+   colour alone (WCAG 1.4.1). primary on body = 4.84:1 (AA); hover thickens
+   the underline instead of inventing a new colour. */
+.content :where(a):not(.btn) {
+  color: var(--color-primary);
+  text-underline-offset: 0.2em;
+}
+
+.content :where(a):not(.btn):hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Inside light blockquotes the primary drops to 4.39:1 (< AA 4.5), so
+   quote links use the quote text colour instead. */
+.content :where(blockquote a):not(.btn) {
+  color: var(--color-text-dark);
+}
+
+.dark .content :where(a):not(.btn) {
+  color: var(--color-darkmode-primary);
+}
+
+.dark .content :where(blockquote a):not(.btn) {
+  color: var(--color-darkmode-text-light);
+}
+
+/* Keyboard focus: a visible ring in both modes (WCAG 2.4.7; 2px primary
+   outline clears the 3:1 non-text minimum on body: 4.84:1 light, 10.6:1 dark).
+   outline does not affect layout. */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: var(--color-darkmode-primary);
+}
+
+/* Long words, URLs and code wrap instead of overflowing or being clipped
+   (WCAG 1.4.10 reflow). anywhere on cells keeps auto-layout tables from
+   exceeding the column, so the theme's overflow-hidden never hides content. */
+.content {
+  overflow-wrap: break-word;
+}
+
+.content :where(a, code, td, th) {
+  overflow-wrap: anywhere;
+}
+
+/* Optional sections (<details>): they carry the long guidance layers.
+   Stacked sections need their own rhythm — details has no default
+   margin, so consecutive sections would collapse together. */
+.content :where(details) {
+  margin-block: 1.25em;
+}
+
+/* A summary is both the heading of its section and its toggle control:
+   semibold to read as a heading, a pointer cursor to read as a control
+   (Chromium's default cursor for summary is the plain arrow). Keyboard
+   toggling and the focus ring above are native; no JS mimics them. */
+.content :where(summary) {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Headings sit below the sticky header (sticky top-0; measured 98px tall
+   in headless Firefox at desktop width): anchored or focused headings
+   would hide under it when the browser scrolls them in. 7rem clears
+   the bar with room to spare. */
+.content :where(h1, h2, h3, h4, h5, h6) {
+  scroll-margin-top: 7rem;
+}
+
+/* The theme ships UI transitions (nav links .15s, accordion icon .2s,
+   theme switcher .3s, search input .2s) with no reduced-motion
+   handling anywhere in the bundle. !important is deliberate: the
+   guarded transitions live in utility classes that a plain selector
+   cannot outrank, and this guard is the one accepted use. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print: keep the article's text, sources and photographs on paper.
+   Site chrome is noise there; div.section.pb-0 is the related-posts
+   block on post pages (PostSingle.astro), distinct from the
+   section-sm utility used on list pages. */
+@media print {
+  .header,
+  footer,
+  .social-icons,
+  div.section.pb-0 {
+    display: none;
+  }
+
+  /* The tags/share row needs !important here: its .row display comes
+     from the bootstrap-grid plugin inside the utilities layer, which
+     outranks this components-layer file at any specificity. Verified
+     empirically — without it the row prints. */
+  article > .row {
+    display: none !important;
+  }
+
+  /* Ink: paper is always light. A reader printing from dark mode would
+     otherwise get light text on white. Backgrounds are usually not
+     printed, so the explicit white keeps "print backgrounds" honest. */
+  .dark body {
+    background: #fff;
+    color: var(--color-text);
+  }
+  .dark :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--color-text);
+  }
+  .dark .content :where(
+      p,
+      strong,
+      li,
+      th,
+      td,
+      blockquote,
+      figcaption,
+      summary,
+      dt,
+      dd,
+      code,
+      pre,
+      hr
+    ) {
+    color: inherit;
+  }
+  .content :where(a):not(.btn),
+  .dark .content :where(a):not(.btn),
+  .dark .content :where(blockquote a):not(.btn) {
+    color: inherit;
+  }
+
+  /* Closed optional sections carry substance (timeline, procedures,
+     sources): reveal them when printing. Chromium 131+ implements
+     ::details-content; other engines need the JS fallback proposed
+     in the handoff. */
+  details:not([open])::details-content {
+    content-visibility: visible;
+  }
+
+  /* Sources must survive paper: print external URLs after their links.
+     Internal navigation links do not need it. */
+  .content :where(a[href^="http"])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+
+  /* Photographs and table rows stay whole across page breaks; code
+     wraps instead of being cut at the paper edge. */
+  figure,
+  tr,
+  img {
+    break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+}

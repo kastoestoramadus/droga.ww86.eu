@@ -1,5 +1,6 @@
 import config from "@/config/config.json";
 import languages from "@/config/language.json";
+import { SITE_BASE, stripBase, withBase } from "@/lib/basePath";
 import React from "react";
 
 const LanguageSwitcher = ({
@@ -39,20 +40,24 @@ const LanguageSwitcher = ({
             window.location.href = translationPaths[selectedLang];
             return;
           }
+          // Work on the pathname below the base (a preview build serves the site
+          // under /preview/pr-<N>/), then put the base back so the switch stays
+          // inside the same preview.
+          const pathBelowBase = removeTrailingSlash(
+            stripBase(pathname, SITE_BASE).replace(`/${lang}`, ""),
+          );
           let newPath;
-          const baseUrl = window.location.origin;
-
           if (selectedLang === default_language) {
-            if (default_language_in_subdir) {
-              newPath = `${baseUrl}/${default_language}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
-            } else {
-              newPath = `${baseUrl}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
-            }
+            // stripping the language segment can leave "" (a bare /en root); the
+            // target is then the site root, not an empty relative URL
+            newPath = default_language_in_subdir
+              ? `/${default_language}${pathBelowBase}`
+              : pathBelowBase || "/";
           } else {
-            newPath = `/${selectedLang}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
+            newPath = `/${selectedLang}${pathBelowBase}`;
           }
 
-          window.location.href = newPath;
+          window.location.href = withBase(newPath, SITE_BASE);
         }}
         value={lang}
       >
