@@ -12,6 +12,7 @@ import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
 import { FaRegClock, FaRegFolder, FaRegUserCircle } from "react-icons/fa";
 import ImageMod from "./components/ImageMod.astro";
+import TopicPictogram from "./helpers/TopicPictogram.astro";
 const { default_language } = config.settings;
 
 const COLLECTION_FOLDER = "blog";
@@ -49,7 +50,10 @@ const { title, description, author, categories, image, date, tags } = post.data;
             </div>
           )
         }
-        <h1 set:html={markdownify(title)} class="h2 mb-4" />
+        <h1 set:html={markdownify(title)} class="zeszyt-underline h2 mb-4" />
+        <div class="mb-4">
+          <TopicPictogram topic={post.data.translationKey} />
+        </div>
         <ul class="mb-4">
           <li class="mr-4 inline-block">
             <a href={slugSelector(`/authors/${slugify(author)}`, lang)}>

@@ -42,8 +42,39 @@ const call_to_action = await getSinglePage(
         <div class="lg:col-7 md:col-9 mb-8 text-center">
           <h1
             set:html={markdownify(banner.title)}
-            class="mb-4 text-h3 lg:text-h1"
+            class="zeszyt-underline mb-4 text-h3 lg:text-h1"
           />
+          <!-- Poplar branch divider, path data from the task 740 direction-B pool -->
+          <span class="zeszyt-pictogram mb-4" aria-hidden="true">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 400 400"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+            >
+              <path d="M 0 380 C 60 260 140 180 320 60" stroke-width="7"></path>
+              <path
+                d="M 60 280 C 78 236 118 222 152 228 C 118 250 80 258 60 280 Z"
+                stroke-width="7"></path>
+              <path
+                d="M 64 276 C 94 254 124 242 148 230"
+                stroke-width="3"></path>
+              <path
+                d="M 120 227.5 C 138 183.5 178 169.5 212 175.5 C 178 197.5 140 205.5 120 227.5 Z"
+                stroke-width="7"></path>
+              <path
+                d="M 124 223.5 C 154 201.5 184 189.5 208 177.5"
+                stroke-width="3"></path>
+              <path
+                d="M 180 175 C 198 131 238 117 272 123 C 238 145 200 153 180 175 Z"
+                stroke-width="7"></path>
+              <path
+                d="M 184 171 C 214 149 244 137 268 125"
+                stroke-width="3"></path>
+            </svg>
+          </span>
           <p set:html={markdownify(banner.content)} class="mb-8" />
           {
             banner.button.enable && (
