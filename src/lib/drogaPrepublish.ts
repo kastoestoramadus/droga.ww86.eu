@@ -130,12 +130,12 @@ function formatDuration(durationMs: number | null): string {
 const STATUS_LABEL: Record<PhaseStatus, string> = { pass: "PASS", fail: "FAIL", skip: "SKIPPED" };
 
 export function formatPhaseLine(result: PhaseResult, index: number, total: number): string {
-  const line = `[${index}/${total}] ${result.name.padEnd(15, ".")} ${STATUS_LABEL[result.status]} (${formatDuration(result.durationMs)})`;
+  const width = total.toString().length;
+  const line = `[${index.toString().padStart(width)}/${total}] ${result.name.padEnd(15, ".")} ${STATUS_LABEL[result.status]} (${formatDuration(result.durationMs)})`;
   return result.note === undefined ? line : `${line}\n      skipped/failed: ${result.note}`;
 }
 
 export function formatReport(report: PrepublishReport): string {
-  const width = report.phases.length.toString().length;
   const lines = [
     `${report.tool} — offline prepublication checks`,
     `build root: ${report.buildRoot}`,
@@ -143,7 +143,7 @@ export function formatReport(report: PrepublishReport): string {
     "",
   ];
   report.phases.forEach((phase, i) => {
-    lines.push(formatPhaseLine(phase, String(i + 1).padStart(width), String(report.phases.length).padStart(width)));
+    lines.push(formatPhaseLine(phase, i + 1, report.phases.length));
   });
   lines.push(
     "",

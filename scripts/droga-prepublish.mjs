@@ -24,6 +24,7 @@
 // checker scripts in this directory.
 import { spawnSync } from "node:child_process";
 import { existsSync, writeFileSync } from "node:fs";
+import { resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   DISCLAIMER,
@@ -61,8 +62,10 @@ function readFlags(argv) {
 const flags = readFlags(process.argv.slice(2));
 const plan = planPhases(flags);
 const buildPlanned = plan.find((phase) => phase.name === "build")?.skipReason === undefined;
+// the checkers resolve the build root against the repo root (their cwd), so the wrapper must too
+const buildRootPath = resolve(repoRoot, flags.buildRoot);
 
-if (!buildPlanned && !existsSync(flags.buildRoot)) {
+if (!buildPlanned && !existsSync(buildRootPath)) {
   console.error(`build root "${flags.buildRoot}" not found; run pnpm build first or drop --skip-build`);
   process.exit(2);
 }
@@ -83,7 +86,7 @@ for (const spec of plan) {
   results.push(result);
   console.log(formatPhaseLine(result, results.length, plan.length));
 }
-if (buildPlanned && !existsSync(flags.buildRoot)) {
+if (buildPlanned && !existsSync(buildRootPath)) {
   console.error(`build phase passed but the build root "${flags.buildRoot}" is still missing; aborting`);
   process.exit(1);
 }
