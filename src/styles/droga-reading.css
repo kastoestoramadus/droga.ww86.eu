@@ -1,0 +1,64 @@
+/* Reading experience for article content: measure, leading, link and focus
+   presentation, overflow safety. Palette and fonts stay with the theme. */
+
+/* Measure: text blocks cap at 65ch (Tailwind Typography's own default,
+   mid-range of the 45-75ch readability heuristic; WCAG sets no measure limit).
+   Media, tables and code keep the full column width. */
+.content :where(p, ul, ol, dl) {
+  max-width: 65ch;
+}
+
+/* Leading: match the site-wide body rhythm (leading-relaxed = 1.625);
+   the prose default of 1.5 diverged from it. */
+.content :where(p) {
+  line-height: 1.625;
+}
+
+/* Links: theme primary plus underline, so recognition never relies on
+   colour alone (WCAG 1.4.1). primary on body = 4.84:1 (AA); hover thickens
+   the underline instead of inventing a new colour. */
+.content :where(a):not(.btn) {
+  color: var(--color-primary);
+  text-underline-offset: 0.2em;
+}
+
+.content :where(a):not(.btn):hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Inside light blockquotes the primary drops to 4.39:1 (< AA 4.5), so
+   quote links use the quote text colour instead. */
+.content :where(blockquote a):not(.btn) {
+  color: var(--color-text-dark);
+}
+
+.dark .content :where(a):not(.btn) {
+  color: var(--color-darkmode-primary);
+}
+
+.dark .content :where(blockquote a):not(.btn) {
+  color: var(--color-darkmode-text-light);
+}
+
+/* Keyboard focus: a visible ring in both modes (WCAG 2.4.7; 2px primary
+   outline clears the 3:1 non-text minimum on body: 4.84:1 light, 10.6:1 dark).
+   outline does not affect layout. */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.dark :focus-visible {
+  outline-color: var(--color-darkmode-primary);
+}
+
+/* Long words, URLs and code wrap instead of overflowing or being clipped
+   (WCAG 1.4.10 reflow). anywhere on cells keeps auto-layout tables from
+   exceeding the column, so the theme's overflow-hidden never hides content. */
+.content {
+  overflow-wrap: break-word;
+}
+
+.content :where(a, code, td, th) {
+  overflow-wrap: anywhere;
+}
