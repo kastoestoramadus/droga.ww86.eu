@@ -15,7 +15,7 @@ I wanted a low price and a wood-based material rather than [mined bentonite](htt
 
 ## How I sift the pellets
 
-I use fine mesh bought at Castorama, two ordinary litter trays and a temporary container. The trays normally stand in two different places; I add the extra container for cleaning. I need space for material waiting to be sifted, recovered pellets and the fine particles. The mesh holds much larger batches than a scoop. When I tried sifting the whole tray’s contents at once, material stuck underneath, clogged the openings and required more force.
+I use fine mesh bought at Castorama, two ordinary litter trays and a temporary container. The trays normally stand in two different places; I add the extra container for cleaning. I need space for material waiting to be sifted, recovered pellets and the fine particles. The mesh holds much larger batches than a scoop. When I tried sifting the whole tray's contents at once, material stuck underneath, clogged the openings and required more force.
 
 1. I collect the contents of the trays in one container; I usually scoop the feces into mixed waste before sifting.
 2. I lay the mesh over a tray, leaving enough hanging over the rim to grip.
