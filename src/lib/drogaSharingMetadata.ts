@@ -84,6 +84,16 @@ export const alternateLinks = (
     }
   }
 
+  // Taxonomy term slugs differ per language (przyroda vs nature) and no
+  // translation map exists, and no translated 404 route is built; a prefix
+  // swap would point at pages that do not exist, so no alternates at all.
+  if (
+    /^\/(categories|tags)\/[^/]+\/?$/.test(route) ||
+    route === "/404"
+  ) {
+    return [];
+  }
+
   const linkFor = (targetLang: string): string => {
     let target = route;
     if (translationKey) {
