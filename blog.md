@@ -30,7 +30,6 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 ##### Categories
 
 -   [Przyroda (1)](/categories/przyroda)
--   [Notatki (1)](/categories/notatki)
 -   [Codzienność (1)](/categories/codzienność)
 
 ##### Tags
@@ -39,7 +38,6 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 -   [Ai](/tags/ai)
 -   [Ursus](/tags/ursus)
 -   [Działanie społeczne](/tags/działanie-społeczne)
--   [Start](/tags/start)
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)

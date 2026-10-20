@@ -1,1 +1,0 @@
-var e=[{languageName:`Pl`,languageCode:`pl`,contentDir:`polski`,weight:1},{languageName:`En`,languageCode:`en`,contentDir:`english`,weight:2}];export{e as t};

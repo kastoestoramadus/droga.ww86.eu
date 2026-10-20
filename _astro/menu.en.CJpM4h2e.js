@@ -1,0 +1,1 @@
+var e=[{name:`Home`,url:`/`},{name:`About`,url:`/about`},{name:`Pages`,url:``,hasChildren:!0,children:[{name:`Contact`,url:`/contact`},{name:`Blog`,url:`/blog`},{name:`Authors`,url:`/authors`},{name:`Categories`,url:`/categories`},{name:`Tags`,url:`/tags`}]}],t=[{name:`Privacy Policy`,url:`/privacy-policy`}],n={main:e,footer:t};export{n as default,t as footer,e as main};

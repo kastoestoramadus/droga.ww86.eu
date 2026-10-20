@@ -2,16 +2,16 @@
 
 URL: https://droga.ww86.eu
 
-## Blog
+## Droga
 
 URL: https://droga.ww86.eu
 
 Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 
-# Blog
+# Droga
 
-Tutaj piszę o rzeczach, które nie są kodem. Treść do uzupełnienia.
+Blog Waldemara Wosińskiego: notatki o codziennych obserwacjach, działaniu społecznym i osobistym pisaniu.
 
 ![banner](/_astro/banner.BMwzPDc-_Z17jISl.webp)
 
@@ -76,18 +76,6 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
-
-#### [Pierwszy wpis](/blog/pierwszy-wpis)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
-
-[Czytaj dalej](/blog/pierwszy-wpis)
-
 #### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
@@ -132,7 +120,6 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 ##### Categories
 
 -   [Przyroda (1)](/categories/przyroda)
--   [Notatki (1)](/categories/notatki)
 -   [Codzienność (1)](/categories/codzienność)
 
 ##### Tags
@@ -141,7 +128,6 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 -   [Ai](/tags/ai)
 -   [Ursus](/tags/ursus)
 -   [Działanie społeczne](/tags/działanie-społeczne)
--   [Start](/tags/start)
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)
@@ -358,78 +344,6 @@ Zagrożenie wycinką: [fakty i dokumenty albo „nie wiem”].
 
 ---
 
-## Wpisy
-
-URL: https://droga.ww86.eu/blog/page/2
-
-Wszystkie wpisy.
-
-
-# Wpisy
-
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
-
-#### [Pierwszy wpis](/blog/pierwszy-wpis)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
-
-[Czytaj dalej](/blog/pierwszy-wpis)
-
-##### Categories
-
--   [Przyroda (1)](/categories/przyroda)
--   [Notatki (1)](/categories/notatki)
--   [Codzienność (1)](/categories/codzienność)
-
-##### Tags
-
--   [Drzewa](/tags/drzewa)
--   [Ai](/tags/ai)
--   [Ursus](/tags/ursus)
--   [Działanie społeczne](/tags/działanie-społeczne)
--   [Start](/tags/start)
--   [Kot](/tags/kot)
--   [Pellet](/tags/pellet)
--   [Usprawnienia](/tags/usprawnienia)
-
----
-
-## Pierwszy wpis
-
-URL: https://droga.ww86.eu/blog/pierwszy-wpis
-
-Na razie szkielet bloga, treść wkrótce.
-
-
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_uce2f.webp)
-
-# Pierwszy wpis
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem `translationKey`.
-
-##### Tags :
-
--   [Start](/tags/start)
-
-##### Share :
-
--   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fpierwszy-wpis)
--   [](https://twitter.com/intent/tweet/?text=Pierwszy+wpis&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fpierwszy-wpis)
--   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fpierwszy-wpis&title=Pierwszy+wpis&summary=Na+razie+szkielet+bloga%2C+tre%C5%9B%C4%87+wkr%C3%B3tce.&source=https%3A%2F%2Fdroga.ww86.eu)
--   [](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fpierwszy-wpis&media=&description=Na+razie+szkielet+bloga%2C+tre%C5%9B%C4%87+wkr%C3%B3tce.)
-
-## Related Posts
-
----
-
 ## Pellet w kuwecie: przesiewanie na siatce
 
 URL: https://droga.ww86.eu/blog/przesiewanie-pelletu-w-kuwecie
@@ -549,7 +463,6 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 # Categories
 
 -   [Przyroda 1](/categories/przyroda)
--   [Notatki 1](/categories/notatki)
 -   [Codzienność 1](/categories/codzienność)
 
 ---
@@ -572,29 +485,6 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentonitu\](https://pubs.usgs.gov/
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
-
----
-
-## Notatki
-
-URL: https://droga.ww86.eu/categories/notatki
-
-Droga: notatki o ludziach, zmianie i tym, co robimy razem.
-
-
-# Notatki
-
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
-
-#### [Pierwszy wpis](/blog/pierwszy-wpis)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
-
-[Czytaj dalej](/blog/pierwszy-wpis)
 
 ---
 
@@ -651,6 +541,42 @@ Treść do uzupełnienia przed publikacją: jakie dane zbiera strona (komentarze
 
 ---
 
+## Prawa autorskie i korzystanie z treści
+
+URL: https://droga.ww86.eu/rights-and-reuse
+
+Kogo są teksty i zdjęcia na blogu Droga, co wolno zrobić bez pytania, a co wymaga zgody autora.
+
+
+# Prawa autorskie i korzystanie z treści
+
+## Kogo są materiały na tym blogu
+
+Teksty postów i fotografie wykonane przez Waldemara Wosińskiego są jego utworami, a prawa autorskie do nich są zastrzeżone. Kopiowanie, zmienianie i dalsze rozpowszechnianie tych materiałów poza granicami określonymi w prawie wymaga zgody autora.
+
+Część materiałów należy do innych uprawnionych i opisujemy to przy nich:
+
+-   zdjęcie produktu PeeWee we wpisie o przesiewaniu pelletu pochodzi z oficjalnej galerii PeeWee International B.V.; jego prawa pozostają przy uprawnionych,
+-   kod i układ strony opierają się na motywie Astroplate udostępnionym na licencji MIT (plik `LICENSE` w repozytorium bloga).
+
+Wpisy powstawały z pomocą narzędzi AI. Nie przypisujemy sobie z tego tytułu wyłącznych praw wykraczających poza to, co przewiduje prawo.
+
+## Co wolno bez zgody
+
+Ustawa o prawie autorskim pozwala w określonych granicach korzystać z opublikowanych utworów bez zgody autora — między innymi cytować ich fragmenty i korzystać w ramach dozwolonego użytku. Granice wyznacza prawo, nie ta strona: dozwolony użytek nie może naruszać normalnego korzystania z utworu ani godzić w słuszne interesy twórcy.
+
+Korzystając z naszych materiałów w tych granicach, podaj, o ile to możliwe, nazwisko autora (Waldemar Wosiński) i link do oryginalnego adresu posta na `droga.ww86.eu`.
+
+## Zgoda i kontakt
+
+Podanie autora nie jest zgodą. Cytowanie i inne wykorzystania dozwolone przez prawo nie wymagają pytania, ale wszystko poza nimi — całe posty, zmienione wersje, publikacja gdzie indziej — tak. O zgodę pytaj przez stronę [kontaktową](/contact).
+
+## Czego ta strona nie obiecuje
+
+Zastrzeżenie praw nie zablokuje automatycznie kopiowania przez boty ani nie zagwarantuje, że każde dozwolone użycie zostanie podpisane. Nie ogranicza też korzystania w granicach, które ustawa pozwala bez zgody autora.
+
+---
+
 ## Tags
 
 URL: https://droga.ww86.eu/tags
@@ -664,7 +590,6 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 -   [Ai 1](/tags/ai)
 -   [Ursus 1](/tags/ursus)
 -   [Działanie społeczne 1](/tags/działanie-społeczne)
--   [Start 1](/tags/start)
 -   [Kot 1](/tags/kot)
 -   [Pellet 1](/tags/pellet)
 -   [Usprawnienia 1](/tags/usprawnienia)
@@ -773,29 +698,6 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentonitu\](https://pubs.usgs.gov/
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
-
----
-
-## Start
-
-URL: https://droga.ww86.eu/tags/start
-
-Droga: notatki o ludziach, zmianie i tym, co robimy razem.
-
-
-# Start
-
-![Pierwszy wpis](/_astro/image-placeholder.DyBpoAJD_Z25UGJp.webp)
-
-#### [Pierwszy wpis](/blog/pierwszy-wpis)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Notatki](/categories/notatki)
--   12 Oct, 2026
-
-To jest przykładowy wpis. Każdy wpis ma wersję polską i angielską, połączone kluczem translationKey.
-
-[Czytaj dalej](/blog/pierwszy-wpis)
 
 ---
 

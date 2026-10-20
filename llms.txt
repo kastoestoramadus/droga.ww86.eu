@@ -6,7 +6,7 @@ This file helps language models discover the most useful content on this site.
 
 ## Home
 
-- [Blog](https://droga.ww86.eu/index.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+- [Droga](https://droga.ww86.eu/index.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 
 ## About
@@ -27,10 +27,6 @@ This file helps language models discover the most useful content on this site.
 
 - [AI i sześć drzew: od zajawki do zgłoszenia](https://droga.ww86.eu/blog/ai-i-szesc-drzew.md): Jak AI pomagało mi pisać do urzędów o ochronie drzew w Ursusie. Historia zgłoszenia, instrukcja dla kolejnych osób i miejsca, gdzie szukać pomocy.
 
-- [Wpisy](https://droga.ww86.eu/blog/page/2.md): Wszystkie wpisy.
-
-- [Pierwszy wpis](https://droga.ww86.eu/blog/pierwszy-wpis.md): Na razie szkielet bloga, treść wkrótce.
-
 - [Pellet w kuwecie: przesiewanie na siatce](https://droga.ww86.eu/blog/przesiewanie-pelletu-w-kuwecie.md): Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój sposób na oddzielanie całych granulek od trocin.
 
 
@@ -39,8 +35,6 @@ This file helps language models discover the most useful content on this site.
 - [Categories](https://droga.ww86.eu/categories.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Codzienność](https://droga.ww86.eu/categories/codzienność.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
-
-- [Notatki](https://droga.ww86.eu/categories/notatki.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Przyroda](https://droga.ww86.eu/categories/przyroda.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
@@ -53,6 +47,11 @@ This file helps language models discover the most useful content on this site.
 ## Privacy-policy
 
 - [Polityka prywatności](https://droga.ww86.eu/privacy-policy.md): Jak traktuję dane odwiedzających.
+
+
+## Rights-and-reuse
+
+- [Prawa autorskie i korzystanie z treści](https://droga.ww86.eu/rights-and-reuse.md): Kogo są teksty i zdjęcia na blogu Droga, co wolno zrobić bez pytania, a co wymaga zgody autora.
 
 
 ## Tags
@@ -68,8 +67,6 @@ This file helps language models discover the most useful content on this site.
 - [Kot](https://droga.ww86.eu/tags/kot.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Pellet](https://droga.ww86.eu/tags/pellet.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
-
-- [Start](https://droga.ww86.eu/tags/start.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Ursus](https://droga.ww86.eu/tags/ursus.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
