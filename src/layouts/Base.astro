@@ -4,6 +4,7 @@ import config from "@/config/config.json";
 import languages from "@/config/language.json";
 import theme from "@/config/theme.json";
 import { getSinglePage } from "@/lib/contentParser.astro";
+import { autodiscoveryLink } from "@/lib/drogaFeed";
 import {
   alternateLinks,
   canonicalUrl,
@@ -86,6 +87,9 @@ const alternates = alternateLinks(
   slugIndex,
 );
 
+// Feed autodiscovery for the page's own language (/rss.xml, /en/rss.xml).
+const feedLink = autodiscoveryLink(siteUrl, language, config.site.title);
+
 // Article metadata only when the rendered route is a post; dates and author
 // names come from the post frontmatter unchanged.
 const routeSlug = decodeURI(Astro.url.pathname).split("/").filter(Boolean).pop();
@@ -150,6 +154,18 @@ const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
       alternates.map((alternate) => (
         <link rel="alternate" hreflang={alternate.hreflang} href={alternate.href} />
       ))
+    }
+
+    <!-- rss autodiscovery -->
+    {
+      feedLink && (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={feedLink.title}
+          href={feedLink.href}
+        />
+      )
     }
 
     <!-- noindex robots -->
