@@ -49,12 +49,12 @@ export function sitePathOf(href: string, page: string, siteHost: string): Resolv
     if (!NAVIGATION_SCHEMES.includes(scheme)) return none();
     const url = new URL(trimmed);
     if (url.host !== siteHost) return { kind: "external", path: null, fragment: null };
-    return internal(safeDecode(url.pathname), url.hash.slice(1));
+    return internal(safeDecode(url.pathname), safeDecode(url.hash.slice(1)));
   }
   if (trimmed.startsWith("//")) return { kind: "external", path: null, fragment: null };
 
   const beforeFragment = trimmed.split("#")[0];
-  const fragment = trimmed.includes("#") ? trimmed.split("#").slice(1).join("#") : "";
+  const fragment = trimmed.includes("#") ? safeDecode(trimmed.split("#").slice(1).join("#")) : "";
   const rawPath = beforeFragment.split("?")[0];
   if (rawPath === "") {
     if (fragment !== "") return { kind: "internal", path: null, fragment };

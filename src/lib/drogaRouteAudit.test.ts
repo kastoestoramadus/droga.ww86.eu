@@ -42,6 +42,9 @@ test("percent-encoded Polish slugs are decoded before matching a route", () => {
     kind: "internal",
     path: "/tags/działanie-społeczne",
   });
+  expect(sitePathOf("/blog/x#co-uda%C5%82o-mi-si%C4%99-zrobi%C4%87", "/", siteHost)).toMatchObject({
+    fragment: "co-udało-mi-się-zrobić",
+  });
 });
 
 test("absolute URLs of the site itself are internal, other hosts are external", () => {
