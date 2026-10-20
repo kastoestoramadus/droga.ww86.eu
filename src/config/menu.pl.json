@@ -32,10 +32,6 @@
         {
           "name": "Tagi",
           "url": "/tags"
-        },
-        {
-          "name": "Strona 404",
-          "url": "/404"
         }
       ]
     }

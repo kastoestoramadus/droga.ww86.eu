@@ -1,7 +1,7 @@
 ---
 banner:
-  title: "Blog"
-  content: "Here I write about things that are not code. Content to be written."
+  title: "Droga"
+  content: "Waldemar Wosiński's blog: notes on everyday observations, social action and personal writing."
   image: "/images/banner.png"
   button:
     enable: false
