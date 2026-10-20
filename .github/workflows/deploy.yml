@@ -4,6 +4,7 @@ on:
   push:
     branches: [master]
   pull_request:
+    types: [opened, synchronize, reopened, closed] # closed drives the preview cleanup
   workflow_dispatch:
 
 permissions:
@@ -15,8 +16,9 @@ concurrency:
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
-  # Runs all the code of the PR with a read-only token; the publishing job below only copies its output.
+  # Runs all the code of the PR with a read-only token; the publishing jobs below only copy its output.
   build:
+    if: github.event_name != 'pull_request' || github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
@@ -36,21 +38,48 @@ jobs:
       - name: Unit tests, including the Polish/English pairing of posts
         run: pnpm test
 
-      - name: Build
+      - name: Build the site to publish
+        if: github.event_name != 'pull_request'
         run: pnpm build
 
+      # the same site under its own prefix; dist stays at dist/ root, publish-pages nests it below preview/pr-N/
+      - name: Build the PR preview under its own prefix
+        if: github.event_name == 'pull_request'
+        env:
+          SITE_BASE: /preview/pr-${{ github.event.pull_request.number }}
+        run: pnpm build
+
+      - name: Check the preview contract under the prefix
+        if: github.event_name == 'pull_request'
+        run: node scripts/test-preview-build.mjs dist "/preview/pr-${{ github.event.pull_request.number }}"
+
       - name: Post share and translation links
+        if: github.event_name != 'pull_request'
         run: node scripts/test-post-links.mjs
 
-      # the script that publishes with a write token after the merge: better to find out here that it is broken
+      # the scripts that publish with a write token after the merge: better to find out here that they are broken
       - name: Test the publish script
         run: ./scripts/test-publish-pages
+
+      - name: Check the workflow trust
+        run: node scripts/test-workflow-trust.mjs
 
       - name: Upload site
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
         uses: actions/upload-artifact@v7
         with:
           name: site
+          path: dist
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
+          overwrite: true
+
+      - name: Upload the PR preview
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v7
+        with:
+          name: preview-pr-${{ github.event.pull_request.number }}
           path: dist
           include-hidden-files: true
           if-no-files-found: error
@@ -86,3 +115,62 @@ jobs:
         env:
           SOURCE_SHA: ${{ github.sha }}
         run: src/scripts/publish-pages pages site site
+
+  # Copies the verified preview artifact of a PR below preview/pr-<N>/ on gh-pages. Nothing from the PR runs here:
+  # the publishing script comes from a checkout of the literal master branch (the repo's default branch is gh-pages,
+  # so a default checkout would fetch the published site, not the code), and the artifact is only ever copied by
+  # that script, never executed. Fork PRs and Dependabot get no write job at all; same for the cleanup below.
+  preview-publish:
+    if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.head.repo.fork == false && github.event.pull_request.user.login != 'dependabot[bot]'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: pages-preview-${{ github.event.pull_request.number }}
+      cancel-in-progress: true # a newer push to the same PR supersedes this preview
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+          path: src
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: pages
+      - uses: actions/download-artifact@v8
+        with:
+          name: preview-pr-${{ github.event.pull_request.number }}
+          path: site
+      - name: Publish the preview
+        env:
+          SOURCE_SHA: ${{ github.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: src/scripts/publish-pages pages preview "$PR_NUMBER" site
+
+  # A closed PR (merged or not) loses its preview; production, CNAME and the other previews stay.
+  preview-remove:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.head.repo.fork == false && github.event.pull_request.user.login != 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    concurrency:
+      group: pages-preview-${{ github.event.pull_request.number }}
+      cancel-in-progress: true # a close supersedes a publish that is still running for this PR
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+          path: src
+          persist-credentials: false
+      - uses: actions/checkout@v7
+        with:
+          ref: gh-pages
+          path: pages
+      - name: Remove the preview
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: src/scripts/publish-pages pages remove "$PR_NUMBER"
