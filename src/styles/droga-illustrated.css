@@ -1,0 +1,66 @@
+/*
+ * Droga "Zeszyt" (field notebook) illustrated direction.
+ * Line language from the task 740 direction-B pool: paper #f7f4ec, ink
+ * #2f3439, teal #1f7a6d; single-weight round-cap ink strokes. Paper and
+ * border tokens live in src/config/theme.json, headings use Lora.
+ * Decorative pictograms are inline SVG in the templates; this file only
+ * carries the reusable line language.
+ */
+
+/* Hand-inked underline: an irregular stroke, not a rule. */
+.zeszyt-underline {
+  padding-bottom: 0.35em;
+  background-repeat: no-repeat;
+  background-size: 100% 0.22em;
+  background-position: 0 96%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 9' preserveAspectRatio='none'%3E%3Cpath d='M2 6 C 28 2.5, 62 8, 118 4.5' fill='none' stroke='%231f7a6d' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+.dark .zeszyt-underline {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 9' preserveAspectRatio='none'%3E%3Cpath d='M2 6 C 28 2.5, 62 8, 118 4.5' fill='none' stroke='%237fd1c1' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* Ink pictograms: single-weight strokes, never content imagery. */
+.zeszyt-pictogram {
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+.dark .zeszyt-pictogram {
+  color: var(--color-darkmode-primary);
+}
+
+.zeszyt-pictogram svg {
+  display: block;
+  margin-inline: auto;
+}
+
+/* Notebook prose: faint horizontal rules under the text baseline grid. */
+.content {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 1.9rem,
+    color-mix(in srgb, var(--color-text) 5%, transparent) 1.9rem,
+    color-mix(in srgb, var(--color-text) 5%, transparent) calc(1.9rem + 1px)
+  );
+}
+
+/* Margin note: pencil wash instead of a theme card. */
+.content blockquote {
+  border-left: 2px solid var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 6%, transparent);
+  font-style: italic;
+}
+
+/* Stamped links (post tags): square, double-edged, slightly tilted. */
+.content ~ * a[class*="bg-light"],
+main a[class*="bg-light"] {
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  box-shadow: 2px 2px 0 color-mix(in srgb, var(--color-text) 16%, transparent);
+  transform: rotate(-0.6deg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}

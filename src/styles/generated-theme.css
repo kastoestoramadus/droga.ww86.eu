@@ -7,9 +7,9 @@
 @theme {
   /* === Colors === */
   --color-primary: #1f7a6d;
-  --color-body: #faf7f2;
-  --color-border: #e6dfd3;
-  --color-light: #f1ece3;
+  --color-body: #f7f4ec;
+  --color-border: #dcd4c2;
+  --color-light: #f0ebdd;
   --color-dark: #1f2328;
   --color-text: #2f3439;
   --color-text-dark: #1f2328;
@@ -27,7 +27,7 @@
 
   /* === Font Families === */
   --font-primary: Heebo, sans-serif;
-  --font-secondary: Signika, sans-serif;
+  --font-secondary: Lora, serif;
 
   /* === Font Sizes === */
   --text-base: 16px;
