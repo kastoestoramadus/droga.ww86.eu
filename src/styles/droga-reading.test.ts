@@ -103,6 +103,11 @@ describe("droga-reading.css step 2: optional sections, anchors, motion, print", 
     expect(printPart).toMatch(
       /div\.section\.pb-0[^{]*\{[^}]*display:\s*none/m,
     );
+    // The tags/share row needs !important: its .row display lives in the
+    // utilities layer, which outranks this file's components layer.
+    expect(printPart).toMatch(
+      /article\s*>\s*\.row\s*\{[^}]*display:\s*none\s*!important/m,
+    );
     expect(printPart).not.toMatch(
       /(?:figure|img|picture|details|summary)[^{]*\{[^}]*display:\s*none/m,
     );
