@@ -29,6 +29,15 @@ source_sha=${SOURCE_SHA:-unknown}
 
 pr_number() { [[ ${1:-} =~ ^[0-9]+$ ]] || die "not a pull request number: '${1:-}'"; echo "$1"; }
 
+# The site dir may be a downloaded CI artifact: a symlink in it must never reach gh-pages, cp -a would
+# copy it as-is and git would store a target pointing outside the tree (absolute or ../../). A real
+# build emits plain files only, so refuse the whole artifact before copying anything.
+symlink_free() {
+  local first
+  first=$(find "$1" -type l -print -quit)
+  [[ -z $first ]] || die "refusing to publish: $first is a symlink"
+}
+
 case $mode in
   site)
     [[ $# -eq 1 ]] || die "usage: publish-pages <gh-pages-checkout> site <site-dir>"
@@ -36,6 +45,7 @@ case $mode in
     [[ -f $site/index.html ]] || die "$site has no index.html, refusing to publish it as the site"
     [[ -s $site/CNAME ]] || die "$site has no CNAME, publishing it would drop the custom domain"
     [[ ! -e $site/preview ]] || die "$site contains preview/, that path is reserved for PR previews"
+    symlink_free "$site"
     message="Publish site from $source_sha"
     ;;
   preview)
@@ -43,6 +53,7 @@ case $mode in
     n=$(pr_number "$1")
     site=$(abs_dir "$2")
     [[ -f $site/index.html ]] || die "$site has no index.html, refusing to publish it as a preview"
+    symlink_free "$site"
     message="Preview of PR #$n from $source_sha"
     ;;
   remove)

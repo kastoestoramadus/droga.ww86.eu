@@ -63,6 +63,12 @@ check "deleted file gone" not_in_tree preview/pr-5/img/a.png
 check "content replaced" bash -c "'$real_git' --git-dir='$t/origin.git' show gh-pages:preview/pr-5/index.html | grep -q pr-v2"
 check "other preview untouched" in_tree preview/pr-6/img/a.png
 
+echo "publishing the identical preview again changes nothing"
+clone "$t/pages"
+before=$(tip)
+check "succeeds" "$publish" "$t/pages" preview 6 "$t/pr"
+check "no new commit" test "$(tip)" = "$before"
+
 echo "publishing a new site replaces the root and keeps previews, CNAME and .nojekyll"
 make_site "$t/site2" v2; echo fresh > "$t/site2/fresh.html"; rm "$t/site2/about.html"
 "$publish" "$t/pages" site "$t/site2" >/dev/null 2>&1
@@ -82,6 +88,11 @@ before=$(tip)
 check "removing it again succeeds" "$publish" "$t/pages" remove 5
 check "removing it again changes nothing" test "$(tip)" = "$before"
 
+echo "cleaning up a PR that never published a preview succeeds"
+before=$(tip)
+check "succeeds" "$publish" "$t/pages" remove 777
+check "changes nothing" test "$(tip)" = "$before"
+
 echo "guards refuse bad input and change nothing"
 before=$(tip)
 make_site "$t/nocname" x; rm "$t/nocname/CNAME"
@@ -93,10 +104,36 @@ check "site without index.html" fails "$publish" "$t/pages" site "$t/empty"
 check "preview without index.html" fails "$publish" "$t/pages" preview 7 "$t/empty"
 check "PR number ../x" fails "$publish" "$t/pages" preview ../x "$t/pr"
 check "empty PR number" fails "$publish" "$t/pages" remove ''
+check "negative PR number" fails "$publish" "$t/pages" preview -1 "$t/pr"
+check "alphanumeric PR number" fails "$publish" "$t/pages" preview 5x "$t/pr"
+check "path PR number" fails "$publish" "$t/pages" remove 1/2
+check "decimal PR number" fails "$publish" "$t/pages" preview 0.5 "$t/pr"
 check "unknown mode" fails "$publish" "$t/pages" sideways
 clone "$t/elsewhere"; "$real_git" -C "$t/elsewhere" switch -q -c other
 check "checkout on another branch" fails "$publish" "$t/elsewhere" site "$t/site"
 check "origin unchanged" test "$(tip)" = "$before"
+
+echo "a downloaded artifact that plants symlinks is refused before anything is copied"
+before=$(tip)
+make_site "$t/linked" ln
+ln -s ../../../etc/passwd "$t/linked/passwd-link"
+ln -s /etc "$t/linked/etc-link"
+ln -s ../../../escape "$t/linked/img/escape-link"
+check "site with a symlink" fails "$publish" "$t/pages" site "$t/linked"
+check "preview with a symlink" fails "$publish" "$t/pages" preview 30 "$t/linked"
+check "origin unchanged by refused symlink publishes" test "$(tip)" = "$before"
+
+echo "two previews published in parallel both land"
+clone "$t/a"; clone "$t/b"
+make_site "$t/pa" pa; make_site "$t/pb" pb
+"$publish" "$t/a" preview 20 "$t/pa" >"$t/out20.txt" 2>&1 & pid_a=$!
+"$publish" "$t/b" preview 21 "$t/pb" >"$t/out21.txt" 2>&1 & pid_b=$!
+wait "$pid_a"; rc20=$?; wait "$pid_b"; rc21=$?
+check "preview 20 succeeded" test "$rc20" -eq 0
+check "preview 21 succeeded" test "$rc21" -eq 0
+check "preview 20 landed" in_tree preview/pr-20/index.html
+check "preview 21 landed" in_tree preview/pr-21/index.html
+check "history stays linear" test -z "$(origin rev-list --merges gh-pages)"
 
 echo "a competing push lands between our commit and our push"
 clone "$t/pages"

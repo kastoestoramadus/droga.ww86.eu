@@ -3,6 +3,7 @@ import TwSizeIndicator from "@/components/TwSizeIndicator.astro";
 import config from "@/config/config.json";
 import languages from "@/config/language.json";
 import theme from "@/config/theme.json";
+import { isPreviewBuild, stripBase, withBase } from "@/lib/basePath";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { autodiscoveryLink } from "@/lib/drogaFeed";
 import {
@@ -48,6 +49,9 @@ const { title, meta_title, description, image, noindex, canonical, lang } =
 
 const language = lang || getLangFromUrl(Astro.url);
 
+// every page of a preview build is non-indexable, whatever the page set itself
+const effectiveNoindex = noindex || isPreviewBuild();
+
 const siteUrl: SiteUrlConfig = {
   baseUrl: config.site.base_url,
   basePath: config.site.base_path,
@@ -55,6 +59,10 @@ const siteUrl: SiteUrlConfig = {
   defaultLanguageInSubdir: config.settings.default_language_in_subdir,
   trailingSlash: config.site.trailing_slash,
 };
+
+// In a preview build the served pathname carries the preview prefix; sharing
+// metadata always addresses the production location of the same page.
+const pagePath = stripBase(Astro.url.pathname);
 
 // Post slugs per language keyed by translationKey; alternates pair through it,
 // never through a URL prefix swap (slugs differ between languages).
@@ -79,10 +87,10 @@ for (const [code, posts] of postsByLang) {
   );
 }
 
-const canonicalHref = canonical ?? canonicalUrl(siteUrl, Astro.url.pathname);
+const canonicalHref = canonical ?? canonicalUrl(siteUrl, pagePath);
 const alternates = alternateLinks(
   siteUrl,
-  Astro.url.pathname,
+  pagePath,
   enabledLanguages,
   slugIndex,
 );
@@ -92,7 +100,7 @@ const feedLink = autodiscoveryLink(siteUrl, language, config.site.title);
 
 // Article metadata only when the rendered route is a post; dates and author
 // names come from the post frontmatter unchanged.
-const routeSlug = decodeURI(Astro.url.pathname).split("/").filter(Boolean).pop();
+const routeSlug = decodeURI(pagePath).split("/").filter(Boolean).pop();
 const currentPost = postsByLang.get(language)?.find(
   (post) => post.id.split("/").pop() === routeSlug,
 );
@@ -110,7 +118,7 @@ const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
       )
     }
     <!-- favicon -->
-    <link rel="shortcut icon" href={config.site.favicon} />
+    <link rel="shortcut icon" href={withBase(config.site.favicon)} />
     <!-- theme meta -->
     <meta name="theme-name" content="astroplate" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -169,7 +177,7 @@ const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
     }
 
     <!-- noindex robots -->
-    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {effectiveNoindex && <meta name="robots" content="noindex,nofollow" />}
 
     <!-- meta-description -->
     <meta
@@ -213,6 +221,8 @@ const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
         <meta property="article:author" content={plainify(currentPost.data.author)} />
       )
     }
+    <!-- og:url keeps the production URL even in a preview build: the preview prefix
+         is an isolated copy, not a second address of the article -->
     <meta property="og:url" content={canonicalHref} />
 
     <!-- twitter-title -->
