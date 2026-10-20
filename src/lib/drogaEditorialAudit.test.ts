@@ -1,6 +1,7 @@
 import { expect, test } from "vitest";
 import {
   auditDrogaEditorial,
+  extractRepoPaths,
   parseSourceBasePointer,
   scanBriefForUnconfirmedFields,
   type AuditInput,
@@ -39,7 +40,7 @@ const complete = (): AuditInput => ({
   ],
   languages: ["pl", "en"],
   bases: [base("topic", ["src/content/blog/polski/a.md", "src/content/blog/english/a.md"])],
-  briefs: [{ key: "topic", path: "editorial/topic/brief.md", unconfirmed: [] }],
+  briefs: [{ key: "topic", path: "editorial/topic/brief.md", unconfirmed: [], paths: [] }],
   exists: fileTree([
     "editorial/topic/source.md",
     "editorial/topic/brief.md",
@@ -259,6 +260,7 @@ test("unconfirmed brief fields are reported as missing owner input", () => {
           key: "topic",
           path: "editorial/topic/brief.md",
           unconfirmed: [{ field: "Odbiorcy", markers: ["NIEPOTWIERDZONE"] }],
+          paths: [],
         },
       ],
     }),
@@ -318,4 +320,33 @@ test("scanBriefForUnconfirmedFields finds unconfirmed markers with their bullet 
       markers: ["puste — wymaga decyzji autora", "puste — wymaga decyzji autora"],
     },
   ]);
+});
+
+test("a repo path mentioned in a brief that does not exist is a dangling-path error", () => {
+  const findings = auditDrogaEditorial(
+    withInput({
+      briefs: [
+        {
+          key: "topic",
+          path: "editorial/topic/brief.md",
+          unconfirmed: [],
+          paths: ["editorial/topic/source.md", "public/images/topic/gone.webp"],
+        },
+      ],
+    }),
+  );
+  expect(
+    findings.some(
+      (f) =>
+        f.severity === "error" &&
+        f.category === "brief" &&
+        f.message.includes("dangling path mentioned in brief: public/images/topic/gone.webp"),
+    ),
+  ).toBe(true);
+});
+
+test("extractRepoPaths keeps repo-rooted backticked paths only, deduplicated", () => {
+  const text =
+    "Base `editorial/topic/source.md`, web `public/images/topic/`, again `editorial/topic/source.md`, url `https://example.com/x`, key `trees-with-ai`.";
+  expect(extractRepoPaths(text)).toEqual(["editorial/topic/source.md", "public/images/topic/"]);
 });

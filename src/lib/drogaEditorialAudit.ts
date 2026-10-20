@@ -54,6 +54,8 @@ export interface BriefReview {
   readonly key: string;
   readonly path: string;
   readonly unconfirmed: readonly UnconfirmedField[];
+  /** Repo-rooted paths mentioned in backticks (publication layers, originals, web images). */
+  readonly paths: readonly string[];
 }
 
 export interface AuditInput {
@@ -75,6 +77,19 @@ const POINTER_PATTERN =
 const BASE_SHAPE = /^editorial\/([^/]+)\/source\.md$/;
 
 const SEVERITY_ORDER: readonly Severity[] = ["error", "missing", "not-applicable"];
+
+const REPO_ROOTS: readonly string[] = ["editorial/", "src/content/", "public/"];
+
+/** Repo-rooted paths a brief mentions in backticks, deduplicated, in first-mention order. */
+export function extractRepoPaths(text: string): readonly string[] {
+  const paths: string[] = [];
+  for (const [, mentioned] of text.matchAll(/`([^`\s]+)`/g)) {
+    if (REPO_ROOTS.some((root) => mentioned.startsWith(root)) && !paths.includes(mentioned)) {
+      paths.push(mentioned);
+    }
+  }
+  return paths;
+}
 
 /** Reads the "Source base" / "Baza merytoryczna" comment a post carries next to its opening. */
 export function parseSourceBasePointer(body: string): SourceBasePointer | undefined {
@@ -270,6 +285,16 @@ export function auditDrogaEditorial(input: AuditInput): readonly Finding[] {
   }
 
   for (const brief of input.briefs) {
+    for (const mentioned of brief.paths) {
+      if (!input.exists(mentioned)) {
+        findings.push({
+          severity: "error",
+          category: "brief",
+          subject: brief.path,
+          message: `dangling path mentioned in brief: ${mentioned} does not exist`,
+        });
+      }
+    }
     for (const field of brief.unconfirmed) {
       findings.push({
         severity: "missing",

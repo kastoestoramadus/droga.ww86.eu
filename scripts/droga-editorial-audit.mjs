@@ -17,6 +17,7 @@ import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import {
   auditDrogaEditorial,
+  extractRepoPaths,
   parseSourceBasePointer,
   scanBriefForUnconfirmedFields,
 } from "../src/lib/drogaEditorialAudit.ts";
@@ -60,10 +61,12 @@ for (const entry of readdirSync(editorialRoot, { withFileTypes: true })
   const hasBrief = existsSync(join(root, briefPath));
   bases.push({ key: entry.name, dir: `editorial/${entry.name}`, hasSource: true, hasBrief, linkedPosts });
   if (hasBrief) {
+    const briefText = readFileSync(join(root, briefPath), "utf8");
     briefs.push({
       key: entry.name,
       path: briefPath,
-      unconfirmed: scanBriefForUnconfirmedFields(readFileSync(join(root, briefPath), "utf8")),
+      unconfirmed: scanBriefForUnconfirmedFields(briefText),
+      paths: extractRepoPaths(briefText),
     });
   }
 }
