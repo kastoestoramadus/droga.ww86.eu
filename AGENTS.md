@@ -39,6 +39,12 @@ pnpm check         # generates .json/search.json (the search modal imports it), 
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
+
+# exact PR-preview build (same content under /preview/pr-7/; dist stays at dist/ root,
+# publish-pages copies it into preview/pr-<N>/ on gh-pages):
+SITE_BASE=/preview/pr-7 pnpm build
+node scripts/test-preview-build.mjs dist /preview/pr-7 # every internal URL inside the prefix,
+                   # noindex,nofollow on every page incl. 404, no sitemap/llms.txt, production share/og URLs
 ```
 
 ## Conventions
@@ -77,6 +83,13 @@ node scripts/test-post-links.mjs # after build: share URLs and translated post d
 - A plain `.md` post cannot embed components; widgets go into the page template
   (`src/pages/posts/[...slug].astro`) or into `.mdx` posts.
 - Astro `base`/`site` must be set before publishing under a path prefix; internal links must respect it.
+  A preview build sets the base through `SITE_BASE` (never by editing `config.json`): every internal
+  link then goes through the base-aware helpers in `src/lib/basePath.ts` and `slugSelector`. Raw HTML
+  in Markdown (full-size image links) is prefixed after the build by `scripts/prefix-build-html.mjs`,
+  because Astro's `unified()` processor shape silently ignores extra rehype plugins. A preview build
+  is noindex,nofollow everywhere, emits no sitemap and no llms.txt, keeps og:url/canonical/share URLs
+  at their production addresses, and adds a `/pl/` copy of the Polish pages (Astro does that under a
+  non-root base; its links are prefixed too).
 
 ## Theme
 
@@ -136,7 +149,11 @@ The same machinery as the hub's and the tech blog's: `scripts/publish-pages` and
 Only `GITHUB_TOKEN`, never `pull_request_target`; `contents: write` on the job `publish` only. `gh-pages` is written by
 the workflow only, never by hand, and `publish-pages` refuses a site without `CNAME`.
 
-**No PR previews yet.** The hub's `preview` mode of `publish-pages` is unused: Astroplate ignores `base_path` (menu
-links and images start at `/`), so a site under `/preview/pr-N/` would link to production. Patch that first.
+**PR previews.** The site itself is base-aware now (see Gotchas), so a preview is one build:
+`SITE_BASE=/preview/pr-7 pnpm build` and `scripts/publish-pages <pages> preview 7 dist` (the hub's
+`preview` mode, including the retry on the gh-pages race). Previews are isolated, noindex copies:
+`robots.txt` disallows `/preview/`, previews carry no sitemap/llms.txt, and their og:url, canonical
+and share links keep the production addresses. The publish workflow that triggers a preview build
+per PR is not wired into `.github/workflows/deploy.yml` yet. Patch that first.
 
 DNS: `droga.ww86.eu CNAME kastoestoramadus.github.io`, set at the registrar (the hub's `DNS.md` has the pattern).
