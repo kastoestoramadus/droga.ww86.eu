@@ -39,7 +39,8 @@ export interface CheckOptions {
 
 export interface LinkCheckResult {
   readonly url: string;
-  readonly files: readonly string[];
+  /** Source files referencing the URL; batch runs attach them, single checks omit them. */
+  readonly files?: readonly string[];
   readonly outcome: LinkOutcome;
   readonly method: "head" | "get-fallback";
   /** Final HTTP status that decided the outcome, when one arrived. */

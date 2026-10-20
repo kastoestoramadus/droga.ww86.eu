@@ -193,7 +193,7 @@ test("duplicate URLs are checked once and concurrency stays within the bound", a
     peak = Math.max(peak, inFlight);
     await new Promise((resolve) => setTimeout(resolve, 5));
     inFlight--;
-    return new Response(null, { status: 200 });
+    return new Response(String(url), { status: 200 });
   };
   const results = await runChecks(
     [
