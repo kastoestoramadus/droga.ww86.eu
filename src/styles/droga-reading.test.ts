@@ -110,7 +110,9 @@ describe("droga-reading.css step 2: optional sections, anchors, motion, print", 
 
   it("print: forces light ink even when the reader is in dark mode", () => {
     expect(printPart).toMatch(/\.dark\s+body\s*\{[^}]*background/m);
-    expect(printPart).toMatch(/\.dark\s+\.content\s*:where\(a\):not\(\.btn\)\s*\{[^}]*color:\s*inherit/m);
+    expect(printPart).toMatch(
+      /\.dark\s+\.content\s*:where\(a\):not\(\.btn\)[^{]*\{[^}]*color:\s*inherit/m,
+    );
   });
 
   it("print: reveals closed optional sections (progressive enhancement)", () => {

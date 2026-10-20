@@ -62,3 +62,117 @@
 .content :where(a, code, td, th) {
   overflow-wrap: anywhere;
 }
+
+/* Optional sections (<details>): they carry the long guidance layers.
+   Stacked sections need their own rhythm — details has no default
+   margin, so consecutive sections would collapse together. */
+.content :where(details) {
+  margin-block: 1.25em;
+}
+
+/* A summary is both the heading of its section and its toggle control:
+   semibold to read as a heading, a pointer cursor to read as a control
+   (Chromium's default cursor for summary is the plain arrow). Keyboard
+   toggling and the focus ring above are native; no JS mimics them. */
+.content :where(summary) {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Headings sit below the sticky header (sticky top-0, 1.5rem padding
+   top and bottom plus the ~30px logo row ≈ 78px): anchored or focused
+   headings would hide under it when the browser scrolls them in. */
+.content :where(h1, h2, h3, h4, h5, h6) {
+  scroll-margin-top: 6rem;
+}
+
+/* The theme ships UI transitions (nav links .15s, accordion icon .2s,
+   theme switcher .3s, search input .2s) with no reduced-motion
+   handling anywhere in the bundle. !important is deliberate: the
+   guarded transitions live in utility classes that a plain selector
+   cannot outrank, and this guard is the one accepted use. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print: keep the article's text, sources and photographs on paper.
+   Site chrome is noise there; div.section.pb-0 is the related-posts
+   block on post pages (PostSingle.astro), distinct from the
+   section-sm utility used on list pages. */
+@media print {
+  .header,
+  footer,
+  .social-icons,
+  div.section.pb-0 {
+    display: none;
+  }
+
+  /* Ink: paper is always light. A reader printing from dark mode would
+     otherwise get light text on white. Backgrounds are usually not
+     printed, so the explicit white keeps "print backgrounds" honest. */
+  .dark body {
+    background: #fff;
+    color: var(--color-text);
+  }
+  .dark :is(h1, h2, h3, h4, h5, h6) {
+    color: var(--color-text);
+  }
+  .dark .content :where(
+      p,
+      strong,
+      li,
+      th,
+      td,
+      blockquote,
+      figcaption,
+      summary,
+      dt,
+      dd,
+      code,
+      pre,
+      hr
+    ) {
+    color: inherit;
+  }
+  .content :where(a):not(.btn),
+  .dark .content :where(a):not(.btn),
+  .dark .content :where(blockquote a):not(.btn) {
+    color: inherit;
+  }
+
+  /* Closed optional sections carry substance (timeline, procedures,
+     sources): reveal them when printing. Chromium 131+ implements
+     ::details-content; other engines need the JS fallback proposed
+     in the handoff. */
+  details:not([open])::details-content {
+    content-visibility: visible;
+  }
+
+  /* Sources must survive paper: print external URLs after their links.
+     Internal navigation links do not need it. */
+  .content :where(a[href^="http"])::after {
+    content: " (" attr(href) ")";
+    font-size: 0.9em;
+  }
+
+  /* Photographs and table rows stay whole across page breaks; code
+     wraps instead of being cut at the paper edge. */
+  figure,
+  tr,
+  img {
+    break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  pre {
+    white-space: pre-wrap;
+  }
+}
