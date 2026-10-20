@@ -1,0 +1,62 @@
+---
+/**
+ * Decorative topic pictogram for the Zeszyt (illustrated) direction.
+ * Line art only, single-weight strokes, aria-hidden: the post photograph
+ * carries the content meaning; the pictogram is a margin stamp. Path data
+ * comes from the task 740 direction-B asset pool (sources/cover-*-b.svg).
+ */
+interface Props {
+  topic?: string;
+}
+const { topic } = Astro.props;
+const stroke = {
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-linecap": "round",
+};
+const pictograms: Record<string, { width: number; height: number; viewBox: string; body: string }> = {
+  "trees-with-ai": {
+    width: 64,
+    height: 64,
+    viewBox: "0 0 400 400",
+    body: `<g ${Object.entries(stroke).map(([k, v]) => `${k}="${v}"`).join(" ")}>
+      <path d="M 0 380 C 60 260 140 180 320 60" stroke-width="14"/>
+      <path d="M 60 280 C 78 236 118 222 152 228 C 118 250 80 258 60 280 Z" stroke-width="14"/>
+      <path d="M 64 276 C 94 254 124 242 148 230" stroke-width="6"/>
+      <path d="M 120 227.5 C 138 183.5 178 169.5 212 175.5 C 178 197.5 140 205.5 120 227.5 Z" stroke-width="14"/>
+      <path d="M 124 223.5 C 154 201.5 184 189.5 208 177.5" stroke-width="6"/>
+      <path d="M 180 175 C 198 131 238 117 272 123 C 238 145 200 153 180 175 Z" stroke-width="14"/>
+      <path d="M 184 171 C 214 149 244 137 268 125" stroke-width="6"/>
+    </g>`,
+  },
+  "pellet-sifting": {
+    width: 64,
+    height: 51,
+    viewBox: "-170 -70 340 270",
+    body: `<g ${Object.entries(stroke).map(([k, v]) => `${k}="${v}"`).join(" ")}>
+      <path d="M -150 190 C -150 120 -120 60 -40 44 L -20 -40 C -18 -58 4 -62 12 -46 L 28 -18 L 70 -18 L 86 -46 C 94 -62 116 -58 114 -40 L 104 50 C 140 74 158 118 158 190" stroke-width="10"/>
+      <path d="M -150 190 L 158 190" stroke-width="9"/>
+      <path d="M -60 96 C -40 88 -12 92 0 104" stroke-width="8"/>
+      <circle cx="-52" cy="30" r="8" fill="currentColor" stroke="none"/>
+      <circle cx="66" cy="30" r="8" fill="currentColor" stroke="none"/>
+      <path d="M 6 44 L 0 58 L 14 58" stroke-width="8"/>
+      <path d="M 130 120 C 168 104 176 140 146 150" stroke-width="9"/>
+    </g>`,
+  },
+};
+const pictogram = topic ? pictograms[topic] : undefined;
+---
+
+{
+  pictogram && (
+    <span class="zeszyt-pictogram" aria-hidden="true">
+      <svg
+        width={pictogram.width}
+        height={pictogram.height}
+        viewBox={pictogram.viewBox}
+      >
+        <Fragment set:html={pictogram.body} />
+      </svg>
+    </span>
+  )
+}
