@@ -39,6 +39,8 @@ pnpm check         # generates .json/search.json (the search modal imports it), 
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
+./scripts/test-publish-pages    # publish-pages against throwaway local bare repos (no network)
+node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
 
 # exact PR-preview build (same content under /preview/pr-7/; dist stays at dist/ root,
 # publish-pages copies it into preview/pr-<N>/ on gh-pages):
@@ -139,21 +141,26 @@ Name **Droga**, served at https://droga.ww86.eu (a subdomain of the hub's domain
 ```plaintext
 this repo, branch master
   └─ .github/workflows/deploy.yml
-       job build    (read-only token) pnpm check, pnpm test, pnpm build, scripts/test-publish-pages → artifact `site` (master)
-       job publish  (master only, contents: write)   scripts/publish-pages site → root of gh-pages
-            → branch gh-pages: built site only, plus `.nojekyll` and `CNAME`
+       job build          (read-only token) pnpm check, pnpm test, build, test-publish-pages, test-workflow-trust
+                          → artifact `site` (master) or `preview-pr-<N>` (PR: build with SITE_BASE=/preview/pr-<N>)
+       job publish        (master only, contents: write)   scripts/publish-pages site → root of gh-pages
+       job preview-publish (PR, contents: write)           scripts/publish-pages preview <N> → preview/pr-<N>/
+       job preview-remove  (PR closed, contents: write)    scripts/publish-pages remove <N> → delete preview/pr-<N>/
+            → branch gh-pages: production at the root plus the live previews below preview/, `.nojekyll`, `CNAME`
                → GitHub Pages, "deploy from a branch" (gh-pages, /), custom domain droga.ww86.eu
 ```
 
 The same machinery as the hub's and the tech blog's: `scripts/publish-pages` and its test are copied from the hub.
-Only `GITHUB_TOKEN`, never `pull_request_target`; `contents: write` on the job `publish` only. `gh-pages` is written by
-the workflow only, never by hand, and `publish-pages` refuses a site without `CNAME`.
+Only `GITHUB_TOKEN`, never `pull_request_target`; `contents: write` on the three publishing jobs only. `gh-pages` is
+written by the workflow only, never by hand, and `publish-pages` refuses a site without `CNAME`.
 
-**PR previews.** The site itself is base-aware now (see Gotchas), so a preview is one build:
-`SITE_BASE=/preview/pr-7 pnpm build` and `scripts/publish-pages <pages> preview 7 dist` (the hub's
-`preview` mode, including the retry on the gh-pages race). Previews are isolated, noindex copies:
-`robots.txt` disallows `/preview/`, previews carry no sitemap/llms.txt, and their og:url, canonical
-and share links keep the production addresses. The publish workflow that triggers a preview build
-per PR is not wired into `.github/workflows/deploy.yml` yet. Patch that first.
+**PR previews.** The site itself is base-aware (see Gotchas), so a preview is one build under
+`SITE_BASE=/preview/pr-<N>` plus `scripts/publish-pages <pages> preview <N> dist` (retry on the gh-pages race
+included). Previews are isolated, noindex copies: `robots.txt` disallows `/preview/`, previews carry no
+sitemap/llms.txt, and their og:url, canonical and share links keep the production addresses. The write jobs
+never run PR code: their scripts come from a checkout of the literal `master` branch (the repo's default
+branch is gh-pages, so a default checkout would fetch the published site), the PR number reaches the script
+as an environment variable, and `publish-pages` refuses an artifact containing a symlink. Fork PRs and
+Dependabot get builds but no write job. `scripts/test-workflow-trust.mjs` checks these invariants in CI.
 
 DNS: `droga.ww86.eu CNAME kastoestoramadus.github.io`, set at the registrar (the hub's `DNS.md` has the pattern).
