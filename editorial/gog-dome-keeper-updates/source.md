@@ -143,3 +143,26 @@ obok tej bazy. Cytaty po angielsku przytaczamy w oryginale, w tłumaczeniu podaj
 publikacji z adnotacją „tłumaczenie własne". Dzień obserwacji (25.10.2026)
 jest w każdej wizualizacji widoczny dla czytelnika jako punkt odniesienia; wszelkie „dni poślizgu"
 liczymy wyłącznie od 13.04.2026 do tego dnia i nigdy inaczej.
+
+## Warstwa publikacyjna: wariant „dobrej woli"
+
+Jedna z dwóch redakcyjnych alternatyw dla tej samej publikacji (drugi wariant: kąt zaufania i
+oczekiwań; wybiera się jeden tekst, nie skleja dwóch). Wariant „dobrej woli" zaczyna od uznania i
+wspólnych wartości (gry bez DRM, granie kanapowe), potem Dome Keeper jest konkretnym, ograniczonym
+powodem apelu — nie ogólnym oskarżeniem. Pytanie centralne brzmi „co by pomogło", a nie „kto winien";
+hipotezy o przyczynach poślizgu pozostają wyłącznie w sekcji „Czego ten tekst nie twierdzi".
+
+- Tytuł kierunkowy PL: „GOG, chcę wam kibicować. Pomóżcie mi" (EN: „GOG, I want to cheer for you.
+  Help me do it"); wspólny klucz tłumaczeń: `gog-dome-keeper-updates`.
+- Dowodowy kotwica w tekście widocznym: trzywierszowa tabela stanu (wersja, split-screen, DLC)
+  z dniem obserwacji 25.10.2026 i różnicą 195 dni; pełna tabela dowodów i chronologia trafiają
+  do początkowo zwiniętych sekcji `details`.
+- Wizualia: rysunek „Propozycja" — sugerowany obieg czterech komunikatów (parita funkcji → status
+  i powód poślizgu → data docelowa albo szczere „jeszcze nie wiemy" → powiadomienie o zmianie),
+  z podpisem, że to sugestia redakcyjna, a nie opis procesu GOG; do tego tabela „co chciałbym
+  wiedzieć / jak to pomaga". Rysunek nie sugeruje żadnej ścieżki przyczynowej do kłopotów finansowych.
+- Finał to konkretne życzenia dobrej woli (kooperacja w GOG, jeden komunikat wyjaśniający, norma
+  komunikacji), po którym zostaje jawnie powiedziane niezaspokojone oczekiwanie: 195 dni i dalej
+  brak lokalnej kooperacji w wydaniu z GOG.
+- Pliki publikacyjne tego wariantu w repozytorium: `src/content/blog/polski/gog-chce-wam-kibicowac.md`
+  oraz `src/content/blog/english/gog-i-want-to-cheer-for-you.md`.
