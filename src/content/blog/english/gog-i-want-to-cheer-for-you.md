@@ -16,7 +16,7 @@ DRM-free games are an idea I value and backed with my wallet: I bought on GOG de
 In my GOG edition, there is still no way to play together (as of 25 October 2026). The free update adding co-op modes — including local split-screen — launched on 13 April 2026 on Steam and Xbox. The publisher's (Raw Fury) announcement says it plainly: "cooperative play, competitive play, local splitscreen and online multiplayer". Between that launch and the day of my observation, **195 days** passed. The newest public version on GOG is still 4.2.3 from 8 April 2025, and the store page lists only single-player. Steam is already at v5.0.8.
 
 <figure style="margin:2rem 0">
-<svg viewBox="0 0 760 250" style="width:100%;height:auto" role="img" aria-labelledby="gog-tl-title gog-tl-desc" font-family="system-ui, sans-serif">
+<svg viewBox="0 0 790 250" style="width:100%;height:auto" role="img" aria-labelledby="gog-tl-title gog-tl-desc" font-family="system-ui, sans-serif">
 <title id="gog-tl-title">Dome Keeper timeline: Steam and Xbox versus GOG, as of 25 Oct 2026</title>
 <desc id="gog-tl-desc">Upper track (Steam/Xbox): 13 Apr 2026 free update with local split-screen; 03 Sep 2026 version v5.0.8. Lower track (GOG): 08 Apr 2025 build 4.2.3, then no new public version, which was only verified on 25 Oct 2026 (observation date). The span 13 Apr 2026 to 25 Oct 2026 is 195 days.</desc>
 <text x="16" y="60" font-size="14" font-weight="700" fill="currentColor">Steam / Xbox</text>
@@ -25,7 +25,7 @@ In my GOG edition, there is still no way to play together (as of 25 October 2026
 <text x="480" y="36" font-size="13" text-anchor="middle" fill="currentColor" font-weight="600">13 Apr 2026 — free update (local split-screen)</text>
 <circle cx="639" cy="56" r="6" fill="currentColor"/>
 <text x="639" y="80" font-size="13" text-anchor="middle" fill="currentColor" opacity="0.8">03 Sep 2026 — v5.0.8</text>
-<text x="16" y="170" font-size="14" font-weight="700" fill="currentColor">GOG (Windows)</text>
+<text x="16" y="192" font-size="14" font-weight="700" fill="currentColor">GOG (Windows)</text>
 <line x1="60" y1="166" x2="720" y2="166" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
 <circle cx="68" cy="166" r="6" fill="currentColor"/>
 <text x="68" y="146" font-size="13" text-anchor="start" fill="currentColor" font-weight="600">08 Apr 2025 — build 4.2.3 (latest public)</text>
