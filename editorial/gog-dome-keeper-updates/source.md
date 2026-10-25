@@ -143,3 +143,16 @@ obok tej bazy. Cytaty po angielsku przytaczamy w oryginale, w tłumaczeniu podaj
 publikacji z adnotacją „tłumaczenie własne". Dzień obserwacji (25.10.2026)
 jest w każdej wizualizacji widoczny dla czytelnika jako punkt odniesienia; wszelkie „dni poślizgu"
 liczymy wyłącznie od 13.04.2026 do tego dnia i nigdy inaczej.
+
+## Warstwa publikacyjna — wariant A „dobra idea to za mało" (zaufanie/oczekiwania)
+
+Teza: wspierałem ideę gier bez DRM zakupami, ale brak funkcji, na której mi zależało (lokalna
+kooperacja), ujawnia konkretną porażkę obsługi i podważa zaufanie. Ton: bezpośredni, powściągliwy,
+rozczarowany, oparty na dowodach; bez sarkazmu, ataków, straszenia finansami czy wymyślonego bojkotu.
+Prośba o jasny status/plan; zakończenie szczerym życiem, żeby GOG odzyskało zaufanie autora.
+Wizualizacja: dwutorowa os czasu (Steam/Xbox kontra GOG) z widocznym dniem obserwacji i wyraźnym
+oznaczeniem, że brak zdarzenia po stronie GOG zweryfikowano dopiero 25.10.2026; tabelka porównawcza
+5 wierszy tylko z wartościami zweryfikowanymi. Pliki publikacyjne: PL i EN pod wspólnym
+translationKey `gog-dome-keeper-updates` (te same ścieżki, co w wariancie alternatywnym — wybór
+jednego wariantu daje jeden post). Publikacja: PL `src/content/blog/polski/gog-chce-wam-kibicowac.md`,
+EN `src/content/blog/english/gog-i-want-to-cheer-for-you.md`.
