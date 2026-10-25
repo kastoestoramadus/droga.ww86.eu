@@ -9,4 +9,4 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 Blog Waldemara Wosińskiego: notatki o codziennych obserwacjach, działaniu społecznym i osobistym pisaniu.
 
-![banner](/_astro/banner.BMwzPDc-_Z17jISl.webp)
+![banner](/_astro/banner.CKvaI2Mz_vFNAT.webp)
