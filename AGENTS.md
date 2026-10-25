@@ -39,6 +39,7 @@ pnpm check         # generates .json/search.json (the search modal imports it), 
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
+node scripts/droga-prepublish.mjs # all offline prepublication checks (add --live-links for the network phase)
 ./scripts/test-publish-pages    # publish-pages against throwaway local bare repos (no network)
 node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
 
