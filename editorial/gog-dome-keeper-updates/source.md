@@ -71,10 +71,34 @@ DLC (212), Missing Features (113), Missing Languages (100), Missing Free DLC (51
 Other (34) — suma controlna 1573 zgadza się z komórką „Current total issues". Przypisujemy dokładnie
 te liczby i te nazwy kategorii; nie nazywamy 1573 problemów „liczbą zaniedbanych gier".
 
-Granice tej listy: to zbiór prowadzony przez społeczność (metodologia w osobnym wpisie maintenera;
-weryfikacja w toku), 17 „Special Mentions" jest w samym arkuszu oznaczonych jako niepotwierdzone, a
-próbkowanie jest samoselekcyjne — gracze zgłaszają to, co ich zaboli. Lista mówi, że problem wygląda
+Granice tej listy: to zbiór prowadzony przez społeczność (provenance zweryfikowane 25.10.2026
+z otwierającego posta wątku „Games that treat GOG customers as second class citizens v2" na forum GOG:
+lista prowadzona od 2018 r. przez użytkownika omega64, zapożyczona od fronzelneekburma; wpisy trafiają
+na zgłoszenia graczy, jedyna reguła dowodowa to prośba o datę najwcześniejszego brakującego patcha),
+17 „Special Mentions" jest w samym arkuszu oznaczonych jako niepotwierdzone, a próbkowanie jest
+samoselekcyjne — gracze zgłaszają to, co ich zaboli. Lista mówi, że problem wygląda
 systemowo; nie mówi, jak wygląda cała oferta sklepu.
+
+## Porównanie przypadków (pełne dane w `data/comparison-cases.csv`)
+
+Cztery zbadane przypadki pokazują, że „brakująca aktualizacja" to nie jeden rodzaj problemu:
+- **Pathfinder: Kingmaker EE** (zamrożenie świadome, potwierdzone przez dewelopera): build Linux
+  stoi na 2.1.5d, bo „the development for Pathfinder: Kingmaker is no longer active, and we're not
+  able to produce or upload new builds for any platform" (post z tagiem dewelopera, 19.11.2025) —
+  przyczyna leży po stronie końca prac dewelopera, nie decyzji sklepu.
+- **Death From Above – Complete Edition** (mały tytuł; GOG na 1.0.1, naprawa achievementu
+  „Warship" wyszła na Steam w 1.0.2 — wg wątku z lutego 2024): gracze zgłaszają brak odpowiedzi
+  GOG, Rockodile i Lesser Evil (wątek z 10.12.2025).
+- **Skyrim Special Edition** (duży wydawca): memory leak opisany jako specyficzny dla wersji GOG
+  (OP 31.08.2024: „This doesn't happen with the Steam version"), wątek żyje do sierpnia 2026,
+  bez odpowiedzi zespołu GOG ani Bethesdy.
+- **Batman: Arkham Knight** (przypadek „prawie kompletu"): wg listy wszystkie aktualizacje
+  dotarły poza jedną z 3.12.2020 (skiny) — lista notuje i wieloletnie zamrożenia, i pojedyncze
+  drobne braki; nie każdemu wierszowi przysługuje ta sama waga.
+
+Wniosek dla publikacji: zanim ktoś nazwie przypadek „porzuceniem", trzeba sprawdzić, czy to
+poślizg (Dome Keeper 2023), świadome zamrożenie (Kingmaker), śmierć projektu, czy drobny brak
+(Batman) — a bez odpowiedzi oficjalnej strony przyczyna pozostaje nieznana.
 
 ## Kto za to odpowiada — rozdzielone pytania
 
