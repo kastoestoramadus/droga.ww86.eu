@@ -1,10 +1,10 @@
 /* section style */
 .section {
-  @apply py-24 xl:py-28;
+  @apply py-28 xl:py-36;
 }
 
 .section-sm {
-  @apply py-16 xl:py-20;
+  @apply py-20 xl:py-24;
 }
 
 /* container */
@@ -20,7 +20,7 @@
   @apply inline-block;
 }
 .social-icons li a {
-  @apply flex h-9 w-9 items-center justify-center rounded-sm bg-primary text-center leading-9 text-white dark:bg-darkmode-primary dark:text-text-dark;
+  @apply flex h-9 w-9 items-center justify-center rounded-full bg-primary text-center leading-9 text-white dark:bg-darkmode-primary dark:text-text-dark;
 }
 .social-icons li a svg {
   @apply h-5 w-5;
@@ -28,7 +28,7 @@
 
 /* notice */
 .notice {
-  @apply mb-6 rounded-lg border px-8 py-6;
+  @apply mb-6 rounded-2xl border px-8 py-6;
 }
 
 .notice-head {
@@ -73,7 +73,7 @@
 
 /* tab */
 .tab {
-  @apply overflow-hidden rounded-lg border border-border dark:border-darkmode-border;
+  @apply overflow-hidden rounded-2xl border border-border dark:border-darkmode-border;
 }
 
 .tab-nav {
@@ -106,7 +106,7 @@
 
 /* accordion */
 .accordion {
-  @apply mb-6 overflow-hidden rounded-lg border border-border bg-light dark:border-darkmode-border dark:bg-darkmode-light;
+  @apply mb-6 overflow-hidden rounded-2xl border border-border bg-light dark:border-darkmode-border dark:bg-darkmode-light;
 }
 
 .accordion-header {
@@ -139,7 +139,7 @@
 }
 
 .modal-content {
-  @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-lg bg-body p-8 dark:bg-darkmode-body;
+  @apply relative top-1/2 z-50 mx-auto max-w-[90%] -translate-y-1/2 rounded-2xl bg-body p-8 dark:bg-darkmode-body;
 }
 
 .modal-close {
@@ -159,10 +159,10 @@
   @apply prose-img:max-w-full prose-img:rounded-lg;
   @apply prose-strong:text-text-dark dark:prose-strong:text-darkmode-text;
   @apply prose-hr:border-border dark:prose-hr:border-darkmode-border;
-  @apply prose-pre:rounded-lg prose-pre:bg-light dark:prose-pre:bg-darkmode-light;
+  @apply prose-pre:rounded-2xl prose-pre:bg-light dark:prose-pre:bg-darkmode-light;
   @apply prose-code:text-darkmode-text-dark;
   @apply prose-li:text-text dark:prose-li:text-darkmode-text;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark dark:prose-blockquote:border-darkmode-primary dark:prose-blockquote:bg-darkmode-light dark:prose-blockquote:text-darkmode-text-light;
+  @apply prose-blockquote:rounded-2xl prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark dark:prose-blockquote:border-darkmode-primary dark:prose-blockquote:bg-darkmode-light dark:prose-blockquote:text-darkmode-text-light;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""] dark:prose-table:before:border-darkmode-border;
   @apply prose-thead:border-border prose-thead:bg-light dark:prose-thead:border-darkmode-border dark:prose-thead:bg-darkmode-light;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text-dark dark:prose-th:text-darkmode-text;
