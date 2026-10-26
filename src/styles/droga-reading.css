@@ -159,8 +159,8 @@
   /* Closed optional sections carry substance (timeline, procedures,
      sources): reveal them when printing. ::details-content is supported
      in Chromium 131+, Firefox 143+ and Safari 18.4+ (MDN browser-compat-data,
-     fetched 2026-10-20); older engines need the JS fallback proposed
-     in the handoff. */
+     fetched 2026-10-20); older engines are covered by the
+     beforeprint handler in Base.astro. */
   details:not([open])::details-content {
     content-visibility: visible;
   }
