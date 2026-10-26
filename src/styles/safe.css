@@ -1,14 +1,23 @@
-/* navbar toggler */
-input#nav-toggle:checked + label #show-button {
+/* navbar toggler and submenus: state is aria-expanded on the button (Header.astro) */
+#nav-toggle[aria-expanded="true"] #show-button {
   @apply hidden;
 }
 
-input#nav-toggle:checked + label #hide-button {
+#nav-toggle[aria-expanded="true"] #hide-button {
   @apply block;
 }
 
-input#nav-toggle:checked ~ #nav-menu {
+#nav-toggle[aria-expanded="true"] ~ #nav-menu {
   @apply block;
+}
+
+.nav-dropdown > [aria-expanded="true"] + .nav-dropdown-list {
+  @apply block visible opacity-100;
+}
+
+/* skip link: off-screen until it receives focus */
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-body focus:px-4 focus:py-2 focus:font-semibold focus:text-text-dark dark:focus:bg-darkmode-body dark:focus:text-darkmode-text-dark;
 }
 
 /* swiper pagination */

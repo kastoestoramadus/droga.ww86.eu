@@ -19,7 +19,7 @@ const menu = await getTranslations(lang);
 const { navigation_button, settings } = config;
 const { default_language } = config.settings;
 const { pathname } = Astro.url;
-const { get_started } = await getTranslations(lang);
+const { get_started, menu_label } = await getTranslations(lang);
 
 // Post slugs differ between languages; use the shared key rather than swapping URL prefixes.
 let translationPaths: Record<string, string> = {};
@@ -54,23 +54,24 @@ if (disabledLanguages.includes(lang)) {
     <div class="order-0">
       <Logo />
     </div>
-    {/* navbar toggler */}
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      for="nav-toggle"
+    {/* navbar toggler: a real button, so the keyboard reaches it; state in aria-expanded */}
+    <button
+      id="nav-toggle"
+      type="button"
+      aria-controls="nav-menu"
+      aria-expanded="false"
+      aria-label={menu_label}
       class="order-3 cursor-pointer flex items-center lg:hidden text-text-dark dark:text-white lg:order-1"
     >
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
-        <title>Menu Open</title>
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20" aria-hidden="true">
         <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
       </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
-        <title>Menu Close</title>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20" aria-hidden="true">
         <polygon
           points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
           transform="rotate(45 10 10)"></polygon>
       </svg>
-    </label>
+    </button>
     {/* /navbar toggler */}
 
     <ul
@@ -82,13 +83,12 @@ if (disabledLanguages.includes(lang)) {
           <>
             {menu.hasChildren ? (
               <li class="nav-item nav-dropdown group relative">
-                <input
-                  type="checkbox"
+                <button
+                  type="button"
                   id={`submenu-${menu.name}`}
-                  class="peer hidden lg:hidden"
-                />
-                <label
-                  for={`submenu-${menu.name}`}
+                  aria-expanded="false"
+                  aria-controls={`submenu-list-${menu.name}`}
+                  data-submenu-toggle
                   class={`nav-link inline-flex items-center ${
                     menu.children
                       ?.map(({ url }: { url: string }) =>
@@ -100,11 +100,11 @@ if (disabledLanguages.includes(lang)) {
                   }`}
                 >
                   {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true">
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
-                </label>
-                <ul class="nav-dropdown-list hidden peer-checked:block lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                </button>
+                <ul id={`submenu-list-${menu.name}`} class="nav-dropdown-list hidden lg:invisible lg:absolute lg:block lg:opacity-0">
                   {menu.children?.map((child: any) => (
                     <li class="nav-dropdown-item">
                       <a
@@ -191,3 +191,66 @@ if (disabledLanguages.includes(lang)) {
     </div>
   </nav>
 </header>
+
+<noscript>
+  <style is:inline>
+    /* without JS the toggle buttons do nothing: show the menu expanded on small screens, keep hover on large ones */
+    @media (max-width: 63.999rem) {
+      #nav-toggle { display: none; }
+      #nav-menu, .nav-dropdown-list { display: block; }
+    }
+    @media (min-width: 64rem) {
+      .nav-dropdown:hover > .nav-dropdown-list,
+      .nav-dropdown:focus-within > .nav-dropdown-list { visibility: visible; opacity: 1; }
+    }
+  </style>
+</noscript>
+
+<script>
+  // Menu and submenu state live in aria-expanded; CSS reads it (safe.css). Escape closes and returns focus.
+  // Bound now and again on astro:page-load, because the client router replaces the header on navigation
+  // (the first page-load event can fire before this module runs; data-bound keeps bindings single).
+  function setExpanded(button: Element, open: boolean) {
+    button.setAttribute("aria-expanded", String(open));
+  }
+  function bind() {
+    const toggle = document.getElementById("nav-toggle");
+    if (!toggle || toggle.dataset.bound) return;
+    toggle.dataset.bound = "true";
+    toggle.addEventListener("click", () =>
+      setExpanded(toggle, toggle.getAttribute("aria-expanded") !== "true"),
+    );
+    document.querySelectorAll("[data-submenu-toggle]").forEach((button) => {
+      button.addEventListener("click", () =>
+        setExpanded(button, button.getAttribute("aria-expanded") !== "true"),
+      );
+    });
+    document.querySelectorAll(".nav-dropdown").forEach((item) => {
+      const button = item.querySelector("[data-submenu-toggle]");
+      if (!button) return;
+      item.addEventListener("pointerenter", (event) => {
+        if ((event as PointerEvent).pointerType === "mouse" && matchMedia("(min-width: 64rem)").matches) {
+          setExpanded(button, true);
+        }
+      });
+      item.addEventListener("pointerleave", () => {
+        if (!item.contains(document.activeElement)) setExpanded(button, false);
+      });
+      item.addEventListener("focusout", (event) => {
+        const next = (event as FocusEvent).relatedTarget as Node | null;
+        if (next && !item.contains(next)) setExpanded(button, false);
+      });
+    });
+  }
+  bind();
+  document.addEventListener("astro:page-load", bind);
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+    const open =
+      document.querySelector<HTMLElement>("[data-submenu-toggle][aria-expanded=true]") ??
+      document.querySelector<HTMLElement>("#nav-toggle[aria-expanded=true]");
+    if (!open) return;
+    setExpanded(open, false);
+    if (document.getElementById("nav-menu")?.contains(document.activeElement) || document.activeElement === open) open.focus();
+  });
+</script>
