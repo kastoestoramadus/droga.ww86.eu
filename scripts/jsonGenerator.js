@@ -1,6 +1,7 @@
 import matter from "gray-matter";
 import fs from "node:fs";
 import path from "node:path";
+import { isPublished } from "../src/lib/publication.ts";
 
 const languagesPath = new URL("../src/config/language.json", import.meta.url);
 const languages = JSON.parse(fs.readFileSync(languagesPath, "utf8"));
@@ -62,7 +63,15 @@ const getData = (folder, groupDepth, langIndex = 0) => {
     })
     .flat();
 
-  return getPaths.filter((page) => !page.frontmatter?.draft && page);
+  // the search index is bundled into public JS: the same rule as the pages, tags and sitemap
+  const now = new Date();
+  const flags = {
+    drafts: process.argv.includes("--buildDrafts"),
+    future: process.argv.includes("--buildFuture"),
+  };
+  return getPaths.filter(
+    (page) => page && isPublished(page.frontmatter ?? {}, now, flags),
+  );
 };
 
 try {
