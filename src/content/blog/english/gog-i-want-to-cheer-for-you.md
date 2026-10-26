@@ -15,7 +15,7 @@ draft: false
 
 ## That is why I am writing, not just complaining
 
-Dome Keeper launched on Steam and GOG on the same day in September 2022. The free update with co-op, including local split-screen, shipped on **April 13, 2026** on Steam and Xbox. On the day I am writing this (**October 25, 2026**), the newest public version in my GOG edition is still **4.2.3 from April 8, 2025**, and the product page lists no co-op at all. The difference: **195 days**.
+Dome Keeper launched on Steam in September 2022 and on GOG two months later. The free update with co-op, including local split-screen, shipped on **April 13, 2026** on Steam and Xbox. On the day I am writing this (**October 25, 2026**), the newest public version in my GOG edition is still **4.2.3 from April 8, 2025**, and the product page lists no co-op at all. The difference: **195 days**.
 
 | Status as of 2026-10-25 | Steam | GOG |
 |---|---|---|
@@ -25,11 +25,11 @@ Dome Keeper launched on Steam and GOG on the same day in September 2022. The fre
 
 Let me say it plainly: **such a delay is unacceptable to me.** I am not saying who is at fault — I do not know where along the way this update got stuck, and I will not pretend otherwise. What I do know is that I wish GOG well, and I know what I am missing. Both are true at once; I hide neither.
 
-I also know a different scenario than silence. In 2023, Update 2.4 also arrived in GOG late, and back then a developer **explained on the forum** what was holding it up: crashes occurring only in the GOG version, and a wrapper supplied by GOG that was still in beta. He added that such slips would probably be common. That one honest statement made the waiting bearable. Because it is not the delay that hurts most — it is the not knowing.
+I also know a different scenario than silence. In 2023, Update 2.4 also arrived on GOG late, and back then a developer **explained on the forum** what was holding it up: crashes occurring only in the GOG version, and a wrapper supplied by GOG that was still in beta. He added that such slips would probably be common. That one honest statement made the waiting bearable. Because it is not the delay that hurts most — it is the not knowing.
 
 ## My proposal: four messages instead of silence
 
-I do not know GOG's internal processes and I do not claim any are missing. What follows is an editorial suggestion only — what a simple information loop about updates could look like if the store wanted to look after itself in the voices of players like me:
+I do not know GOG's internal processes and I do not claim any are missing. What follows is an editorial suggestion only — what a simple information loop about updates could look like if the store wanted to look after itself in the eyes of players like me:
 
 <figure role="figure" aria-labelledby="flow-title-en flow-desc-en" style="margin: 2rem auto; max-width: 30rem;">
   <svg viewBox="0 0 420 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="flow-title-en flow-desc-en" style="width: 100%; height: auto; display: block; color: inherit;">
@@ -93,8 +93,8 @@ The full editorial source base of this post, with the chronology, methodology an
 <details>
 <summary>Chronology in brief</summary>
 
-- **2022-09-27** — Dome Keeper launches on Steam and GOG.
-- **2022-11-25** — GOG limits supported systems to Windows (GOGDB tracker).
+- **2022-09-27** — Dome Keeper launches on Steam.
+- **2022-11-25** — Dome Keeper launches on GOG, Windows only (GOG API, GOGDB tracker).
 - **2023-03-07** — Update 2.4 on Steam; delayed on GOG, and on 2023-04-02 a developer explains the causes on the forum.
 - **2025-04-08** — build 4.2.3: the last public version on GOG (as of the observation day).
 - **2026-04-13** — the free co-op update (Steam and Xbox) plus the paid The Lost Keepers DLC; GOG goes unmentioned in the announcements.

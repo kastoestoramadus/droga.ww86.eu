@@ -15,7 +15,7 @@ draft: false
 
 ## Dlatego piszę, a nie tylko narzekam
 
-Dome Keeper miał premierę na Steam i w GOG tego samego dnia we wrześniu 2022. Darmowa aktualizacja z kooperacją, w tym lokalnym split-screenem, wyszła **13 kwietnia 2026** na Steam i Xbox. W dniu, gdy to piszę (**25 października 2026**), najnowsza publiczna wersja w moim wydaniu z GOG to wciąż **4.2.3 z 8 kwietnia 2025**, a karta produktu nie wymienia żadnej kooperacji. Różnica: **195 dni**.
+Dome Keeper miał premierę na Steam we wrześniu 2022, a w GOG dwa miesiące później. Darmowa aktualizacja z kooperacją, w tym lokalnym split-screenem, wyszła **13 kwietnia 2026** na Steam i Xbox. W dniu, gdy to piszę (**25 października 2026**), najnowsza publiczna wersja w moim wydaniu z GOG to wciąż **4.2.3 z 8 kwietnia 2025**, a karta produktu nie wymienia żadnej kooperacji. Różnica: **195 dni**.
 
 | Stan na 25.10.2026 | Steam | GOG |
 |---|---|---|
@@ -23,21 +23,21 @@ Dome Keeper miał premierę na Steam i w GOG tego samego dnia we wrześniu 2022.
 | Lokalny split-screen | od 13.04.2026 | niewymieniony |
 | DLC The Lost Keepers (płatne) | dostępne | nieoferowane |
 
-Piszę to wprost: **taka zwłoka jest dla mnie niedopuszczalna.** Nie mówię przy tym, komu winić — nie wiem, gdzie po drodze zatrzymała się ta aktualizacja, i nie udaję, że wiem. Wiem natomiast, że życzę GOG dobrze, i wiem, czego mi brakuje. Obie te rzeczy prawdziwe naraz; żadnej nie chowam.
+Piszę to wprost: **taka zwłoka jest dla mnie niedopuszczalna.** Nie mówię przy tym, kogo winić — nie wiem, gdzie po drodze zatrzymała się ta aktualizacja, i nie udaję, że wiem. Wiem natomiast, że życzę GOG dobrze, i wiem, czego mi brakuje. Obie te rzeczy są prawdziwe naraz; żadnej nie chowam.
 
-Znam też inny scenariusz niż cisza. W 2023 roku aktualizacja 2.4 też zagościła w GOG z poślizgiem, i wtedy deweloper **wyjaśnił na forum**, co ją zatrzymuje: awarie występujące tylko w wersji GOG i wrapper dostarczany przez GOG, wciąż w wersji beta. Zapowiedział przy okazji, że podobne poślizgi mogą się powtarzać. Ta jedna szczera wypowiedź sprawiała, że czekanie było do zniesienia. Bo to nie poślizg boli najbardziej — boli nie wiedza.
+Znam też inny scenariusz niż cisza. W 2023 roku aktualizacja 2.4 też zagościła w GOG z poślizgiem, i wtedy deweloper **wyjaśnił na forum**, co ją zatrzymuje: awarie występujące tylko w wersji GOG i wrapper dostarczany przez GOG, wciąż w wersji beta. Zapowiedział przy okazji, że podobne poślizgi mogą się powtarzać. Ta jedna szczera wypowiedź sprawiała, że czekanie było do zniesienia. Bo to nie poślizg boli najbardziej — boli niewiedza.
 
 ## Moja propozycja: cztery komunikaty zamiast milczenia
 
-Nie znam wewnętrznych procesów GOG i nie twierdzę, że ich brakuje. Poniżej jest tylko sugestia redakcyjna — jak mógłby wyglądać prosty obieg informacji o aktualizacjach, gdyby sklep chciał o siebie dbać w głosach graczy takich jak ja:
+Nie znam wewnętrznych procesów GOG i nie twierdzę, że ich brakuje. Poniżej jest tylko sugestia redakcyjna — jak mógłby wyglądać prosty obieg informacji o aktualizacjach, gdyby sklep chciał o siebie dbać w oczach graczy takich jak ja:
 
 <figure role="figure" aria-labelledby="flow-title flow-desc" style="margin: 2rem auto; max-width: 30rem;">
   <svg viewBox="0 0 420 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="flow-title flow-desc" style="width: 100%; height: auto; display: block; color: inherit;">
     <title id="flow-title">Propozycja obiegu komunikatów o aktualizacjach</title>
-    <desc id="flow-desc">Cztery kolejne kroki: 1. Parita funkcji opublikowana w GOG. 2. Status aktualizacji i powód poślizgu. 3. Data docelowa albo szczere „jeszcze nie wiemy”. 4. Powiadomienie o zmianie stanu.</desc>
+    <desc id="flow-desc">Cztery kolejne kroki: 1. Parytet funkcji opublikowany w GOG. 2. Status aktualizacji i powód poślizgu. 3. Data docelowa albo szczere „jeszcze nie wiemy”. 4. Powiadomienie o zmianie stanu.</desc>
     <text x="210" y="20" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Propozycja — sugestia redakcyjna, nie opis procesu GOG</text>
     <rect x="30" y="40" width="360" height="72" rx="10" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
-    <text x="210" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">1. Parita funkcji opublikowana w GOG</text>
+    <text x="210" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">1. Parytet funkcji opublikowany w GOG</text>
     <text x="210" y="92" text-anchor="middle" font-size="12" fill="currentColor">co gra ma i czego jej brakuje wobec innych platform</text>
     <line x1="210" y1="112" x2="210" y2="146" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
     <rect x="30" y="148" width="360" height="72" rx="10" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
@@ -57,7 +57,7 @@ Nie znam wewnętrznych procesów GOG i nie twierdzę, że ich brakuje. Poniżej 
       </marker>
     </defs>
   </svg>
-  <figcaption>Rysunek „Propozycja”: mój pomysł na obieg komunikatów o aktualizacjach w wersji tekstowej — (1) publikacja stanu par funkcji w GOG, (2) status aktualizacji wraz z powodem poślizgu, (3) data docelowa albo szczere „jeszcze nie wiemy”, (4) powiadomienie o każdej zmianie stanu. To propozycja z zewnątrz, nie opis tego, jak GOG dziś pracuje.</figcaption>
+  <figcaption>Rysunek „Propozycja”: mój pomysł na obieg komunikatów o aktualizacjach w wersji tekstowej — (1) publikacja stanu parytetu funkcji w GOG, (2) status aktualizacji wraz z powodem poślizgu, (3) data docelowa albo szczere „jeszcze nie wiemy”, (4) powiadomienie o każdej zmianie stanu. To propozycja z zewnątrz, nie opis tego, jak GOG dziś pracuje.</figcaption>
 </figure>
 
 I konkretnie, czego byłbym ciekaw w sprawie Dome Keepera:
@@ -71,9 +71,9 @@ I konkretnie, czego byłbym ciekaw w sprawie Dome Keepera:
 
 ## Życzę wam dopracowania się
 
-Chcę, żeby alternatywy takie jak GOG rozkwitały. Chcę, żeby Preservation Program, którym GOG chwali się przy klasykach, miał swoją codzienną wersję dla gier świeżych. Chcę, żebyście graczom, którzy zapłacili i czekają, dawali powód do dumy — i chcę grać w Dome Keepera kanapą z drugą osobą w wydaniu kupionym u was.
+Chcę, żeby alternatywy takie jak GOG rozkwitały. Chcę, żeby Preservation Program, którym GOG chwali się przy klasykach, miał swoją codzienną wersję dla gier świeżych. Chcę, żebyście graczom, którzy zapłacili i czekają, dawali powód do dumy — i chcę grać w Dome Keepera na kanapie z drugą osobą w wydaniu kupionym u was.
 
-Dlatego moje życzenia są konkretne, nie grzecznościowe: żeby kooperacja trafiła do GOG, żeby jednym komunikatem wyjaśnić, co ją wstrzymuje, i żeby taki obieg informacji został u was normą. A zanim to się stanie, zostaje fakt, którego te życzenia nie zacierają: 195 dni po premierze aktualizacji moje wydanie z GOG wciąż nie ma lokalnej kooperacji. Chcę w was kibicować — pomóżcie mi w tym.
+Dlatego moje życzenia są konkretne, nie grzecznościowe: żeby kooperacja trafiła do GOG, żeby jednym komunikatem wyjaśnić, co ją wstrzymuje, i żeby taki obieg informacji został u was normą. A zanim to się stanie, zostaje fakt, którego te życzenia nie zacierają: 195 dni po premierze aktualizacji moje wydanie z GOG wciąż nie ma lokalnej kooperacji. Chcę wam kibicować — pomóżcie mi w tym.
 
 <details>
 <summary>Dane i źródła (stan na 25.10.2026)</summary>
@@ -93,8 +93,8 @@ Pełna baza merytoryczna tej publikacji, wraz z chronologią, metodologią i ogr
 <details>
 <summary>Chronologia w pigułce</summary>
 
-- **27.09.2022** — premiera Dome Keepera na Steam i w GOG.
-- **25.11.2022** — GOG ogranicza systemy do Windows (tracker GOGDB).
+- **27.09.2022** — premiera Dome Keepera na Steam.
+- **25.11.2022** — premiera w GOG, tylko Windows (API GOG, tracker GOGDB).
 - **07.03.2023** — aktualizacja 2.4 na Steam; w GOG poślizg, 02.04.2023 deweloper wyjaśnia przyczyny na forum.
 - **08.04.2025** — build 4.2.3: ostatnia publiczna wersja w GOG (stan na dzień obserwacji).
 - **13.04.2026** — darmowa aktualizacja z kooperacją (Steam i Xbox) oraz płatne DLC The Lost Keepers; GOG w ogłoszeniach nie pada.
@@ -109,7 +109,7 @@ Wszystkie „dni poślizgu” liczone wyłącznie od 13.04.2026 do 25.10.2026.
 
 - Nie twierdzę, że deweloper porzucił wersję GOG ani że to wina sklepu — bez oficjalnej wypowiedzi przyczyna pozostaje nieznana.
 - Nie łączę zmiany właściciela GOG (29.12.2025) z tą zwłoką; poślizgi zdarzały się już w 2023 r., przed zmianą.
-- Liczby arkusza społecznego cytuję dosłownie: 1172 gry, 1573 problemy, 325 „Missing Updates” — to różne wielkości i nie nazywam ich „liczbą zaniedbanych gier”.
+- Liczby arkusza społecznościowego cytuję dosłownie: 1172 gry, 1573 problemy, 325 „Missing Updates” — to różne wielkości i nie nazywam ich „liczbą zaniedbanych gier”.
 - Darmowa aktualizacja, płatne DLC, multiplayer online i lokalny split-screen to cztery różne rzeczy; nigdzie ich nie mieszam.
 - Preservation Program (2024) dotyczy utrzymywania klasyków — nie jest obietnicą pełnej aktualności całego katalogu.
 </details>

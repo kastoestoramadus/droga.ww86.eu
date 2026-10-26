@@ -156,10 +156,10 @@ hipotezy o przyczynach poślizgu pozostają wyłącznie w sekcji „Czego ten te
 
 - Tytuł kierunkowy PL: „GOG, chcę wam kibicować. Pomóżcie mi" (EN: „GOG, I want to cheer for you.
   Help me do it"); wspólny klucz tłumaczeń: `gog-dome-keeper-updates`.
-- Dowodowy kotwica w tekście widocznym: trzywierszowa tabela stanu (wersja, split-screen, DLC)
+- Dowodowa kotwica w tekście widocznym: trzywierszowa tabela stanu (wersja, split-screen, DLC)
   z dniem obserwacji 25.10.2026 i różnicą 195 dni; pełna tabela dowodów i chronologia trafiają
   do początkowo zwiniętych sekcji `details`.
-- Wizualia: rysunek „Propozycja" — sugerowany obieg czterech komunikatów (parita funkcji → status
+- Wizualia: rysunek „Propozycja" — sugerowany obieg czterech komunikatów (parytet funkcji → status
   i powód poślizgu → data docelowa albo szczere „jeszcze nie wiemy" → powiadomienie o zmianie),
   z podpisem, że to sugestia redakcyjna, a nie opis procesu GOG; do tego tabela „co chciałbym
   wiedzieć / jak to pomaga". Rysunek nie sugeruje żadnej ścieżki przyczynowej do kłopotów finansowych.
