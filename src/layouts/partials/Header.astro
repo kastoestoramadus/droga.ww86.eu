@@ -192,6 +192,20 @@ if (disabledLanguages.includes(lang)) {
   </nav>
 </header>
 
+<noscript>
+  <style is:inline>
+    /* without JS the toggle buttons do nothing: show the menu expanded on small screens, keep hover on large ones */
+    @media (max-width: 63.999rem) {
+      #nav-toggle { display: none; }
+      #nav-menu, .nav-dropdown-list { display: block; }
+    }
+    @media (min-width: 64rem) {
+      .nav-dropdown:hover > .nav-dropdown-list,
+      .nav-dropdown:focus-within > .nav-dropdown-list { visibility: visible; opacity: 1; }
+    }
+  </style>
+</noscript>
+
 <script>
   // Menu and submenu state live in aria-expanded; CSS reads it (safe.css). Escape closes and returns focus.
   // Bound now and again on astro:page-load, because the client router replaces the header on navigation
