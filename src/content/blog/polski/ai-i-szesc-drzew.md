@@ -13,7 +13,7 @@ draft: false
 
 Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, **zgłosiłem sześć drzew do objęcia ochroną jako pomniki przyrody**. AI bardzo pomogło mi przygotowywać maile i przejść od pomysłu do konkretnego działania.
 
-### Co udało mi się zrobić?
+## Co udało mi się zrobić?
 
 - **Zebrałem zdjęcia i własne pomiary sześciu drzew.** Największy obwód wyniósł 360 cm. A jak go zmierzyłem — nie pytajcie. 🙂
 - **17 września 2026 przekazałem do Biura Ochrony Środowiska uporządkowany PDF:** mapę z oznaczeniami D1–D6, tabelę i odpowiadające im fotografie.
@@ -102,7 +102,7 @@ W moim zestawieniu obwody na wysokości 130 cm wynosiły:
 To pomiary własne i propozycje oznaczenia gatunków. D5 i D6 są osobnymi drzewami — ich obwodów nie sumujemy.
 
 
-### Czy wystarczy odpowiednio gruby pień?
+## Czy wystarczy odpowiednio gruby pień?
 
 [Przepisy o kryteriach pomników przyrody](https://eli.gov.pl/api/acts/DU/2017/2300/text.html) przewidują obwód na wysokości 130 cm **albo** wyróżniające walory drzewa. Dla topoli białej próg wynosi 300 cm, a dla pozostałych topoli poza osiką — 350 cm. Dlatego oznaczenie gatunku ma znaczenie, a mniejszego drzewa nie trzeba z góry skreślać.
 
@@ -141,7 +141,7 @@ To moja propozycja, nie opis obowiązujących przepisów. I dopiero punkt wyjśc
 
 Podejście „posadzimy małe, a za 40 lat będzie dobrze” mnie nie przekonuje. Czterdzieści lat to tutaj obraz odsuwania rekompensaty na przyszłość, nie wyliczony czas wzrostu każdego drzewa. Chcę, żebyśmy chronili to, co już mamy, i uwzględniali potrzeby dzisiejszych mieszkańców. Nowe drzewa są potrzebne, ale ich posadzenie nie sprawia, że wieloletnia strata znika.
 
-### Nasadzenia planowane etapami
+## Nasadzenia planowane etapami
 
 Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docelowy układ**, z zapasem na nieprzyjęcie sadzonek i z planem późniejszego przerzedzania. Chodzi mi o wcześniejszą zieleń i mniejsze ryzyko zaczynania od małej sadzonki po każdym ubytku. Końcowy układ może być nieregularny, zależnie od tego, co się przyjmie.
 
