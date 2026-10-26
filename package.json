@@ -7,6 +7,7 @@
   "type": "module",
   "packageManager": "pnpm@11.8.0",
   "scripts": {
+    "audit:editorial": "node scripts/droga-editorial-audit.mjs",
     "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"node scripts/jsonGenerator.js && astro dev\"",
     "build": "node scripts/themeGenerator.js && node scripts/jsonGenerator.js && astro build && node scripts/prefix-build-html.mjs && node scripts/llmsGenerator.js",
     "preview": "astro preview",

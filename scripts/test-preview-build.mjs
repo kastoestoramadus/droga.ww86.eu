@@ -1,5 +1,5 @@
 // Verifies a preview build (SITE_BASE=/preview/pr-7) against the preview contract.
-// Usage: node check-preview-dist.mjs <dist-dir> <base>
+// Usage: node scripts/test-preview-build.mjs <dist-dir> <base>
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, relative } from "node:path";
