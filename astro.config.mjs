@@ -53,6 +53,8 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
       cssVariable: `--font-${key}`,
       provider: fontProviders.google(),
       weights,
+      // Polish needs latin-ext (ą ć ę ł ń ś ź ż); Astro downloads only latin by default
+      subsets: ["latin", "latin-ext"],
       display: "swap",
       fallbacks: [fallback],
     };
