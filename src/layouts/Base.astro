@@ -13,7 +13,7 @@ import {
   type PostSlugIndex,
   type SiteUrlConfig,
 } from "@/lib/drogaSharingMetadata";
-import { getLangFromUrl } from "@/lib/utils/languageParser";
+import { getLangFromUrl, getTranslations } from "@/lib/utils/languageParser";
 import { plainify } from "@/lib/utils/textConverter";
 import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
@@ -48,6 +48,7 @@ const { title, meta_title, description, image, noindex, canonical, lang } =
   Astro.props;
 
 const language = lang || getLangFromUrl(Astro.url);
+const { skip_to_content } = await getTranslations(language);
 
 // every page of a preview build is non-indexable, whatever the page set itself
 const effectiveNoindex = noindex || isPreviewBuild();
@@ -256,13 +257,31 @@ const ogImage = resolveOgImage(image, config.metadata.meta_image, siteUrl);
       )
     }
 
+    <a href="#main-content" class="skip-link">{skip_to_content}</a>
     <Announcement lang={language} client:only="react" />
     <Header />
     <SearchModal lang={language} client:only="react" />
-    <main class="grow" id="main-content">
+    <main class="grow focus:outline-none" id="main-content" tabindex="-1">
       <slot />
     </main>
     <Footer />
     <TwSizeIndicator />
+    <script>
+      // Print fallback for engines without ::details-content (see droga-reading.css): open every closed
+      // optional section for the print job and restore the reader's state afterwards.
+      const openedForPrint = new Set<HTMLDetailsElement>();
+      window.addEventListener("beforeprint", () => {
+        document.querySelectorAll<HTMLDetailsElement>("details:not([open])").forEach((d) => {
+          d.open = true;
+          openedForPrint.add(d);
+        });
+      });
+      window.addEventListener("afterprint", () => {
+        openedForPrint.forEach((d) => {
+          d.open = false;
+        });
+        openedForPrint.clear();
+      });
+    </script>
   </body>
 </html>
