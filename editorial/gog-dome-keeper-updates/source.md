@@ -41,8 +41,10 @@ najnowszy publiczny build (4.2.3) jest starszy niż aktualizacja.
 
 ## Chronologia (skrót; pełna w `data/timeline.csv`)
 
-- 27.09.2022 — premiera Dome Keepera (Steam i GOG).
-- 25.11.2022 — GOG ogranicza systemy do Windows (były też Mac i Linux; tracker GOGDB).
+- 27.09.2022 — premiera Dome Keepera na Steam (karta GOG pokazuje tę datę jako globalną datę premiery).
+- 25.11.2022 — premiera w GOG: `gogReleaseDate` w API GOG, pierwszy build i instalator 0.1.5, tylko Windows
+  (GOGDB: tego dnia systemy na karcie zmieniono z Windows/Mac/Linux na Windows; buildów na Maca
+  ani Linuksa w API GOG nie ma).
 - 07.03.2023 — aktualizacja 2.4 na Steam; na GOG nie ma jej przez tygodnie; 18.03.2023 otwierany
   jest wątek na forum GOG, a 2.04.2023 deweloper Bippinbits tłumaczy: „again and again (…) there are
   new crashes specific to GOG", wrapper „supplied by GOG, but still in beta"; zapowiada, że takie
