@@ -70,3 +70,7 @@
     }
   }
 }
+
+.dark .theme-switcher input:focus-visible + label {
+  outline-color: var(--color-darkmode-primary);
+}
