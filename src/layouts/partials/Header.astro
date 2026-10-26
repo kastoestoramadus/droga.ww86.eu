@@ -104,7 +104,7 @@ if (disabledLanguages.includes(lang)) {
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </button>
-                <ul id={`submenu-list-${menu.name}`} class="nav-dropdown-list hidden lg:invisible lg:absolute lg:block lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100">
+                <ul id={`submenu-list-${menu.name}`} class="nav-dropdown-list hidden lg:invisible lg:absolute lg:block lg:opacity-0">
                   {menu.children?.map((child: any) => (
                     <li class="nav-dropdown-item">
                       <a
@@ -212,10 +212,19 @@ if (disabledLanguages.includes(lang)) {
       );
     });
     document.querySelectorAll(".nav-dropdown").forEach((item) => {
+      const button = item.querySelector("[data-submenu-toggle]");
+      if (!button) return;
+      item.addEventListener("pointerenter", (event) => {
+        if ((event as PointerEvent).pointerType === "mouse" && matchMedia("(min-width: 64rem)").matches) {
+          setExpanded(button, true);
+        }
+      });
+      item.addEventListener("pointerleave", () => {
+        if (!item.contains(document.activeElement)) setExpanded(button, false);
+      });
       item.addEventListener("focusout", (event) => {
         const next = (event as FocusEvent).relatedTarget as Node | null;
-        const button = item.querySelector("[data-submenu-toggle]");
-        if (button && next && !item.contains(next)) setExpanded(button, false);
+        if (next && !item.contains(next)) setExpanded(button, false);
       });
     });
   }
