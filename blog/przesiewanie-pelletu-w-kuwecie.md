@@ -90,13 +90,13 @@ Mam zajawkę permakulturową: wolę rozkład materii na miejscu, bez przekopywan
 
 Nie mam potwierdzenia jego bezpieczeństwa. W odsiewie mogą zostać drobiny kału. Opisana przez [CDC droga przenoszenia toksoplazmozy](https://www.cdc.gov/toxoplasmosis/causes/index.html) dotyczy kału zakażonego kota i skażonej gleby, nie samego moczu. Nie oznacza to, że mój kot jest zakażony lub trawnik skażony. [EPA odradza odchody zwierząt i koci żwirek w domowym kompoście](https://www.epa.gov/recycle/composting-home); samo odsianie trocin nie rozstrzyga tej niepewności.
 
-##### Tags :
+## Tags :
 
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)
 
-##### Share :
+## Share :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)
 -   [](https://twitter.com/intent/tweet/?text=Pellet+w+kuwecie%3A+przesiewanie+na+siatce&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)

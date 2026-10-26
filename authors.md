@@ -9,7 +9,7 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 ![Waldemar Wosiński](/_astro/avatar.DeQDKSwT_1Rjf6j.webp)
 
-#### [Waldemar Wosiński](/authors/waldemar-wosiński)
+## [Waldemar Wosiński](/authors/waldemar-wosiński)
 
 Krótki opis autora, do uzupełnienia.
 

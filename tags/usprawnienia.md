@@ -7,7 +7,7 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Usprawnienia
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)

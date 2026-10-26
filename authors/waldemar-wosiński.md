@@ -13,7 +13,7 @@ Krótki opis autora, do uzupełnienia.
 
 -   [github](https://github.com/kastoestoramadus)
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -23,7 +23,7 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)

@@ -7,7 +7,7 @@ description: "Wszystkie wpisy.
 
 # Wpisy
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -17,7 +17,7 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -27,12 +27,12 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
 
-##### Categories
+## Categories
 
 -   [Przyroda (1)](/categories/przyroda)
 -   [Codzienność (1)](/categories/codzienność)
 
-##### Tags
+## Tags
 
 -   [Drzewa](/tags/drzewa)
 -   [Ai](/tags/ai)

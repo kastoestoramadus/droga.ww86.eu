@@ -26,7 +26,7 @@ Kilka słów o autorze bloga.
 
 ![O mnie](/_astro/image-placeholder.DyBpoAJD_1yh1uJ.webp)
 
-## O mnie
+# O mnie
 
 Tekst do uzupełnienia: kim jestem, czym się zajmuję i o czym tu piszę.
 
@@ -43,7 +43,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 ![Waldemar Wosiński](/_astro/avatar.DeQDKSwT_1Rjf6j.webp)
 
-#### [Waldemar Wosiński](/authors/waldemar-wosiński)
+## [Waldemar Wosiński](/authors/waldemar-wosiński)
 
 Krótki opis autora, do uzupełnienia.
 
@@ -66,7 +66,7 @@ Krótki opis autora, do uzupełnienia.
 
 -   [github](https://github.com/kastoestoramadus)
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -76,7 +76,7 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -97,7 +97,7 @@ Wszystkie wpisy.
 
 # Wpisy
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -107,7 +107,7 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -117,12 +117,12 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 
 [Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
 
-##### Categories
+## Categories
 
 -   [Przyroda (1)](/categories/przyroda)
 -   [Codzienność (1)](/categories/codzienność)
 
-##### Tags
+## Tags
 
 -   [Drzewa](/tags/drzewa)
 -   [Ai](/tags/ai)
@@ -149,7 +149,7 @@ Jak AI pomagało mi pisać do urzędów o ochronie drzew w Ursusie. Historia zg�
 
 Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickiej i Dyrekcyjnej, **zgłosiłem sześć drzew do objęcia ochroną jako pomniki przyrody**. AI bardzo pomogło mi przygotowywać maile i przejść od pomysłu do konkretnego działania.
 
-### Co udało mi się zrobić?
+## Co udało mi się zrobić?
 
 -   **Zebrałem zdjęcia i własne pomiary sześciu drzew.** Największy obwód wyniósł 360 cm. A jak go zmierzyłem — nie pytajcie. 🙂
 -   **17 września 2026 przekazałem do Biura Ochrony Środowiska uporządkowany PDF:** mapę z oznaczeniami D1–D6, tabelę i odpowiadające im fotografie.
@@ -249,7 +249,7 @@ Jak D5
 
 To pomiary własne i propozycje oznaczenia gatunków. D5 i D6 są osobnymi drzewami — ich obwodów nie sumujemy.
 
-### Czy wystarczy odpowiednio gruby pień?
+## Czy wystarczy odpowiednio gruby pień?
 
 [Przepisy o kryteriach pomników przyrody](https://eli.gov.pl/api/acts/DU/2017/2300/text.html) przewidują obwód na wysokości 130 cm **albo** wyróżniające walory drzewa. Dla topoli białej próg wynosi 300 cm, a dla pozostałych topoli poza osiką — 350 cm. Dlatego oznaczenie gatunku ma znaczenie, a mniejszego drzewa nie trzeba z góry skreślać.
 
@@ -279,7 +279,7 @@ To moja propozycja, nie opis obowiązujących przepisów. I dopiero punkt wyjśc
 
 Podejście „posadzimy małe, a za 40 lat będzie dobrze” mnie nie przekonuje. Czterdzieści lat to tutaj obraz odsuwania rekompensaty na przyszłość, nie wyliczony czas wzrostu każdego drzewa. Chcę, żebyśmy chronili to, co już mamy, i uwzględniali potrzeby dzisiejszych mieszkańców. Nowe drzewa są potrzebne, ale ich posadzenie nie sprawia, że wieloletnia strata znika.
 
-### Nasadzenia planowane etapami
+## Nasadzenia planowane etapami
 
 Chciałbym też rozważać w parkowych grupach drzew **gęstszy start niż docelowy układ**, z zapasem na nieprzyjęcie sadzonek i z planem późniejszego przerzedzania. Chodzi mi o wcześniejszą zieleń i mniejsze ryzyko zaczynania od małej sadzonki po każdym ubytku. Końcowy układ może być nieregularny, zależnie od tego, co się przyjmie.
 
@@ -326,14 +326,14 @@ Zagrożenie wycinką: [fakty i dokumenty albo „nie wiem”].
    Nie obiecuj ustanowienia ochrony ani wstrzymania wycinki.
 ```
 
-##### Tags :
+## Tags :
 
 -   [Drzewa](/tags/drzewa)
 -   [AI](/tags/ai)
 -   [Ursus](/tags/ursus)
 -   [Działanie społeczne](/tags/działanie-społeczne)
 
-##### Share :
+## Share :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew)
 -   [](https://twitter.com/intent/tweet/?text=AI+i+sze%C5%9B%C4%87+drzew%3A+od+zajawki+do+zg%C5%82oszenia&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew)
@@ -436,13 +436,13 @@ Mam zajawkę permakulturową: wolę rozkład materii na miejscu, bez przekopywan
 
 Nie mam potwierdzenia jego bezpieczeństwa. W odsiewie mogą zostać drobiny kału. Opisana przez [CDC droga przenoszenia toksoplazmozy](https://www.cdc.gov/toxoplasmosis/causes/index.html) dotyczy kału zakażonego kota i skażonej gleby, nie samego moczu. Nie oznacza to, że mój kot jest zakażony lub trawnik skażony. [EPA odradza odchody zwierząt i koci żwirek w domowym kompoście](https://www.epa.gov/recycle/composting-home); samo odsianie trocin nie rozstrzyga tej niepewności.
 
-##### Tags :
+## Tags :
 
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)
 
-##### Share :
+## Share :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)
 -   [](https://twitter.com/intent/tweet/?text=Pellet+w+kuwecie%3A+przesiewanie+na+siatce&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)
@@ -476,7 +476,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Codzienność
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -497,7 +497,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Przyroda
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -605,7 +605,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Ai
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -626,7 +626,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Drzewa
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -647,7 +647,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Działanie społeczne
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -668,7 +668,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Kot
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -689,7 +689,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Pellet
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)
@@ -710,7 +710,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Ursus
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
@@ -731,7 +731,7 @@ Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Usprawnienia
 
-#### [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Codzienność](/categories/codzienność)

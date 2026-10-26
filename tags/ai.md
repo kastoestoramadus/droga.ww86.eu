@@ -7,7 +7,7 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 # Ai
 
-#### [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
+## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
