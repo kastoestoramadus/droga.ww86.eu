@@ -57,6 +57,9 @@ jobs:
         if: github.event_name != 'pull_request'
         run: node scripts/test-post-links.mjs
 
+      - name: Polish letters inside the web fonts
+        run: node scripts/test-font-coverage.mjs
+
       # the scripts that publish with a write token after the merge: better to find out here that they are broken
       - name: Test the publish script
         run: ./scripts/test-publish-pages

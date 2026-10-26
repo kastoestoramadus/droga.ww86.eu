@@ -1,6 +1,7 @@
 ---
 import config from "@/config/config.json";
 import languages from "@/config/language.json";
+import { isPublished } from "@/lib/publication";
 import { slugify } from "@/lib/utils/textConverter";
 
 import { getCollection } from "astro:content";
@@ -25,8 +26,15 @@ export const getTaxonomy = async (collection: string, name: string) => {
 
   const singlePages = await getCollection(
     "blog",
-    ({ id }: any) => {
-      return id.startsWith(actualCollection) && !id.endsWith("-index");
+    ({ id, data }: any) => {
+      return (
+        id.startsWith(actualCollection) &&
+        !id.endsWith("-index") &&
+        isPublished(data, new Date(), {
+          drafts: process.argv.includes("--buildDrafts"),
+          future: process.argv.includes("--buildFuture"),
+        })
+      );
     }
   );
   const taxonomyPages = singlePages.map((page: any) => page.data[name]);
@@ -61,8 +69,15 @@ export const getAllTaxonomy = async (collection: string, name: string) => {
 
   const singlePages = await getCollection(
     "blog",
-    ({ id }: any) => {
-      return id.startsWith(actualCollection) && !id.endsWith("-index");
+    ({ id, data }: any) => {
+      return (
+        id.startsWith(actualCollection) &&
+        !id.endsWith("-index") &&
+        isPublished(data, new Date(), {
+          drafts: process.argv.includes("--buildDrafts"),
+          future: process.argv.includes("--buildFuture"),
+        })
+      );
     }
   );
   const taxonomyPages = singlePages.map((page: any) => page.data[name]);
