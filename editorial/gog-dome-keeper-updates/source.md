@@ -30,12 +30,15 @@ Różnica: 195 dni od premiery aktualizacji do dnia obserwacji (13.04.2026 → 2
 | Steam: aktualna wersja v5.0.8 (poprawka z 3.09.2026) | [Steam news API](https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1637320&count=40) | oficjalne ogłoszenia | 2026-10-25 |
 | GOG: najnowsza publiczna wersja Windows to 4.2.3, `date_published` 2025-04-08 | [publiczne API buildów GOG](https://content-system.gog.com/products/1635627436/os/windows/builds?generation=2) | bezpośrednia obserwacja | 2026-10-25 |
 | GOG: instalator offline też 4.2.3 (856,7 MB); tylko Windows | [GOGDB](https://www.gogdb.org/product/1635627436) | niezależny tracker (zgodny z API) | 2026-10-25 |
+| GOG: instalator do pobrania to 4.2.3, ale lista zmian na karcie kończy się na 1.9.5 z 09.02.2024 („LUNAR NEW YEAR UPDATE”) — lista zmian nie jest aktualizowana i nie mówi, która wersja jest w sklepie | [API produktu GOG](https://api.gog.com/products/1635627436?expand=downloads,changelog) (pola `downloads.installers[].version` i `changelog`) | bezpośrednia obserwacja | 2026-10-26 |
 | Karta GOG wymienia tylko Single-player (spośród trybów gry) | [karta produktu GOG](https://www.gog.com/en/game/dome_keeper) | bezpośrednia obserwacja | 2026-10-25 |
 | Społecznościowa lista „2nd Class" potwierdza: Steam 5.0 od 13.04.2026, GOG 4.2.3, brak multiplayera i DLC | [arkusz v3](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) (aktualizacja 2026-10-24) | zbiór społecznościowy | 2026-10-25 |
 
 Zastrzeżenia do dowodów: znacznik czasu publikacji builda w API GOG to niekoniecznie moment, w którym
 klient może go pobrać; GOGDB jest trackerem strony trzeciej i może się spóźniać — dlatego liczy się
-zgodność czterech niezależnych dróg (API, tracker, karta sklepu, lista społeczności). Brak wpisu
+zgodność trzech niezależnych dróg co do wersji (API buildów i instalatorów GOG, tracker, lista społeczności);
+karta sklepu potwierdza tylko brak kooperacji, a jej lista zmian kończy się na 1.9.5 (09.02.2024)
+i wersji nie potwierdza. Brak wpisu
 „kooperacja" na karcie GOG sam w sobie niczego nie dowodzi o przyszłych buildach — dowodzi go to, że
 najnowszy publiczny build (4.2.3) jest starszy niż aktualizacja.
 
@@ -52,6 +55,10 @@ najnowszy publiczny build (4.2.3) jest starszy niż aktualizacja.
 - 27.09.2024 — ogłoszenie: milion graczy; multiplayer i modding „to come".
 - 13/14.11.2024 — GOG Preservation Program; zespół GOG przyznaje: „we could have done a much better
   job maintaining the games released on GOG in the past" (o klasykach, nie o nowych grach).
+- 09.02.2024 — 1.9.5 („LUNAR NEW YEAR UPDATE”): ostatni wpis na liście zmian karty GOG (lista nieaktualizowana
+  od tego czasu; GOG wydał później buildy 4.0.4, 4.2.1 i 4.2.3).
+- 19.03.2025 — v4.2.2 na Steam: ostatnie ogłoszenie patcha z linii 4.x (Steam news); do 13.04.2026 GOG nie
+  odstawał od Steam co do wersji.
 - 08.04.2025 — build 4.2.3: ostatnia publiczna wersja w GOG (do dnia obserwacji).
 - 20/21.08.2025 — zapowiedź multiplayera (online i lokalny) z zwiastunem.
 - 29.12.2025 — CD PROJEKT ogłasza sprzedaż 100% udziałów GOG współzałożycielowi Michałowi Kicińskiemu

@@ -38,7 +38,7 @@ In my GOG edition, there is still no way to play together (as of 25 October 2026
 <line x1="695" y1="94" x2="695" y2="106" stroke="currentColor" stroke-width="1.5"/>
 <text x="588" y="118" font-size="13" text-anchor="middle" fill="currentColor" font-weight="700">195 days</text>
 </svg>
-<figcaption>Dome Keeper: shipped versions and one confirmed gap. The dashed line on the GOG track is not a measured duration — it is the absence of a dated event between 08 Apr 2025 and the observation date 25 Oct 2026 (four agreeing sources: the GOG builds API, GOGDB, the store page, the community sheet). The same data is in the table below and in the sources section.</figcaption>
+<figcaption>Dome Keeper: shipped versions and one confirmed gap. The dashed line on the GOG track is not a measured duration — it is the absence of a dated event between 08 Apr 2025 and the observation date 25 Oct 2026 (three agreeing sources: the GOG builds and installers API, GOGDB, the community sheet; the changelog on the store page ends at 1.9.5 of 09 Feb 2024 and is not maintained). The same data is in the table below and in the sources section.</figcaption>
 </figure>
 
 | Feature | Steam | GOG (observed 25 Oct 2026) |
@@ -61,7 +61,7 @@ I bought more than one game on GOG because I believed in this idea. I still valu
 <summary>Sources, dates and method (all retrieved 25 Oct 2026)</summary>
 
 - Free update (co-op, local split-screen, online) launched 13 Apr 2026 on Steam and Xbox: [Raw Fury announcement](https://rawfury.com/dome-keeper-the-lost-keepers-dlc-out-now/). The paid DLC "The Lost Keepers" ($7.99) is a separate, paid product — do not confuse it with the free update.
-- GOG: newest public Windows version 4.2.3, `date_published` 2025-04-08: [GOG builds API](https://content-system.gog.com/products/1635627436/os/windows/builds?generation=2); agreeing with [GOGDB](https://www.gogdb.org/product/1635627436), the [product page](https://www.gog.com/en/game/dome_keeper) (Single-player only) and Dome Keeper's row in the [community sheet](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) (updated 24 Oct 2026).
+- GOG: newest public Windows version 4.2.3, `date_published` 2025-04-08: [GOG builds API](https://content-system.gog.com/products/1635627436/os/windows/builds?generation=2); agreeing with [GOGDB](https://www.gogdb.org/product/1635627436), the [product page](https://www.gog.com/en/game/dome_keeper) (Single-player only) and Dome Keeper's row in the [community sheet](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) (updated 24 Oct 2026). The changelog on the GOG page ends at 1.9.5 of 09 Feb 2024 ("Lunar New Year Update"), but GOG ships the 4.2.3 installer according to the [GOG product API](https://api.gog.com/products/1635627436?expand=downloads,changelog) — it is the changelog that is out of date, not the version.
 - Steam: v5.0.8 (patch 03 Sep 2026) per the [Steam news API](https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1637320&count=40); Shared/Split Screen Co-op categories per [appdetails](https://store.steampowered.com/api/appdetails?appids=1637320&filters=categories).
 - 195 days: from 13 Apr 2026 to 25 Oct 2026. That span only; no other "delay days" are counted.
 - The 2023 case: [GOG forum thread](https://www.gog.com/forum/dome_keeper/update_24_steam_version_20230307_still_not_available/page1), developer post of 02 Apr 2023 (quotes in the original).
