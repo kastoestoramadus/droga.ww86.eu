@@ -55,6 +55,8 @@ Znam też poprzedni przypadek z tej samej gry: w 2023 r. aktualizacja 2.4 na GOG
 
 Dlatego proszę o jedno, dobrze określone: **jasny komunikat statusu**. Czy darmowa aktualizacja z lokalną kooperacją ma trafić do GOG? Jeśli tak — kiedy. Jeśli nie wiadomo — powiedzcie to wprost, tak jak pisaliście w 2024 r. przy Preservation Program: „actions, not just words”.
 
+**Szerszy kontekst.** Dome Keeper nie jest wyjątkiem, tylko jednym wierszem w długiej liście. Gracze od 2018 r. prowadzą na forum GOG wątek [„Games that treat GOG customers as second class citizens v2”](https://www.gog.com/forum/general/games_that_treat_gog_customers_as_second_class_citizens_v2/page1) i [arkusz](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) z grami, którym w GOG czegoś brakuje: w aktualizacji z 24.10.2026 to 1172 gry i 1573 zgłoszone braki, w tym 325 brakujących aktualizacji. To zbiór zgłoszeń społeczności, a nie dowód na intencje GOG — ale warto do niego zajrzeć, zanim uzna się mój przypadek za odosobniony.
+
 Kupiłem w GOG niejedną grę, bo wierzyłem w tę ideę. Ideę nadal cenię. Życzę GOG, żeby znów zasłużyło na moje zaufanie — zaczynając od rzetelnej obsługi tego, co już zostało sprzedane.
 
 <details>

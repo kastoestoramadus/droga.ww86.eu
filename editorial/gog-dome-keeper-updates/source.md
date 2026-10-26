@@ -88,6 +88,14 @@ na zgłoszenia graczy, jedyna reguła dowodowa to prośba o datę najwcześniejs
 samoselekcyjne — gracze zgłaszają to, co ich zaboli. Lista mówi, że problem wygląda
 systemowo; nie mówi, jak wygląda cała oferta sklepu.
 
+Sprawdzone 26.10.2026: wątek [„Games that treat GOG customers as second class citizens v2”](https://www.gog.com/forum/general/games_that_treat_gog_customers_as_second_class_citizens_v2/page1)
+jest publiczny, ma 6651 postów na 444 stronach, pierwszy post omega64 z 23.10.2018 linkuje ten arkusz
+(i osobny arkusz brakujących osiągnięć). Eksport CSV arkusza: komórki „Current total games” 1172,
+„Current total issues” 1573, „Last update” October 24 2026; 325 wierszy ma znacznik w kolumnie
+„Missing Updates” (policzone z eksportu, zgodne z komórką sumy). Wątku na Reddicie, o którym wspomina
+autor, nie zweryfikowano: reddit.com odrzuca nasze zapytania (HTTP 403), a wyszukiwarka nie znalazła
+posta z linkiem do arkusza — link dopiszemy, gdy autor go poda.
+
 ## Porównanie przypadków (pełne dane w `data/comparison-cases.csv`)
 
 Cztery zbadane przypadki pokazują, że „brakująca aktualizacja" to nie jeden rodzaj problemu:

@@ -55,6 +55,8 @@ I also know this game's earlier case: in 2023, Update 2.4 was late on GOG too, a
 
 So I ask for one well-defined thing: **a clear status message**. Is the free update with local co-op coming to GOG? If yes — when. If nobody knows — say so plainly, the way you wrote in 2024 about the Preservation Program: "actions, not just words".
 
+**Broader context.** Dome Keeper is not an exception, just one row in a long list. Since 2018, players have kept a thread on the GOG forum, ["Games that treat GOG customers as second class citizens v2"](https://www.gog.com/forum/general/games_that_treat_gog_customers_as_second_class_citizens_v2/page1), and a [spreadsheet](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) of games that lack something on GOG: as of its 24 Oct 2026 update, 1172 games and 1573 reported gaps, 325 of them missing updates. It is a collection of community reports, not evidence of GOG's intent — but it is worth a look before treating my case as an isolated one.
+
 I bought more than one game on GOG because I believed in this idea. I still value the idea. I sincerely hope GOG earns my confidence again — starting with reliable service for what has already been sold.
 
 <details>
