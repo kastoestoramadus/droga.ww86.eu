@@ -7,6 +7,7 @@ import {
 
 import config from "@/config/config.json";
 import languages from "@/config/language.json";
+import { isPublished } from "@/lib/publication";
 
 export const getSinglePage = async <C extends CollectionKey>(
   collectionName: C,
@@ -38,14 +39,8 @@ export const getSinglePage = async <C extends CollectionKey>(
   const pages: CollectionEntry<C>[] = (await getCollection(
     collectionName as any,
     ({ data, id }: any) => {
-      if (!buildDrafts && (data as any)?.draft) {
+      if (!isPublished(data as any, now, { drafts: buildDrafts, future: buildFuture })) {
         return false;
-      }
-      if (!buildFuture && (data as any)?.date) {
-        const postDate = new Date((data as any).date);
-        if (postDate > now) {
-          return false;
-        }
       }
       return id.startsWith(path) && !id.endsWith("-index");
     }

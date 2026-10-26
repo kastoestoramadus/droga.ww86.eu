@@ -18,7 +18,8 @@
     "remove-multilang": "node scripts/removeMultilang.js && pnpm format",
     "deploy:cf-workers": "npm run build && wrangler deploy",
     "preview:cf-workers": "npm run build && wrangler dev",
-    "test": "vitest run"
+    "test": "vitest run",
+    "check:publication": "node scripts/droga-prepublish.mjs"
   },
   "dependencies": {
     "@astrojs/check": "0.9.9",

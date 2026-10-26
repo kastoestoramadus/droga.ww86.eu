@@ -3,28 +3,9 @@ import languagesJSON from "../../config/language.json";
 import { stripBase, withBase } from "../basePath";
 const { default_language } = config.settings;
 
-const locales: { [key: string]: any } = {};
-
-// Load menu and dictionary dynamically
-languagesJSON.forEach((language) => {
-  const { languageCode } = language;
-  import(`../../config/menu.${languageCode}.json`).then((menu) => {
-    import(`../../i18n/${languageCode}.json`).then((dictionary) => {
-      locales[languageCode] = { ...menu, ...dictionary };
-    });
-  });
-});
-
-// Extract all languages from the locales object
-const languages = Object.keys(locales);
-
-// Export the locales and languages
-export { languages, locales };
-
 export function getLangFromUrl(url: URL): string {
   // Under a preview base (/preview/pr-<N>) the language sits one level deeper; strip
-  // the base first. The code list comes from language.json, not the asynchronously
-  // filled locales object, so detection cannot race the menu imports.
+  // the base first. The code list comes from language.json.
   const [, lang] = stripBase(url.pathname).split("/");
   if (languagesJSON.some((l) => l.languageCode === lang)) {
     return lang;

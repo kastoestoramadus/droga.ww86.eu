@@ -41,6 +41,9 @@ pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
 ./scripts/test-publish-pages    # publish-pages against throwaway local bare repos (no network)
 node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
+node scripts/droga-check-routes.mjs dist # after build: offline internal links, fragments, local assets, language-switcher targets
+node scripts/droga-check-media.mjs # offline media audit and (after build) export hygiene of dist/
+pnpm check:publication # alias of node scripts/droga-prepublish.mjs; offline only, add --live-links for the network phase
 
 # exact PR-preview build (same content under /preview/pr-7/; dist stays at dist/ root,
 # publish-pages copies it into preview/pr-<N>/ on gh-pages):
