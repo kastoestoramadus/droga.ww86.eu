@@ -39,6 +39,7 @@ pnpm check         # generates .json/search.json (the search modal imports it), 
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
+node scripts/test-font-coverage.mjs # after build: every web font covers ą ć ę ł ń ó ś ź ż (subsets in astro.config.mjs)
 ./scripts/test-publish-pages    # publish-pages against throwaway local bare repos (no network)
 node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
 
