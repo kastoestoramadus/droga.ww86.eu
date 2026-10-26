@@ -15,7 +15,7 @@
 }
 
 /* Links: theme primary plus underline, so recognition never relies on
-   colour alone (WCAG 1.4.1). primary on body = 4.84:1 (AA); hover thickens
+   colour alone (WCAG 1.4.1). primary on body = 6.82:1 (AA); hover thickens
    the underline instead of inventing a new colour. */
 .content :where(a):not(.btn) {
   color: var(--color-primary);
@@ -41,7 +41,7 @@
 }
 
 /* Keyboard focus: a visible ring in both modes (WCAG 2.4.7; 2px primary
-   outline clears the 3:1 non-text minimum on body: 4.84:1 light, 10.6:1 dark).
+   outline clears the 3:1 non-text minimum on body: 6.82:1 light, 10.17:1 dark).
    outline does not affect layout. */
 :focus-visible {
   outline: 2px solid var(--color-primary);
