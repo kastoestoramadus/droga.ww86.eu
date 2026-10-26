@@ -13,7 +13,7 @@ draft: false
 
 Beside the former model workshop of the Ursus engineering works, near Cierlicka and Dyrekcyjna streets in Warsaw, **I proposed six trees for protection as natural monuments**. AI helped me a great deal with writing the emails and turning an idea into concrete action.
 
-### What did I manage to do?
+## What did I manage to do?
 
 - **I collected photographs and my own measurements of six trees.** The largest circumference was 360 cm. Don't ask how I measured it. 🙂
 - **On 17 September 2026, I sent the city's Environmental Protection Department (BOŚ) a consolidated PDF:** a map labelled D1–D6, a table and matching photographs.
@@ -102,7 +102,7 @@ My table recorded the following circumferences at 130 cm above ground:
 These are my measurements and provisional identifications. D5 and D6 are separate trees: their circumferences are not added together.
 
 
-### Is a large enough trunk sufficient?
+## Is a large enough trunk sufficient?
 
 [Poland's natural monument criteria](https://eli.gov.pl/api/acts/DU/2017/2300/text.html) provide for a circumference measured at 130 cm **or** outstanding characteristics of the tree. The threshold for white poplar is 300 cm; for other poplars except aspen, it is 350 cm. Species identification therefore matters, and smaller trees need not be dismissed automatically.
 
@@ -141,7 +141,7 @@ This is my proposal, not a statement of current law. It is only a starting point
 
 The idea of “plant small trees and things will be fine in 40 years” does not convince me. Forty years here illustrates postponing compensation, not a calculated growth period for every tree. I want us to protect what we already have and consider today's residents. New trees are needed, but planting them does not make years of loss disappear.
 
-### Planting in planned stages
+## Planting in planned stages
 
 I would also like park tree groups to consider **denser initial planting than the final layout**, allowing for seedlings that do not establish, with later thinning planned from the start. My aim is earlier greenery and less risk of starting again with a small sapling after every loss. The eventual layout may be irregular, depending on which trees establish.
 

@@ -22,10 +22,10 @@ const lang = getLangFromUrl(Astro.url);
       />
     )
   }
-  <h4 class="mb-3">
+  <h2 class="h4 mb-3">
     <a href={slugSelector(`/authors/${data.id.split("/")[1]}`, lang)}>{title}</a
     >
-  </h4>
+  </h2>
   <p class="mb-4">
     {plainify(data.body?.slice(0, 100))}
   </p>
