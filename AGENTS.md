@@ -39,13 +39,13 @@ pnpm check         # generates .json/search.json (the search modal imports it), 
                    # content frontmatter; run before every commit
 pnpm test          # vitest, unit tests of src/lib
 node scripts/test-post-links.mjs # after build: share URLs and translated post destinations
-node scripts/droga-prepublish.mjs # all offline prepublication checks (add --live-links for the network phase)
+node scripts/droga-prepublish.mjs # all offline prepublication checks (add --live-links for the network phase); alias: pnpm check:publication
 pnpm audit:editorial # node scripts/droga-editorial-audit.mjs: editorial layers, links and open markers (add --json)
+node scripts/test-font-coverage.mjs # after build: every web font covers ą ć ę ł ń ó ś ź ż (subsets in astro.config.mjs)
 ./scripts/test-publish-pages    # publish-pages against throwaway local bare repos (no network)
 node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
 node scripts/droga-check-routes.mjs dist # after build: offline internal links, fragments, local assets, language-switcher targets
 node scripts/droga-check-media.mjs # offline media audit and (after build) export hygiene of dist/
-pnpm check:publication # alias of node scripts/droga-prepublish.mjs; offline only, add --live-links for the network phase
 
 # exact PR-preview build (same content under /preview/pr-7/; dist stays at dist/ root,
 # publish-pages copies it into preview/pr-<N>/ on gh-pages):
