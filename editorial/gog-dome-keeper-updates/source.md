@@ -58,7 +58,7 @@ najnowszy publiczny build (4.2.3) jest starszy niż aktualizacja.
 - 10.02.2026 — publiczny playtest multiplayera na Steam (tydzień).
 - 09.03.2026 — data premiery ogłoszona tylko dla „Steam & XBOX".
 - 13.04.2026 — premiera darmowej aktualizacji (kooperacja, w tym lokalny split-screen) i płatnego
-  DLC The Lost Keepers (7,99 €). GOG w ogłoszeniach nie pada.
+  DLC The Lost Keepers (7,99 USD wg ogłoszenia; Steam 26.10.2026: 7,79 €, 27,99 zł). GOG w ogłoszeniach nie pada.
 - 03.09.2026 — Steam ma już v5.0.8.
 - 25.10.2026 — obserwacja: GOG nadal 4.2.3; karta nadal tylko Single-player; 195 dni różnicy.
 
