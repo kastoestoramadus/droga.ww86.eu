@@ -46,12 +46,12 @@ In my GOG edition, there is still no way to play together (as of 25 October 2026
 | Game version (Windows) | v5.0.8 (patch 03 Sep 2026) | 4.2.3 (build from 08 Apr 2025) |
 | Local split-screen | listed in store categories | not listed |
 | Online co-op / PvP | listed | not listed |
-| Paid DLC "The Lost Keepers" (a different thing than the free update) | available (13 Apr 2026, €7.99) | not offered |
+| Paid DLC "The Lost Keepers" (a different thing than the free update) | available (13 Apr 2026, $7.99) | not offered |
 | Offline DRM-free installer | not applicable | yes — and that works |
 
 I am not writing this to bury GOG. Quite the opposite — I want this store to succeed, and that is exactly why I say it plainly: **a good idea does not replace reliable service**. I am not accusing GOG of breaking the law or of promising full catalogue parity — I found no such commitment and make no such claim. What I do have is a reasonable expectation of an honest relationship with the buyer: I know what I bought and what I am missing, and for over half a year the other side has not said a single word of explanation. A customer has the right to understand what they are buying — even when the answer is uncomfortable.
 
-I also know this game's earlier case: in 2023, Update 2.4 was late on GOG too, and the developer (Bippinbits) then explained technical causes — GOG-specific crashes and a GOG-supplied wrapper "still in beta". That patch eventually shipped. Today, with the 2026 delay, I have found no official, dated explanation — from neither the developer nor the store — and I do not guess whose fault it is. That is all I know and all I claim.
+I also know this game's earlier case: in 2023, Update 2.4 was late on GOG too, and the developer (Bippinbits) then explained technical causes — GOG-specific crashes and a GOG-supplied wrapper "still in beta". That patch eventually shipped. Today, with the 2026 delay, I have found no official, dated explanation — from either the developer or the store — and I do not guess whose fault it is. That is all I know and all I claim.
 
 So I ask for one well-defined thing: **a clear status message**. Is the free update with local co-op coming to GOG? If yes — when. If nobody knows — say so plainly, the way you wrote in 2024 about the Preservation Program: "actions, not just words".
 
@@ -60,14 +60,14 @@ I bought more than one game on GOG because I believed in this idea. I still valu
 <details>
 <summary>Sources, dates and method (all retrieved 25 Oct 2026)</summary>
 
-- Free update (co-op, local split-screen, online) launched 13 Apr 2026 on Steam and Xbox: [Raw Fury announcement](https://rawfury.com/dome-keeper-the-lost-keepers-dlc-out-now/). The paid DLC "The Lost Keepers" (€7.99) is a separate, paid product — do not confuse it with the free update.
+- Free update (co-op, local split-screen, online) launched 13 Apr 2026 on Steam and Xbox: [Raw Fury announcement](https://rawfury.com/dome-keeper-the-lost-keepers-dlc-out-now/). The paid DLC "The Lost Keepers" ($7.99) is a separate, paid product — do not confuse it with the free update.
 - GOG: newest public Windows version 4.2.3, `date_published` 2025-04-08: [GOG builds API](https://content-system.gog.com/products/1635627436/os/windows/builds?generation=2); agreeing with [GOGDB](https://www.gogdb.org/product/1635627436), the [product page](https://www.gog.com/en/game/dome_keeper) (Single-player only) and Dome Keeper's row in the [community sheet](https://docs.google.com/spreadsheets/d/14haGnU2kcY6wV6ssBeyW6_mMk6kkVqZX-QvMKlgXGu0/edit) (updated 24 Oct 2026).
 - Steam: v5.0.8 (patch 03 Sep 2026) per the [Steam news API](https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=1637320&count=40); Shared/Split Screen Co-op categories per [appdetails](https://store.steampowered.com/api/appdetails?appids=1637320&filters=categories).
 - 195 days: from 13 Apr 2026 to 25 Oct 2026. That span only; no other "delay days" are counted.
-- The 2023 case: [GOG forum thread](https://www.gog.com/forum/dome_keeper/update_24_steam_version_20230307_still_not_available/page1), developer post of 02 Apr 2023 (quotes in the original, translation mine).
+- The 2023 case: [GOG forum thread](https://www.gog.com/forum/dome_keeper/update_24_steam_version_20230307_still_not_available/page1), developer post of 02 Apr 2023 (quotes in the original).
 - The Preservation Program and the quote "we could have done a much better job maintaining the games released on GOG in the past": [GOG team post of 14 Nov 2024](https://www.gog.com/forum/general/welcome_to_the_gog_preservation_program_making_games_live_forever_d1673/page1) — classic-games context, not a whole-catalogue currency promise.
 - Full source base with the complete chronology: `editorial/gog-dome-keeper-updates/source.md` in this repository.
 
-What is absent here: claims of bankruptcy, resource cuts, the developer abandoning the game, or fault of the new owner (the ownership change of 29 Dec 2025 is a fact, but I do not derive the delay's cause from it — delays already happened in 2023). Also absent: a boycott or any declaration of leaving the store. A missing store-page entry by itself proves nothing about future versions — the evidence is the age of the newest public build. If the update reaches GOG before publication, this text gets a correction with the real length of the wait.
+What is absent here: claims of bankruptcy, resource cuts, the developer abandoning the game, or fault of the new owner (the ownership change of 29 Dec 2025 is a fact, but I do not derive the delay's cause from it — delays already happened in 2023). Also absent: a boycott or any declaration of leaving the store. A missing store-page entry by itself proves nothing about future versions — the evidence is the age of the newest public build. If the update reaches GOG after publication, this text gets a correction with the real length of the wait.
 
 </details>
