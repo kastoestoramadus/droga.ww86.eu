@@ -27,6 +27,10 @@ This file helps language models discover the most useful content on this site.
 
 - [AI i sześć drzew: od zajawki do zgłoszenia](https://droga.ww86.eu/blog/ai-i-szesc-drzew.md): Jak AI pomagało mi pisać do urzędów o ochronie drzew w Ursusie. Historia zgłoszenia, instrukcja dla kolejnych osób i miejsca, gdzie szukać pomocy.
 
+- [GOG, dobra idea to za mało](https://droga.ww86.eu/blog/gog-chce-wam-kibicowac.md): Wspierałem GOG portfelem dla gier bez DRM, ale w Dome Keeperze od 195 dni nie ma aktualizacji z lokalną kooperacją. Dobra misja nie zastępuje rzetelnej obsługi — proszę o jasny status i plan.
+
+- [Wpisy](https://droga.ww86.eu/blog/page/2.md): Wszystkie wpisy.
+
 - [Pellet w kuwecie: przesiewanie na siatce](https://droga.ww86.eu/blog/przesiewanie-pelletu-w-kuwecie.md): Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój sposób na oddzielanie całych granulek od trocin.
 
 
@@ -35,6 +39,8 @@ This file helps language models discover the most useful content on this site.
 - [Categories](https://droga.ww86.eu/categories.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Codzienność](https://droga.ww86.eu/categories/codzienność.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Gry](https://droga.ww86.eu/categories/gry.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Przyroda](https://droga.ww86.eu/categories/przyroda.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
@@ -60,9 +66,17 @@ This file helps language models discover the most useful content on this site.
 
 - [Ai](https://droga.ww86.eu/tags/ai.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
+- [Dome keeper](https://droga.ww86.eu/tags/dome-keeper.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
 - [Drzewa](https://droga.ww86.eu/tags/drzewa.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Działanie społeczne](https://droga.ww86.eu/tags/działanie-społeczne.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Gog](https://droga.ww86.eu/tags/gog.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Gry bez drm](https://droga.ww86.eu/tags/gry-bez-drm.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+
+- [Kooperacja](https://droga.ww86.eu/tags/kooperacja.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Kot](https://droga.ww86.eu/tags/kot.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 

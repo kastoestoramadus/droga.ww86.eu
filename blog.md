@@ -7,6 +7,16 @@ description: "Wszystkie wpisy.
 
 # Wpisy
 
+## [GOG, dobra idea to za mało](/blog/gog-chce-wam-kibicowac)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Gry](/categories/gry)
+-   25 Oct, 2026
+
+Gry bez DRM to idea, którą cenię i którą wspierałem portfelem: kupowałem w GOG świado
+
+[Czytaj dalej](/blog/gog-chce-wam-kibicowac)
+
 ## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
@@ -17,19 +27,10 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
-
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
--   [Codzienność](/categories/codzienność)
--   18 Oct, 2026
-
-Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentonitu\](https://pubs.usgs.gov/
-
-[Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
-
 ## Categories
 
 -   [Przyroda (1)](/categories/przyroda)
+-   [Gry (1)](/categories/gry)
 -   [Codzienność (1)](/categories/codzienność)
 
 ## Tags
@@ -38,6 +39,10 @@ Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentoni
 -   [Ai](/tags/ai)
 -   [Ursus](/tags/ursus)
 -   [Działanie społeczne](/tags/działanie-społeczne)
+-   [Gog](/tags/gog)
+-   [Dome keeper](/tags/dome-keeper)
+-   [Gry bez drm](/tags/gry-bez-drm)
+-   [Kooperacja](/tags/kooperacja)
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)

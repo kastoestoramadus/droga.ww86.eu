@@ -23,6 +23,16 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
+## [GOG, dobra idea to za mało](/blog/gog-chce-wam-kibicowac)
+
+-   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Gry](/categories/gry)
+-   25 Oct, 2026
+
+Gry bez DRM to idea, którą cenię i którą wspierałem portfelem: kupowałem w GOG świado
+
+[Czytaj dalej](/blog/gog-chce-wam-kibicowac)
+
 ## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
 
 -   [Waldemar Wosiński](/authors/waldemar-wosiński)
