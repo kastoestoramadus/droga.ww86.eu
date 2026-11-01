@@ -79,8 +79,16 @@ export default defineConfig({
   integrations: [
     react(),
     // the sitemap lists production pages only; a preview build is noindex and
-    // must not publish its prefixed URLs as discoverable content
-    ...(isPreviewBuild ? [] : [sitemap()]),
+    // must not publish its prefixed URLs as discoverable content. The /pl/
+    // alias routes canonicalise to the root Polish pages, so only those root
+    // pages belong here (English /en/ pages are distinct content, not aliases).
+    ...(isPreviewBuild
+      ? []
+      : [
+          sitemap({
+            filter: (page) => !page.includes(`/${default_language}/`),
+          }),
+        ]),
     AutoImport({
       imports: [
         "@/shortcodes/Button",
