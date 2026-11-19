@@ -125,27 +125,6 @@ const ctaSectionCollection = defineCollection({
   }),
 });
 
-// Testimonials Section collection schema
-const testimonialSectionCollection = defineCollection({
-  loader: glob({
-    pattern: "*/testimonial.{md,mdx}",
-    base: "src/content/sections",
-  }),
-  schema: z.object({
-    enable: z.boolean(),
-    title: z.string(),
-    description: z.string(),
-    testimonials: z.array(
-      z.object({
-        name: z.string(),
-        avatar: z.string(),
-        designation: z.string(),
-        content: z.string(),
-      }),
-    ),
-  }),
-});
-
 // Export collections
 export const collections = {
   // Pages
@@ -158,5 +137,4 @@ export const collections = {
 
   // sections
   ctaSection: ctaSectionCollection,
-  testimonialSection: testimonialSectionCollection,
 };
