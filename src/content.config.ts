@@ -106,25 +106,6 @@ const homepageCollection = defineCollection({
   }),
 });
 
-// Call to Action collection schema
-const ctaSectionCollection = defineCollection({
-  loader: glob({
-    pattern: "*/call-to-action.{md,mdx}",
-    base: "src/content/sections",
-  }),
-  schema: z.object({
-    enable: z.boolean(),
-    title: z.string(),
-    description: z.string(),
-    image: z.string(),
-    button: z.object({
-      enable: z.boolean(),
-      label: z.string(),
-      link: z.string(),
-    }),
-  }),
-});
-
 // Export collections
 export const collections = {
   // Pages
@@ -134,7 +115,4 @@ export const collections = {
   pages: pagesCollection,
   about: aboutCollection,
   contact: contactCollection,
-
-  // sections
-  ctaSection: ctaSectionCollection,
 };
