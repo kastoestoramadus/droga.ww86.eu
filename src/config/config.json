@@ -16,7 +16,8 @@
     "sticky_header": true,
     "theme_switcher": true,
     "default_theme": "system",
-    "pagination": 2,
+    "pagination": 10,
+    "home_posts": 10,
     "summary_length": 200,
     "blog_folder": "blog",
     "default_language": "pl",
@@ -55,6 +56,6 @@
     "generate_llms_full_txt": true,
     "generate_individual_md": true,
     "include": [],
-    "exclude": []
+    "exclude": ["authors", "en/authors", "pl/authors"]
   }
 }

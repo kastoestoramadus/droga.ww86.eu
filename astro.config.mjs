@@ -86,7 +86,9 @@ export default defineConfig({
       ? []
       : [
           sitemap({
-            filter: (page) => !page.includes(`/${default_language}/`),
+            filter: (page) =>
+              !page.includes(`/${default_language}/`) &&
+              !page.includes("/authors"),
           }),
         ]),
     AutoImport({

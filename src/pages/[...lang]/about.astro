@@ -1,7 +1,8 @@
 ---
+import AuthorCard from "@/components/AuthorCard.astro";
 import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
-import { getListPage } from "@/lib/contentParser.astro";
+import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
 import { render } from "astro:content";
 import { supportedLang } from "@/lib/utils/languageParser";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -21,6 +22,7 @@ if (!buildDrafts && about[0].data.draft) {
   return Astro.redirect("/404");
 }
 
+const authors = await getSinglePage("authors", lang);
 const { Content } = await render(about[0]);
 const { title, description, meta_title, image } = about[0].data;
 ---
@@ -51,6 +53,13 @@ const { title, description, meta_title, image } = about[0].data;
           <div class="content">
             <Content />
           </div>
+          {
+            authors.map((author) => (
+              <div class="mt-10">
+                <AuthorCard data={author} />
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>

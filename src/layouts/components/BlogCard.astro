@@ -8,13 +8,13 @@ import {
 } from "@/lib/utils/languageParser";
 import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
 
-import { FaRegFolder, FaRegUserCircle } from "react-icons/fa";
+import { FaRegFolder } from "react-icons/fa";
 import ImageMod from "./ImageMod.astro";
 
 const { summary_length }: { summary_length: number; blog_folder: string } =
   config.settings;
 const { data } = Astro.props;
-const { title, image, date, author, categories } = data.data;
+const { title, image, date, categories } = data.data;
 
 const lang = getLangFromUrl(Astro.url);
 const { read_more } = await getTranslations(lang);
@@ -46,13 +46,6 @@ data.id = modifiedSlug;
     </a>
   </h2>
   <ul class="mb-4">
-    <li class="mr-4 inline-block">
-      <a href={slugSelector(`/authors/${slugify(author)}`, lang)}>
-        <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
-        {humanize(author)}
-      </a>
-    </li>
-
     <li class="mr-4 inline-block">
       <FaRegFolder className={"mr-2 -mt-1 inline-block"} />
       {

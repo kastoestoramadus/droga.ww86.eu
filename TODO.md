@@ -20,7 +20,8 @@ the folder `nontech-blog-obrazki` in the owner's Google Drive (the link is in th
 
 ## Other
 
-- [ ] Real content for both languages: homepage, about, authors, privacy policy (RODO), first real posts; both versions of each.
+- [x] Authors: single author, `/authors` is a noindex redirect stub to `/about` in both languages (task 2111).
+- [ ] Real content for both languages: homepage, about, privacy policy (RODO), first real posts; both versions of each. The author photo and short bio now appear on `/about` but are still placeholder text.
 - [ ] Brand: logo and favicon (still Astroplate's `favicon.png`, og-image); the second accent (terracotta `#b4532f`, dark `#e08a68`) has no slot in `theme.json`.
 - [ ] Remove what we do not use: Swiper, Google Tag Manager, the Astroplate navigation button, the duplicate `/pl/` copy if the theme allows.
 - [ ] Check the Polish UI strings of the theme that are not in `src/i18n` (dates, search, 404, form) in the browser.

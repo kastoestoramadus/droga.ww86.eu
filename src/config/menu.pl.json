@@ -22,10 +22,6 @@
           "url": "/blog"
         },
         {
-          "name": "Autorzy",
-          "url": "/authors"
-        },
-        {
           "name": "Kategorie",
           "url": "/categories"
         },
