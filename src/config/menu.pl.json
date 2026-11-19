@@ -5,37 +5,26 @@
       "url": "/"
     },
     {
+      "name": "Wpisy",
+      "url": "/blog"
+    },
+    {
       "name": "O mnie",
       "url": "/about"
     },
     {
-      "name": "Strony",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Kontakt",
-          "url": "/contact"
-        },
-        {
-          "name": "Blog",
-          "url": "/blog"
-        },
-        {
-          "name": "Kategorie",
-          "url": "/categories"
-        },
-        {
-          "name": "Tagi",
-          "url": "/tags"
-        }
-      ]
+      "name": "Kontakt",
+      "url": "/contact"
     }
   ],
   "footer": [
     {
       "name": "Polityka prywatności",
       "url": "/privacy-policy"
+    },
+    {
+      "name": "RSS",
+      "url": "/rss.xml"
     }
   ]
 }
