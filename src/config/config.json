@@ -37,10 +37,6 @@
     "label": "Github",
     "link": "https://github.com/zeon-studio/astroplate/tree/multilingual"
   },
-  "google_tag_manager": {
-    "enable": false,
-    "gtm_id": "GTM-XXXXXX"
-  },
   "disqus": {
     "enable": false,
     "shortname": "themefisher-template",
