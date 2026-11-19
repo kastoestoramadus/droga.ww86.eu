@@ -16,5 +16,11 @@
   "menu_label": "Menu",
   "skip_to_content": "Przejdź do treści",
   "announcement": "",
-  "all_posts": "Wszystkie wpisy"
+  "all_posts": "Wszystkie wpisy",
+  "categories": "Kategorie",
+  "tags": "Tagi",
+  "tags_label": "Tagi:",
+  "posts": "Wpisy",
+  "breadcrumb_home": "Start",
+  "theme_switcher_label": "przełącznik motywu"
 }

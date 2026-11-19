@@ -1,6 +1,6 @@
 ---
 import { SITE_BASE, stripBase, withBase } from "@/lib/basePath";
-import { supportedLang } from "@/lib/utils/languageParser";
+import { getTranslations, supportedLang } from "@/lib/utils/languageParser";
 import { humanize } from "@/lib/utils/textConverter";
 
 const { className }: { className?: string } = Astro.props;
@@ -16,11 +16,12 @@ if (supportedLang.includes(paths[0])) {
 }
 
 let baseHref = lang ? `/${lang}/` : "/";
+const labels = await getTranslations(lang);
 
 const homeHref = withBase(baseHref, SITE_BASE);
 let parts = [
   {
-    label: "Home",
+    label: labels.breadcrumb_home,
     href: homeHref,
     "aria-label":
       Astro.url.pathname === homeHref || Astro.url.pathname === `${homeHref}/`
@@ -31,9 +32,20 @@ let parts = [
 
 paths.forEach((label: string, i: number) => {
   const href = withBase(`${baseHref}${paths.slice(0, i + 1).join("/")}`, SITE_BASE);
+  const translated =
+    label === "categories"
+      ? labels.categories
+      : label === "tags"
+        ? labels.tags
+        : label === "blog"
+          ? labels.posts
+          : "";
   label !== "page" &&
     parts.push({
-      label: humanize(label.replace(".html", "").replace(/[-_]/g, " ")) || "",
+      label:
+        translated ||
+        humanize(label.replace(".html", "").replace(/[-_]/g, " ")) ||
+        "",
       href,
       "aria-label": Astro.url.pathname === href ? "page" : undefined,
     });

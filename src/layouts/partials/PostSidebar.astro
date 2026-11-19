@@ -1,44 +1,59 @@
 ---
-import { getLangFromUrl, slugSelector } from "@/lib/utils/languageParser";
+import { shouldShowCategories } from "@/lib/taxonomySidebar";
+import {
+  getLangFromUrl,
+  getTranslations,
+  slugSelector,
+} from "@/lib/utils/languageParser";
 import { humanize } from "@/lib/utils/textConverter";
+
+interface Props {
+  tags: string[];
+  categories: string[];
+  allCategories: string[];
+}
 
 const { tags, categories, allCategories } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
+const { categories: categoriesLabel, tags: tagsLabel } =
+  await getTranslations(lang);
+const showCategories = shouldShowCategories(categories);
 ---
 
 <div class="lg:col-4">
-  <!-- categories -->
-  <div class="mb-8">
-    <h2 class="h5 mb-6">Categories</h2>
-    <div class="rounded bg-light p-8 dark:bg-darkmode-light">
-      <ul class="space-y-4">
-        {
-          categories.map((category: any) => {
-            const count = allCategories.filter(
-              (c: any) => c === category
-            ).length;
-            return (
-              <li>
-                <a
-                  class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
-                  href={slugSelector(`/categories/${category}`, lang)}
-                >
-                  {humanize(category)} <span>({count})</span>
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </div>
-  </div>
+  {
+    showCategories && (
+      <div class="mb-8">
+        <h2 class="h5 mb-6">{categoriesLabel}</h2>
+        <div class="rounded bg-light p-8 dark:bg-darkmode-light">
+          <ul class="space-y-4">
+            {categories.map((category: string) => {
+              const count = allCategories.filter(
+                (c: string) => c === category
+              ).length;
+              return (
+                <li>
+                  <a
+                    class="flex justify-between hover:text-primary dark:hover:text-darkmode-primary"
+                    href={slugSelector(`/categories/${category}`, lang)}
+                  >
+                    {humanize(category)} <span>({count})</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    )
+  }
   <!-- tags -->
   <div class="mb-8">
-    <h2 class="h5 mb-6">Tags</h2>
+    <h2 class="h5 mb-6">{tagsLabel}</h2>
     <div class="rounded bg-light p-6 dark:bg-darkmode-light">
       <ul>
         {
-          tags.map((tag: any) => {
+          tags.map((tag: string) => {
             return (
               <li class="inline-block">
                 <a

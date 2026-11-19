@@ -6,7 +6,7 @@ import Disqus from "@/helpers/Disqus";
 import { stripBase } from "@/lib/basePath";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
-import { slugSelector } from "@/lib/utils/languageParser";
+import { getTranslations, slugSelector } from "@/lib/utils/languageParser";
 import similarItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
@@ -21,6 +21,8 @@ let { lang } = Astro.params;
 if (!lang) {
   lang = default_language;
 }
+
+const { tags_label } = await getTranslations(lang);
 
 const posts = await getSinglePage(
   COLLECTION_FOLDER,
@@ -80,7 +82,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
         </div>
         <div class="row items-start justify-between">
           <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
-            <h2 class="h5 mr-3">Tags :</h2>
+            <h2 class="h5 mr-3">{tags_label}</h2>
             <ul>
               {
                 tags.map((tag: string) => (

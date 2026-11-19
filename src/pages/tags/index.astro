@@ -1,6 +1,8 @@
 ---
+import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
+import { getTranslations } from "@/lib/utils/languageParser";
 import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 
@@ -8,10 +10,13 @@ const BLOG_FOLDER = "blog";
 
 const tags = await getTaxonomy(BLOG_FOLDER, "tags");
 const allTags = await getAllTaxonomy(BLOG_FOLDER, "tags");
+const { tags: tagsLabel } = await getTranslations(
+  config.settings.default_language
+);
 ---
 
-<Base title={"Tags"}>
-  <PageHeader title={"Tags"} />
+<Base title={tagsLabel}>
+  <PageHeader title={tagsLabel} />
   <section class="section">
     <div class="container text-center">
       <ul>

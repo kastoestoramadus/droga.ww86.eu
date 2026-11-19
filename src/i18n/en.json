@@ -16,5 +16,11 @@
   "menu_label": "Menu",
   "skip_to_content": "Skip to main content",
   "announcement": "",
-  "all_posts": "All posts"
+  "all_posts": "All posts",
+  "categories": "Categories",
+  "tags": "Tags",
+  "tags_label": "Tags:",
+  "posts": "Posts",
+  "breadcrumb_home": "Home",
+  "theme_switcher_label": "theme switcher"
 }
