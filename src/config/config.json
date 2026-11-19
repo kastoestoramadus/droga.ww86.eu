@@ -32,11 +32,6 @@
     "contact_form_action": "#",
     "copyright": "© 2026 Waldemar Wosiński · [Wszelkie prawa zastrzeżone](/rights-and-reuse) · [All rights reserved](/en/rights-and-reuse)"
   },
-  "navigation_button": {
-    "enable": false,
-    "label": "Github",
-    "link": "https://github.com/zeon-studio/astroplate/tree/multilingual"
-  },
   "disqus": {
     "enable": false,
     "shortname": "themefisher-template",

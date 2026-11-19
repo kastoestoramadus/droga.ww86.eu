@@ -16,10 +16,10 @@ import { IoSearch } from "react-icons/io5";
 let lang = getLangFromUrl(Astro.url);
 const menu = await getTranslations(lang);
 
-const { navigation_button, settings } = config;
+const { settings } = config;
 const { default_language } = config.settings;
 const { pathname } = Astro.url;
-const { get_started, menu_label } = await getTranslations(lang);
+const { menu_label } = await getTranslations(lang);
 
 // Post slugs differ between languages; use the shared key rather than swapping URL prefixes.
 let translationPaths: Record<string, string> = {};
@@ -135,23 +135,6 @@ if (disabledLanguages.includes(lang)) {
           </>
         ))
       }
-      {/* Navigation button */}
-      {
-        navigation_button.enable && (
-          <li class="mt-4 inline-block lg:hidden">
-            <a
-              class="btn btn-outline-primary btn-sm"
-              href={navigation_button.link}
-              target={
-                navigation_button.link.startsWith("http") ? "_blank" : "_self"
-              }
-              rel={navigation_button.link.startsWith("http") ? "noopener" : ""}
-            >
-              {get_started}
-            </a>
-          </li>
-        )
-      }
     </ul>
 
     <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
@@ -173,21 +156,6 @@ if (disabledLanguages.includes(lang)) {
       {/* Language switcher */}
       <LanguageSwitcher client:load lang={lang} pathname={pathname} translationPaths={translationPaths} />
 
-      {/* Navigation button */}
-      {
-        navigation_button.enable && (
-          <a
-            class="btn btn-outline-primary btn-sm hidden lg:inline-block"
-            href={navigation_button.link}
-            target={
-              navigation_button.link.startsWith("http") ? "_blank" : "_self"
-            }
-            rel={navigation_button.link.startsWith("http") ? "noopener" : ""}
-          >
-            {get_started}
-          </a>
-        )
-      }
     </div>
   </nav>
 </header>
