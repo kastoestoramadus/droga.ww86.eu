@@ -34,7 +34,7 @@
   },
   "disqus": {
     "enable": false,
-    "shortname": "themefisher-template",
+    "shortname": "",
     "settings": {}
   },
   "metadata": {
