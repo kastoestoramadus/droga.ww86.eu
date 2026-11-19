@@ -29,7 +29,7 @@ for (const file of htmlFiles(root)) {
   const rel = relative(root, file);
   if (rel.startsWith("en/") || rel.startsWith("preview/")) continue;
   const text = visibleText(readFileSync(file, "utf8"));
-  for (const word of ["Categories", "Tags"]) {
+  for (const word of ["Categories", "Tags", "Share", "Related Posts", "Contact"]) {
     if (new RegExp(`\\b${word}\\b`).test(text)) {
       problems.push(`${rel}: visible English "${word}"`);
     }

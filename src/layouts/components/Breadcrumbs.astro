@@ -39,7 +39,9 @@ paths.forEach((label: string, i: number) => {
         ? labels.tags
         : label === "blog"
           ? labels.posts
-          : "";
+          : label === "contact"
+            ? labels.contact
+            : "";
   label !== "page" &&
     parts.push({
       label:

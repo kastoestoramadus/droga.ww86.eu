@@ -20,6 +20,9 @@
   "categories": "Kategorie",
   "tags": "Tagi",
   "tags_label": "Tagi:",
+  "share_label": "Udostępnij",
+  "related_posts_label": "Powiązane wpisy",
+  "contact": "Kontakt",
   "posts": "Wpisy",
   "breadcrumb_home": "Start",
   "theme_switcher_label": "przełącznik motywu"

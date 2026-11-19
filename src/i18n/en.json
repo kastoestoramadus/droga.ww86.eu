@@ -20,6 +20,9 @@
   "categories": "Categories",
   "tags": "Tags",
   "tags_label": "Tags:",
+  "share_label": "Share",
+  "related_posts_label": "Related Posts",
+  "contact": "Contact",
   "posts": "Posts",
   "breadcrumb_home": "Home",
   "theme_switcher_label": "theme switcher"
