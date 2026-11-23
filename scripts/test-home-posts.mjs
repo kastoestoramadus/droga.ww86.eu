@@ -68,6 +68,8 @@ for (const [file, prefix, lang, label] of [
     `${file} still contains testimonial/CTA markup`,
   );
   check(!html.includes("/authors/"), `${file} still links to /authors/`);
+  // The 1200x380 banner pushed the first post title below the fold of a 1366x768 screen (measured 771 px).
+  check(!html.includes('alt="banner"'), `${file} still shows the banner image above the posts`);
   const allPosts = posts.filter((p) => p.lang === lang).length;
   if (allPosts > homePosts) {
     check(
