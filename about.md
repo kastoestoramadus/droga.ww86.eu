@@ -10,3 +10,11 @@ description: "Kilka słów o autorze bloga.
 # O mnie
 
 Tekst do uzupełnienia: kim jestem, czym się zajmuję i o czym tu piszę.
+
+![Waldemar Wosiński](/_astro/avatar.DeQDKSwT_1Rjf6j.webp)
+
+## Waldemar Wosiński
+
+Krótki opis autora, do uzupełnienia.
+
+-   [github](https://github.com/kastoestoramadus)

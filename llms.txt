@@ -14,13 +14,6 @@ This file helps language models discover the most useful content on this site.
 - [O mnie](https://droga.ww86.eu/about.md): Kilka słów o autorze bloga.
 
 
-## Authors
-
-- [Autorzy](https://droga.ww86.eu/authors.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
-
-- [Waldemar Wosiński](https://droga.ww86.eu/authors/waldemar-wosiński.md): Autor bloga.
-
-
 ## Blog
 
 - [Wpisy](https://droga.ww86.eu/blog.md): Wszystkie wpisy.
@@ -29,14 +22,12 @@ This file helps language models discover the most useful content on this site.
 
 - [GOG, dobra idea to za mało](https://droga.ww86.eu/blog/gog-chce-wam-kibicowac.md): Wspierałem GOG portfelem dla gier bez DRM, ale w Dome Keeperze od 195 dni nie ma aktualizacji z lokalną kooperacją. Dobra misja nie zastępuje rzetelnej obsługi — proszę o jasny status i plan.
 
-- [Wpisy](https://droga.ww86.eu/blog/page/2.md): Wszystkie wpisy.
-
 - [Pellet w kuwecie: przesiewanie na siatce](https://droga.ww86.eu/blog/przesiewanie-pelletu-w-kuwecie.md): Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój sposób na oddzielanie całych granulek od trocin.
 
 
 ## Categories
 
-- [Categories](https://droga.ww86.eu/categories.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+- [Kategorie](https://droga.ww86.eu/categories.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Codzienność](https://droga.ww86.eu/categories/codzienność.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
@@ -62,7 +53,7 @@ This file helps language models discover the most useful content on this site.
 
 ## Tags
 
-- [Tags](https://droga.ww86.eu/tags.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
+- [Tagi](https://droga.ww86.eu/tags.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 - [Ai](https://droga.ww86.eu/tags/ai.md): Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 

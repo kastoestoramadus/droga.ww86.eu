@@ -7,7 +7,7 @@ description: "Wspierałem GOG portfelem dla gier bez DRM, ale w Dome Keeperze od
 
 # GOG, dobra idea to za mało
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Waldemar Wosiński](/about)
 -   [Gry](/categories/gry)
 -   25 Oct, 2026
 
@@ -75,18 +75,18 @@ Kupiłem w GOG niejedną grę, bo wierzyłem w tę ideę. Ideę nadal cenię. Ż
 
 Czego tu nie ma: zarzutów o bankructwo, cięcia zasobów, porzucenia gry przez dewelopera ani winy nowego właściciela (zmiana właściciela z 29.12.2025 jest faktem, ale przyczyny poślizgu z niej nie wyprowadzam — poślizgi zdarzały się już w 2023 r.). Nie ma też bojkotu ani deklaracji odejścia od sklepu. Brak wpisu na karcie GOG sam nie dowodzi niczego o przyszłych wersjach — dowodem jest wiek najnowszego publicznego builda. Jeśli aktualizacja trafi do GOG po publikacji, ten tekst dostanie sprostowanie z rzeczywistą długością oczekiwania.
 
-## Tags :
+## Tagi:
 
 -   [GOG](/tags/gog)
 -   [Dome Keeper](/tags/dome-keeper)
 -   [Gry bez DRM](/tags/gry-bez-drm)
 -   [Kooperacja](/tags/kooperacja)
 
-## Share :
+## Udostępnij :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fgog-chce-wam-kibicowac)
 -   [](https://twitter.com/intent/tweet/?text=GOG%2C+dobra+idea+to+za+ma%C5%82o&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fgog-chce-wam-kibicowac)
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fgog-chce-wam-kibicowac&title=GOG%2C+dobra+idea+to+za+ma%C5%82o&summary=Wspiera%C5%82em+GOG+portfelem+dla+gier+bez+DRM%2C+ale+w+Dome+Keeperze+od+195+dni+nie+ma+aktualizacji+z+lokaln%C4%85+kooperacj%C4%85.+Dobra+misja+nie+zast%C4%99puje+rzetelnej+obs%C5%82ugi+%E2%80%94+prosz%C4%99+o+jasny+status+i+plan.&source=https%3A%2F%2Fdroga.ww86.eu)
 -   [](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fgog-chce-wam-kibicowac&media=&description=Wspiera%C5%82em+GOG+portfelem+dla+gier+bez+DRM%2C+ale+w+Dome+Keeperze+od+195+dni+nie+ma+aktualizacji+z+lokaln%C4%85+kooperacj%C4%85.+Dobra+misja+nie+zast%C4%99puje+rzetelnej+obs%C5%82ugi+%E2%80%94+prosz%C4%99+o+jasny+status+i+plan.)
 
-## Related Posts
+## Powiązane wpisy

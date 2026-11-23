@@ -7,7 +7,7 @@ description: "Jak AI pomagało mi pisać do urzędów o ochronie drzew w Ursusie
 
 # AI i sześć drzew: od zajawki do zgłoszenia
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Waldemar Wosiński](/about)
 -   [Przyroda](/categories/przyroda)
 -   18 Oct, 2026
 
@@ -190,18 +190,18 @@ Zagrożenie wycinką: [fakty i dokumenty albo „nie wiem”].
    Nie obiecuj ustanowienia ochrony ani wstrzymania wycinki.
 ```
 
-## Tags :
+## Tagi:
 
 -   [Drzewa](/tags/drzewa)
 -   [AI](/tags/ai)
 -   [Ursus](/tags/ursus)
 -   [Działanie społeczne](/tags/działanie-społeczne)
 
-## Share :
+## Udostępnij :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew)
 -   [](https://twitter.com/intent/tweet/?text=AI+i+sze%C5%9B%C4%87+drzew%3A+od+zajawki+do+zg%C5%82oszenia&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew)
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew&title=AI+i+sze%C5%9B%C4%87+drzew%3A+od+zajawki+do+zg%C5%82oszenia&summary=Jak+AI+pomaga%C5%82o+mi+pisa%C4%87+do+urz%C4%99d%C3%B3w+o+ochronie+drzew+w+Ursusie.+Historia+zg%C5%82oszenia%2C+instrukcja+dla+kolejnych+os%C3%B3b+i+miejsca%2C+gdzie+szuka%C4%87+pomocy.&source=https%3A%2F%2Fdroga.ww86.eu)
 -   [](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fai-i-szesc-drzew&media=&description=Jak+AI+pomaga%C5%82o+mi+pisa%C4%87+do+urz%C4%99d%C3%B3w+o+ochronie+drzew+w+Ursusie.+Historia+zg%C5%82oszenia%2C+instrukcja+dla+kolejnych+os%C3%B3b+i+miejsca%2C+gdzie+szuka%C4%87+pomocy.)
 
-## Related Posts
+## Powiązane wpisy

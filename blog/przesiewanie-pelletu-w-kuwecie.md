@@ -7,7 +7,7 @@ description: "Dwie zwykłe kuwety, dodatkowy pojemnik i siatka jako sito. Mój s
 
 # Pellet w kuwecie: przesiewanie na siatce
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
+-   [Waldemar Wosiński](/about)
 -   [Codzienność](/categories/codzienność)
 -   18 Oct, 2026
 
@@ -90,17 +90,17 @@ Mam zajawkę permakulturową: wolę rozkład materii na miejscu, bez przekopywan
 
 Nie mam potwierdzenia jego bezpieczeństwa. W odsiewie mogą zostać drobiny kału. Opisana przez [CDC droga przenoszenia toksoplazmozy](https://www.cdc.gov/toxoplasmosis/causes/index.html) dotyczy kału zakażonego kota i skażonej gleby, nie samego moczu. Nie oznacza to, że mój kot jest zakażony lub trawnik skażony. [EPA odradza odchody zwierząt i koci żwirek w domowym kompoście](https://www.epa.gov/recycle/composting-home); samo odsianie trocin nie rozstrzyga tej niepewności.
 
-## Tags :
+## Tagi:
 
 -   [Kot](/tags/kot)
 -   [Pellet](/tags/pellet)
 -   [Usprawnienia](/tags/usprawnienia)
 
-## Share :
+## Udostępnij :
 
 -   [](https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)
 -   [](https://twitter.com/intent/tweet/?text=Pellet+w+kuwecie%3A+przesiewanie+na+siatce&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie)
 -   [](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie&title=Pellet+w+kuwecie%3A+przesiewanie+na+siatce&summary=Dwie+zwyk%C5%82e+kuwety%2C+dodatkowy+pojemnik+i+siatka+jako+sito.+M%C3%B3j+spos%C3%B3b+na+oddzielanie+ca%C5%82ych+granulek+od+trocin.&source=https%3A%2F%2Fdroga.ww86.eu)
 -   [](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fdroga.ww86.eu%2Fblog%2Fprzesiewanie-pelletu-w-kuwecie&media=&description=Dwie+zwyk%C5%82e+kuwety%2C+dodatkowy+pojemnik+i+siatka+jako+sito.+M%C3%B3j+spos%C3%B3b+na+oddzielanie+ca%C5%82ych+granulek+od+trocin.)
 
-## Related Posts
+## Powiązane wpisy

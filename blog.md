@@ -9,7 +9,6 @@ description: "Wszystkie wpisy.
 
 ## [GOG, dobra idea to za mało](/blog/gog-chce-wam-kibicowac)
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Gry](/categories/gry)
 -   25 Oct, 2026
 
@@ -19,7 +18,6 @@ Gry bez DRM to idea, którą cenię i którą wspierałem portfelem: kupowałem 
 
 ## [AI i sześć drzew: od zajawki do zgłoszenia](/blog/ai-i-szesc-drzew)
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Przyroda](/categories/przyroda)
 -   18 Oct, 2026
 
@@ -27,13 +25,22 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 [Czytaj dalej](/blog/ai-i-szesc-drzew)
 
-## Categories
+## [Pellet w kuwecie: przesiewanie na siatce](/blog/przesiewanie-pelletu-w-kuwecie)
+
+-   [Codzienność](/categories/codzienność)
+-   18 Oct, 2026
+
+Zależało mi na niskiej cenie i surowcu drzewnym zamiast \[wydobywanego bentonitu\](https://pubs.usgs.gov/
+
+[Czytaj dalej](/blog/przesiewanie-pelletu-w-kuwecie)
+
+## Kategorie
 
 -   [Przyroda (1)](/categories/przyroda)
 -   [Gry (1)](/categories/gry)
 -   [Codzienność (1)](/categories/codzienność)
 
-## Tags
+## Tagi
 
 -   [Drzewa](/tags/drzewa)
 -   [Ai](/tags/ai)

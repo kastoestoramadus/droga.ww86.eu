@@ -9,7 +9,6 @@ description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 
 ## [GOG, dobra idea to za mało](/blog/gog-chce-wam-kibicowac)
 
--   [Waldemar Wosiński](/authors/waldemar-wosiński)
 -   [Gry](/categories/gry)
 -   25 Oct, 2026
 

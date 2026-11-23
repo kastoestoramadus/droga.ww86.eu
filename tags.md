@@ -1,11 +1,11 @@
 ---
-title: "Tags"
+title: "Tagi"
 url: "https://droga.ww86.eu/tags"
 description: "Droga: notatki o ludziach, zmianie i tym, co robimy razem.
 "
 ---
 
-# Tags
+# Tagi
 
 -   [Drzewa 1](/tags/drzewa)
 -   [Ai 1](/tags/ai)
