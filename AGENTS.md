@@ -9,7 +9,8 @@ A non-technical blog (coaching, social activism, personal writing) in Polish. St
 no database. Chosen over a hosted platform because the owner wants a static site with small JS extras and
 full ownership of the content.
 
-The homepage (`/` and `/en/`) is a short "Ślad" banner followed by the newest `settings.home_posts` posts
+The homepage (`/` and `/en/`) is the title and one-line intro (no banner image: it pushed the first post below the
+fold of a 1366x768 screen; `banner.image` stays in the schema, unused) followed by the newest `settings.home_posts` posts
 (reused `BlogCard`, drafts and future posts excluded as on `/blog`), with an "all posts" link when more exist.
 `/blog` is the full archive (`settings.pagination`). There is a single author: the author name on a post links
 to `/about`; `/authors` and `/authors/<slug>` are noindex stubs that redirect to the about page in both languages

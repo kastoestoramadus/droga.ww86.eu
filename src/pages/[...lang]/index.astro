@@ -1,6 +1,5 @@
 ---
 import BlogCard from "@/components/BlogCard.astro";
-import ImageMod from "@/components/ImageMod.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
@@ -48,20 +47,6 @@ const { all_posts } = await getTranslations(uiLang);
           />
           <p set:html={markdownify(banner.content)} class="mb-6" />
         </div>
-        {
-          banner.image && (
-            <div class="col-12">
-              <ImageMod
-                src={banner.image}
-                height={380}
-                width={1200}
-                alt="banner"
-                format="webp"
-                class="mx-auto w-full"
-              />
-            </div>
-          )
-        }
       </div>
     </div>
   </section>
