@@ -2,7 +2,11 @@
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getAllTaxonomy, getTaxonomy } from "@/lib/taxonomyParser.astro";
-import { slugSelector, supportedLang } from "@/lib/utils/languageParser";
+import {
+  getTranslations,
+  slugSelector,
+  supportedLang,
+} from "@/lib/utils/languageParser";
 import { humanize } from "@/lib/utils/textConverter";
 import PageHeader from "@/partials/PageHeader.astro";
 
@@ -23,10 +27,11 @@ if (!lang) {
 const langCollection = lang;
 const categories = await getTaxonomy(langCollection, "categories");
 const allCategories = await getAllTaxonomy(langCollection, "categories");
+const { categories: categoriesLabel } = await getTranslations(lang);
 ---
 
-<Base title={"Categories"}>
-  <PageHeader title={"Categories"} />
+<Base title={categoriesLabel}>
+  <PageHeader title={categoriesLabel} />
   <section class="section">
     <div class="container text-center">
       <ul>

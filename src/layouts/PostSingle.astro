@@ -6,7 +6,7 @@ import Disqus from "@/helpers/Disqus";
 import { stripBase } from "@/lib/basePath";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
-import { slugSelector } from "@/lib/utils/languageParser";
+import { getTranslations, slugSelector } from "@/lib/utils/languageParser";
 import similarItems from "@/lib/utils/similarItems";
 import { humanize, markdownify, slugify } from "@/lib/utils/textConverter";
 import { render } from "astro:content";
@@ -21,6 +21,9 @@ let { lang } = Astro.params;
 if (!lang) {
   lang = default_language;
 }
+
+const { tags_label, share_label, related_posts_label } =
+  await getTranslations(lang);
 
 const posts = await getSinglePage(
   COLLECTION_FOLDER,
@@ -52,7 +55,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
         <h1 set:html={markdownify(title)} class="h2 mb-4" />
         <ul class="mb-4">
           <li class="mr-4 inline-block">
-            <a href={slugSelector(`/authors/${slugify(author)}`, lang)}>
+            <a href={slugSelector("/about", lang)}>
               <FaRegUserCircle className={"mr-2 -mt-1 inline-block"} />
               {humanize(author)}
             </a>
@@ -80,7 +83,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
         </div>
         <div class="row items-start justify-between">
           <div class="mb-10 flex items-center lg:col-5 lg:mb-0">
-            <h2 class="h5 mr-3">Tags :</h2>
+            <h2 class="h5 mr-3">{tags_label}</h2>
             <ul>
               {
                 tags.map((tag: string) => (
@@ -97,7 +100,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
             </ul>
           </div>
           <div class="flex items-center lg:col-4">
-            <h2 class="h5 mr-3">Share :</h2>
+            <h2 class="h5 mr-3">{share_label} :</h2>
             <Share
               className="social-icons"
               title={title}
@@ -113,7 +116,7 @@ const { title, description, author, categories, image, date, tags } = post.data;
 
     <!-- Related posts -->
     <div class="section pb-0">
-      <h2 class="h3 mb-12 text-center">Related Posts</h2>
+      <h2 class="h3 mb-12 text-center">{related_posts_label}</h2>
       <div class="row justify-center">
         {
           similarPosts.map((post) => (

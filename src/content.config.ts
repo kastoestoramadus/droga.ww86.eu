@@ -21,7 +21,7 @@ const blogCollection = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date().optional(),
     image: z.string().optional(),
-    author: z.string().default("Admin"),
+    author: z.string().default("Waldemar Wosiński"),
     // shared by the versions of one post in all languages; optional only because -index.md lives in the same
     // collection, src/lib/translations.test.ts requires it on every post
     translationKey: z.string().optional(),
@@ -106,46 +106,6 @@ const homepageCollection = defineCollection({
   }),
 });
 
-// Call to Action collection schema
-const ctaSectionCollection = defineCollection({
-  loader: glob({
-    pattern: "*/call-to-action.{md,mdx}",
-    base: "src/content/sections",
-  }),
-  schema: z.object({
-    enable: z.boolean(),
-    title: z.string(),
-    description: z.string(),
-    image: z.string(),
-    button: z.object({
-      enable: z.boolean(),
-      label: z.string(),
-      link: z.string(),
-    }),
-  }),
-});
-
-// Testimonials Section collection schema
-const testimonialSectionCollection = defineCollection({
-  loader: glob({
-    pattern: "*/testimonial.{md,mdx}",
-    base: "src/content/sections",
-  }),
-  schema: z.object({
-    enable: z.boolean(),
-    title: z.string(),
-    description: z.string(),
-    testimonials: z.array(
-      z.object({
-        name: z.string(),
-        avatar: z.string(),
-        designation: z.string(),
-        content: z.string(),
-      }),
-    ),
-  }),
-});
-
 // Export collections
 export const collections = {
   // Pages
@@ -155,8 +115,4 @@ export const collections = {
   pages: pagesCollection,
   about: aboutCollection,
   contact: contactCollection,
-
-  // sections
-  ctaSection: ctaSectionCollection,
-  testimonialSection: testimonialSectionCollection,
 };

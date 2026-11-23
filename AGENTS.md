@@ -9,6 +9,15 @@ A non-technical blog (coaching, social activism, personal writing) in Polish. St
 no database. Chosen over a hosted platform because the owner wants a static site with small JS extras and
 full ownership of the content.
 
+The homepage (`/` and `/en/`) is the title and one-line intro (no banner image: it pushed the first post below the
+fold of a 1366x768 screen; `banner.image` stays in the schema, unused) followed by the newest `settings.home_posts` posts
+(reused `BlogCard`, drafts and future posts excluded as on `/blog`), with an "all posts" link when more exist.
+`/blog` is the full archive (`settings.pagination`). There is a single author: the author name on a post links
+to `/about`; `/authors` and `/authors/<slug>` are noindex stubs that redirect to the about page in both languages
+and stay out of the sitemap, `llms.txt` and the search index. The main menu is flat in both languages
+(Start/Wpisy/O mnie/Kontakt, Home/Posts/About/Contact); the footer links the feed of the current language.
+The post sidebar shows the categories box only when a language has at least two categories.
+
 **Public repository, public text.** Treat every line here, in commits and in TODO.md as public. The owner is
 openly an IT engineer, so linking this blog with https://ww86.eu and the tech blog is fine. Do not mention,
 link or hint at the owner's other private projects, and do not add analytics, comment systems or social handles
@@ -46,6 +55,8 @@ node scripts/test-font-coverage.mjs # after build: every web font covers ą ć �
 node scripts/test-workflow-trust.mjs # static trust checks of .github/workflows/deploy.yml
 node scripts/droga-check-routes.mjs dist # after build: offline internal links, fragments, local assets, language-switcher targets
 node scripts/droga-check-media.mjs # offline media audit and (after build) export hygiene of dist/
+node scripts/test-home-posts.mjs # after build: homepage shows the newest posts, author stubs redirect, no /authors in indexes
+node scripts/test-flat-nav-pages.mjs dist # after build: no English sidebar/taxonomy headings on PL pages, footer feeds linked
 
 # exact PR-preview build (same content under /preview/pr-7/; dist stays at dist/ root,
 # publish-pages copies it into preview/pr-<N>/ on gh-pages):
@@ -114,11 +125,12 @@ The build also writes a copy of the Polish site under `/pl/`.
 differ so that Polish URLs stay Polish). `src/lib/translations.ts` finds posts without a key, a key used twice in one
 language and a key missing in a language; `pnpm test` fails on any of them, and also when a language lacks its
 dictionary or menu, or when a dictionary has other keys than the English one. The key is optional in the zod schema
-only because `-index.md` shares the blog collection. Still shipped and unused: Google Tag Manager, Swiper,
-`remove-multilang`/`remove-darkmode` scripts, the logo and texts of Astroplate in `config.json`.
+only because `-index.md` shares the blog collection. Still shipped and unused: the
+`remove-multilang`/`remove-darkmode` scripts and Astroplate's logo and texts in `config.json`. Google Tag Manager,
+Swiper, the navigation button, Testimonial and CallToAction were removed in task 2112.
 
-Disqus is **disabled** in `src/config/config.json` (`disqus.enable: false`): the theme's shortname belongs to its
-authors. Enable it only with our own shortname.
+Disqus is **disabled** in `src/config/config.json` (`disqus.enable: false`) and its placeholder shortname was
+cleared: the theme's shortname belongs to its authors. Enable it only with our own shortname.
 
 ## Comments
 

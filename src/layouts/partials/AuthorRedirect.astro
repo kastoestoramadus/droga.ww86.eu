@@ -1,0 +1,38 @@
+---
+import config from "@/config/config.json";
+import { withBase } from "@/lib/basePath";
+import { canonicalUrl, type SiteUrlConfig } from "@/lib/drogaSharingMetadata";
+
+interface Props {
+  lang: string;
+  target: string;
+  title: string;
+}
+
+const { lang, target, title } = Astro.props;
+
+const site: SiteUrlConfig = {
+  baseUrl: config.site.base_url,
+  basePath: config.site.base_path,
+  defaultLanguage: config.settings.default_language,
+  defaultLanguageInSubdir: config.settings.default_language_in_subdir,
+  trailingSlash: config.site.trailing_slash,
+};
+
+const href = withBase(target);
+const canonical = canonicalUrl(site, target);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0; url=${href}`} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <p><a href={href}>{title}</a></p>
+  </body>
+</html>
