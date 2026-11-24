@@ -30,7 +30,7 @@
     tej działki — baza „Chronologia" (tam też: zezwolenie z 2025-07-15 dotyczyło innego drzewa).
   - Stan na 2026-10-18: w przejrzanej korespondencji brak uchwały ani zakończenia procedury —
     baza „Chronologia", status na dzień przeglądu.
-  - Podziękowanie Ewelinie Wiącek-Piechowicz (BOŚ) — upoważnione przez autora, z zakresem i
+  - Podziękowanie Ewelinie W. (BOŚ) — upoważnione przez autora, z zakresem i
     granicami w bazie („Układ redakcyjny i podziękowanie").
   - Źródła zewnętrzne (warszawa19115, rozporządzenie DU 2017/2300, ustawa DU 2026/1315, standard
     ZZW 2025, ZZW Drzewa, FER, Osprey, Otodom/Heksagon 2022, Forest Research, Zielony Ursus) —
