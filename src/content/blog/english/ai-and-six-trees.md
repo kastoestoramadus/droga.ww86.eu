@@ -21,7 +21,7 @@ Beside the former model workshop of the Ursus engineering works, near Cierlicka 
 
 **A concrete correspondence reference: WOU.1331.284.2026** — the reference of the Mazovian regional heritage conservator's reply of 21 September identifying the competent authority. I submitted the natural monument documentation to the city's BOŚ. The correspondence reviewed as of 18 October does not yet confirm designation.
 
-**Thank you to Ewelina Wiącek-Piechowicz of the Environmental Protection Department for her patience and specific guidance on the information and attachments required.** Her advice helped me assemble a coherent package.
+**Thank you to Ewelina W. of the Environmental Protection Department for her patience and specific guidance on the information and attachments required.** Her advice helped me assemble a coherent package.
 
 For me, this matters doubly in Ursus: green space is scarce, and buildings are particularly densely packed on my estate. The [2022 ranking](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) already placed Ursus among Warsaw's least green districts. I want to preserve large trees rather than postpone compensation for decades.
 

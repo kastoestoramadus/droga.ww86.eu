@@ -21,7 +21,7 @@ Przy dawnej modelarni Zakładów Mechanicznych „Ursus”, w rejonie Cierlickie
 
 **Konkretny ślad korespondencji: WOU.1331.284.2026** — znak odpowiedzi Mazowieckiego Wojewódzkiego Konserwatora Zabytków z 21 września, wskazującej właściwy urząd. Dokumentację zgłoszenia pomnikowego przekazałem do miejskiego BOŚ. Na 18 października w przejrzanej korespondencji nie ma jeszcze potwierdzenia ustanowienia pomnika.
 
-**Dziękuję pani Ewelinie Wiącek-Piechowicz z Biura Ochrony Środowiska za cierpliwość i konkretne wskazówki, jakie dane oraz załączniki są potrzebne.** Pomogły mi doprowadzić dokumentację do spójnej postaci.
+**Dziękuję pani Ewelinie W. z Biura Ochrony Środowiska za cierpliwość i konkretne wskazówki, jakie dane oraz załączniki są potrzebne.** Pomogły mi doprowadzić dokumentację do spójnej postaci.
 
 W Ursusie to dla mnie podwójnie ważne: zieleni jest mało, a na moim osiedlu zabudowa jest szczególnie gęsta. Już [ranking z 2022 roku](https://media.otodom.pl/ktore-dzielnice-warszawy-krakowa-i-poznania-sa-najbardziej-zielone-sprawdzil-to-otodom-wraz-ze-specjalistami-z-heksagonu) zaliczał Ursus do najmniej zielonych części Warszawy. Zależy mi na zachowaniu dużych drzew, zamiast odkładania rekompensaty na dziesięciolecia.
 
